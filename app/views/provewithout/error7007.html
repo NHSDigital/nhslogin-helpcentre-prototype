@@ -1,0 +1,114 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'helpcentre-detail.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+What does error reference CID7007 mean?
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/hub">Help centre home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/provewithout/articlelist">What you need to provide to prove who you are
+</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/provewithout/articlelist">Back to What you need to provide to prove who you are
+</a></p>
+</nav>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+
+
+
+
+      <h1>
+What does error reference CID7007 mean?
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom"></span>
+      </h1>
+
+
+<p>
+If you see error reference code CID7007, this is caused by a fault with the way your patient record has been set up by your GP surgery. This error can occur when you move to a new GP surgery.
+</p>
+
+<p>
+Contact your GP and ask them to make sure your record is marked as 'Active'. 
+</p>
+
+<p>To do this, your GP surgery needs to follow these instructions:
+<ol class="nhsuk-list nhsuk-list--number">
+<li>Go to Workflow Manager</li>
+<li>Select Registration</li>
+<li>Select FP22 Reminders</li>
+<li>Select the patient from the list</li>
+<li>Select Actions from the top ribbon</li>
+<li>Select Manage Medical Record Flagged Patients</li>
+<li>Select the patient from the list</li>
+<li>Select Remove</li>
+</ol>
+</p>
+
+<p>
+Then your GP needs to re-register you as a patient by going into ‘Registration’ and selecting ‘Re-Register’ from the top ribbon.
+</p>
+
+<p>
+Once this is done you should be able to start again and use the registration details from your GP surgery’s online services to prove who you are
+</p>
+
+<hr>
+        <h2>
+        Related issues
+        </h2>
+    
+<nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+  <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+  <ol class="nhsuk-contents-list__list">
+   <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="registerforgp">How to register for your GP surgery’s online services</a>
+    </li> 
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="findcodes">How to find your Linkage Key, O.D.S. Code and Account I.D.</a>
+    </li> 
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="entercodes">How to enter your Linkage Key, O.D.S. Code and Account I.D.</a>
+    </li>
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link"  href="codesdontwork">What to do if your Linkage Key, O.D.S. Code and Account I.D. do not work</a>
+    </li> 
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="codesused">What to do if your Linkage Key, O.D.S. Code and Account I.D. have already been used</a>
+    </li>
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="checkdetails">How long does it take to check registration details?</a>
+    </li>
+{#      <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link"  href="error7007">What does error reference CID7007 mean?</a>
+    </li> #} 
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="error2020">What does error reference CID2020 mean?</a>
+    </li> 
+  </ol>
+</nav>
+
+    </div>
+  </div>
+{% endblock %}

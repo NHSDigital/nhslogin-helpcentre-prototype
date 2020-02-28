@@ -1,0 +1,128 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'helpcentre-detail.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+How to take a photo of your I.D.
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/hub">Help centre home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/provewith/articlelist">How to prove who you are with photo I.D.
+</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/provewith/articlelist">Back to How to prove who you are with photo I.D.
+</a></p>
+</nav>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+
+
+
+
+      <h1>
+How to take a photo of your I.D.
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom"></span>
+      </h1>
+
+<h2>Passport</h2>
+
+<p>To take a good photo of your passport make sure:
+<ul>
+<li>you have not covered any part of the page</li>
+<li>all 4 edges of the page are in your photo</li>
+<li>you can clearly see your face and all the text</li>
+<li>there's no shine from a light or window</li>
+</ul>
+</p>
+
+
+<h2>Driving licence</h2>
+
+<p>To take a good photo of your driving licence make sure:
+<ul>
+<li>you do not cover any of the corners</li>
+<li>you can clearly see your face and all the text</li>
+<li>there's no shine from a light or window</li>
+</ul>
+</p>
+
+
+<h2>European national identity card</h2>
+
+<p>To take a good photo of your identity card make sure:
+<ul>
+<li>you do not cover any of the corners</li>
+<li>you can clearly see your face and all the text</li>
+<li>there's no shine from a light or window</li>
+</ul>
+</p>
+
+
+
+<hr>
+        <h2>
+        Related issues
+        </h2>
+    
+<nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+  <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+  <ol class="nhsuk-contents-list__list">
+   <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="whatyouneed">What you need to provide to prove who you are</a>
+    </li> 
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="acceptedtypes">Accepted types of photo I.D. to prove who you are</a>
+    </li> 
+{#      <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="takeaphoto">How to take a photo of your I.D.</a>
+    </li> #}
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="uploadaphoto">How to upload a photo of your I.D.</a>
+    </li> 
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="cameraunavailable">Camera is unavailable when trying to take a photo or record a video</a>
+    </li>
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="webbrowserpermission">How to allow your web browser permission to access the camera and microphone</a>
+    </li> 
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="photofiledamaged">What to do if your photo file is damaged</a>
+    </li> 
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="checkphoto">How long does it take to check photo I.D?</a>
+    </li> 
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="donotpass">What to do if you do not pass the photo I.D. check</a>
+    </li> 
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="error4002">What does error reference CID4002 mean?</a>
+    </li>
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="error4011">What does error reference CID4011 mean?</a>
+    </li>  
+  </ol>
+</nav>
+
+    </div>
+  </div>
+{% endblock %}

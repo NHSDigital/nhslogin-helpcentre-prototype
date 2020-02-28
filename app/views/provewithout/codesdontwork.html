@@ -1,0 +1,153 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'helpcentre-detail.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+What to do if your Linkage Key, O.D.S. Code and Account I.D. do not work
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/hub">Help centre home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/provewithout/articlelist">What you need to provide to prove who you are
+</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/provewithout/articlelist">Back to What you need to provide to prove who you are
+</a></p>
+</nav>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+
+
+
+
+      <h1>
+What to do if your Linkage Key, O.D.S. Code and Account I.D. do not work
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom"></span>
+      </h1>
+
+
+<p>
+The registration details from your GP surgery’s online services can be used to prove who you are. These include a Linkage Key, an O.D.S. Code and an Account I.D. They are used along with your name and date of birth. 
+</p>
+
+<p>
+If this does not work for you there are a number of possible reasons why. 
+</p>
+
+<h2>
+Wrong details
+</h2>
+
+<p>
+If you see error code reference CID7001, this means 1 or more of the details that you entered might be wrong. This could mean that you have wrongly entered your Linkage Key, O.D.S. Code or Account I.D. Or, it could mean the name and date of birth you entered does not match what is on your NHS record.
+</p>
+
+<p>
+Contact your GP surgery to check you have the right registration details. If you have the right details, ask your GP surgery to check your name and date of birth is correct and up to date on your NHS record.
+</p>
+
+<h2>
+Issue with GP surgery online services
+</h2>
+
+<p>
+If you see error code reference CID7002, this means there is an issue with your GP surgery’s online services. Speak to your GP as you may not have permission to use your GP surgery’s online services.
+</p>
+
+<p>
+You can also try proving who you are using photo I.D. instead. You will not need the registration details from your GP surgery’s online services to do this.
+</p>
+
+<p>
+If you are trying to use the NHS App you should speak to your GP surgery about using their online services.
+</p>
+
+<h2>
+No user match found
+</h2>
+
+<p>
+If you see error code reference CID7003, this means we could not find a match for the details you entered. This could mean that you have wrongly entered your Linkage Key, O.D.S. Code or Account I.D. Or, it could mean the name and date of birth you entered does not match what is on your NHS record.
+</p>
+
+<p>
+Contact your GP surgery to check you have the right registration details. If you have the right details, ask your GP surgery to check your name and date of birth is correct and up to date on your NHS record.
+</p>
+
+<h2>
+No GP system found
+</h2>
+
+<p>
+If you see error code reference CID7006, this means we could not find a GP system using the O.D.S. code your entered. This can happen if your GP changes supplier. It can also happen when GP surgeries split or merge into one.
+</p>
+
+<p>
+Contact your GP surgery to check you have the right registration details, making sure you have the correct O.D.S. code. 
+</p>
+
+<p>
+If you are trying to access the NHS app, you may need to wait until your GP surgery is on the app.
+</p>
+
+<p>
+If you are trying to access any other website or app, you can prove who you are using photo I.D. instead. You will not need the registration details from your GP surgery’s online services to do this.
+</p>
+
+<hr>
+        <h2>
+        Related issues
+        </h2>
+    
+<nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+  <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+  <ol class="nhsuk-contents-list__list">
+   <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="registerforgp">How to register for your GP surgery’s online services</a>
+    </li> 
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="findcodes">How to find your Linkage Key, O.D.S. Code and Account I.D.</a>
+    </li> 
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="entercodes">How to enter your Linkage Key, O.D.S. Code and Account I.D.</a>
+    </li>
+ {#    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link"  href="codesdontwork">What to do if your Linkage Key, O.D.S. Code and Account I.D. do not work</a>
+    </li>  #}
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="codesused">What to do if your Linkage Key, O.D.S. Code and Account I.D. have already been used</a>
+    </li>
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="checkdetails">How long does it take to check registration details?</a>
+    </li> 
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link"  href="error7007">What does error reference CID7007 mean?</a>
+    </li> 
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="error2020">What does error reference CID2020 mean?</a>
+    </li> 
+  </ol>
+</nav>
+
+    </div>
+  </div>
+{% endblock %}

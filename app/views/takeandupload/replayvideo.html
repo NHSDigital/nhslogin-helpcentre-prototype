@@ -1,0 +1,117 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'helpcentre-detail.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+How to replay your short video
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/hub">Help centre home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/takeandupload/articlelist">How to take and upload a video
+</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/takeandupload/articlelist">Back to How to take and upload a video
+</a></p>
+</nav>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+
+
+
+
+      <h1>
+How to replay your short video
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom"></span>
+      </h1>
+
+<p>
+When you have recorded your video, simply press the ‘play video’ button to watch it back. 
+</p>
+
+
+<h2>
+Unable to replay the video
+</h2>
+
+<p>
+Some users are unable to replay their short video because a white box is displayed instead of a play button. Also, some device and browser combinations prevent users from proceeding once they have recorded a video. 
+</p>
+
+<p>
+This is likely due to the video format captured by the device camera not being supported by the browser for playback. We are testing ways to support additional video formats. In the meantime, users can change the video format of the device to a supported format.
+</p>
+
+<p>For example:
+<ul>
+<li>video/mp4</li>
+<li>video/webm</li>
+</ul>
+</p>
+
+
+<p>
+You should also avoid using Windows Media Player to replay your video.
+</p>
+
+
+<hr>
+        <h2>
+        Related issues
+        </h2>
+    
+<nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+  <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+  <ol class="nhsuk-contents-list__list">
+   <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="brightness">How to turn up your phone’s brightness</a>
+    </li> 
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="recordscan">How to record a scan of your face</a>
+    </li> 
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="recordvideo">How to record a short video</a>
+    </li>
+{#     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="replayvideo">How to replay your short video</a>
+    </li>  #}
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="videodamaged">What to do if your video file is damaged</a>
+    </li>
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="checkfacescan">How long does it take to check the automated face scan?</a>
+    </li>
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="checkvideo">How long does it take to check the short video?</a>
+    </li> 
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="cannottakevideo">What to do if you cannot take or upload a video</a>
+    </li> 
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="error4012">What does error reference CID4012 mean?</a>
+    </li> 
+  </ol>
+</nav>
+
+    </div>
+  </div>
+{% endblock %}

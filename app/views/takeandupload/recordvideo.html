@@ -1,0 +1,142 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'helpcentre-detail.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+How to record a short video
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/hub">Help centre home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/takeandupload/articlelist">How to take and upload a video
+</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/takeandupload/articlelist">Back to How to take and upload a video
+</a></p>
+</nav>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+
+
+
+
+      <h1>
+How to record a short video
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom"></span>
+      </h1>
+
+<p>
+To record a good short video make sure:
+<ul>
+<li>your entire face is visible</li>
+<li>you are not wearing a hat or any other accessories<li>
+<li>you say the randomly generated numbers loudly and clearly</li>
+<li>you have good light in the background</li>
+</ul>
+</p>
+
+<h2>
+Recording a video on iOS devices
+</h2>
+
+<p>
+Some iOS users may have problems taking and uploading their short video. If the camera does not open or shows a black screen when taking a video, this may be a problem with permissions or a known bug in the operating system.
+</p>
+
+<p>
+Users should make sure the Safari browser on their device has camera and microphone permissions. Updating the iOS operating system software on their device to a newer version may also help, if available. Version 11.2 will always show a black screen when trying to open the camera. There is an <a href="https://support.apple.com/en-gb">Apple support article</a> that describes how to check for updates.
+</p>
+
+<h2>
+Recording a video on Android devices
+</h2>
+
+<p>
+Some Android users may have problems recording and uploading their short video. To try to fix this problem users should avoid the ‘camera’ option when given a choice of applications to record the video with. They should choose a video option instead, like ‘camcorder’ or ‘capture video’.
+</p>
+
+<p>
+Users should also make sure the web browser on their device has camera and microphone permissions. The user’s device also needs enough free memory to record and save the video.
+</p>
+
+<h2>
+Unsupported video format
+</h2>
+
+<p>
+Some devices automatically record a video in an unsupported video format. We are testing ways to support additional video formats. In the meantime, users can change the video format of the device to a supported format.
+</p>
+
+<p>For example:
+<ul>
+<li>video/mp4</li>
+<li>video/webm</li>
+</ul>
+</p>
+
+
+<p>
+Alternatively, users can try register again on a different device. For example, a different phone or tablet, or a computer with a webcam. If users complete the process on another browser or device, they can then use the same account to log in on their original device without needing to take the photo or video again.
+</p>
+
+
+<hr>
+        <h2>
+        Related issues
+        </h2>
+    
+<nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+  <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+  <ol class="nhsuk-contents-list__list">
+   <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="brightness">How to turn up your phone’s brightness</a>
+    </li> 
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="recordscan">How to record a scan of your face</a>
+    </li> 
+{#      <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="recordvideo">How to record a short video</a>
+    </li> #}
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="replayvideo">How to replay your short video</a>
+    </li> 
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="videodamaged">What to do if your video file is damaged</a>
+    </li>
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="checkfacescan">How long does it take to check the automated face scan?</a>
+    </li>
+     <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="checkvideo">How long does it take to check the short video?</a>
+    </li> 
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="cannottakevideo">What to do if you cannot take or upload a video</a>
+    </li> 
+    <li class="nhsuk-contents-list__item">
+      <a class="nhsuk-contents-list__link" href="error4012">What does error reference CID4012 mean?</a>
+    </li> 
+  </ol>
+</nav>
+
+    </div>
+  </div>
+{% endblock %}
