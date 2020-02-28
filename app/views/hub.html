@@ -1,0 +1,68 @@
+{% extends 'layout.html' %}
+
+{% block beforeContent %}
+  {{ hero({
+    "heading": "NHS login Help Centre",
+    "text": "Rapidly create HTML prototypes of NHS.UK services."
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+
+<div class="nhsuk-grid-row nhsuk-panel-group">
+  <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+    {{ promo({
+            "href": "/whatisnhslogin/articlelist",
+            "heading": "What is NHS login?",
+            "headingLevel": 2,
+            "description": "What NHS login is, where you can use it and how it can benefit you."
+    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+    {{ promo({
+            "href": "/setupandmanage/articlelist",
+            "heading": "How to set up and manage NHS login",
+            "headingLevel": 2,
+            "description": "Learn how to create, manage, edit and delete an NHS login."    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+    {{ promo({
+            "href": "/provewith/articlelist",
+            "heading": "How to prove who you are with photo I.D.",
+            "headingLevel": 2,
+            "description": "Steps on how to take and upload a good photo of your I.D."    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+    {{ promo({
+            "href": "/provewithout/articlelist",
+            "heading": "How to prove who you are without photo I.D.",
+            "headingLevel": 2,
+            "description": "How to get registration details from your GP surgery’s online services."    }) }}
+  </div>
+    <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+    {{ promo({
+            "href": "/takeandupload/articlelist",
+            "heading": "How to take and upload a video",
+            "headingLevel": 2,
+            "description": "Steps on how to take and upload a video to prove who you are."    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+    {{ promo({
+            "href": "/mixed/articlelist",
+            "heading": "Mixed help and support",
+            "headingLevel": 2,
+            "description": "Technical problems, general advice and known service issues."    }) }}
+  </div>
+</div>
+
+
+      <div class="nhsuk-u-reading-width">
+        <p class="nhsuk-u-margin-bottom-0">Visit the <a href="https://service-manual.nhs.uk">NHS digital service manual</a> for guidance and examples.</p>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}
