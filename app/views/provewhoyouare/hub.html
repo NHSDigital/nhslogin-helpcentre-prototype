@@ -1,0 +1,43 @@
+{% extends 'helpcentre-detail.html' %}
+
+{% block pageTitle %}
+How to prove who you are
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/">Back to Help centre home</a></p>
+</nav>
+
+
+
+      <h1>
+        How to prove who you are
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom"></span>
+      </h1>
+
+<div class="nhsuk-grid-row nhsuk-panel-group">
+  <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+    {{ promo({
+            "href": "/provewith/articlelist",
+            "heading": "With photo I.D.",
+            "headingLevel": 2,
+            "description": "Steps on how to take and upload a good photo of your I.D."    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+    {{ promo({
+            "href": "/provewithout/articlelist",
+            "heading": "Without photo I.D.",
+            "headingLevel": 2,
+            "description": "How to get registration details from your GP surgery’s online services."    }) }}
+  </div>
+
+    </div>
+  </div>
+{% endblock %}
