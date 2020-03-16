@@ -12,7 +12,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-Email addresses
+        The confirm email address link in your email does not work
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -26,8 +26,10 @@ Email addresses
     <ol class="nhsuk-breadcrumb__list">
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/manage/hub">How to manage NHS login</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/manage/email/articlelist">Email addresses</a></li>
+
     </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/hub">Back to Help centre home</a></p>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/manage/email/articlelist">Back to Email addresses</a></p>
 </nav>
 
   <div class="nhsuk-grid-row">
@@ -36,19 +38,61 @@ Email addresses
 
 
 
+
       <h1>
-Email addresses
+        The confirm email address link in your email does not work
         <span class="nhsuk-caption-xl nhsuk-caption--bottom"></span>
       </h1>
 
+<p>
+You need to confirm your email address when you set up an NHS login. To do this, you must select the confirm email address link we send you. If the link in your email does not work, there are a number of possible reasons why.
+</p>
+
+      <h2>Broken link – Reference CID1001</h2>
+      
+      <p>A broken link can happen if:
+      <ul>
+      <li>you copy or type the link from the email and make a mistake</li>
+      <li>a technical error occurs</li>
+      </ul>
+      </p>
+
+<p>
+If this happens, you can try selecting the link in your email again. If you type the web address, check it is correct. If you paste the web address, make sure you copy the full address.
+      </p>
+
+      <h2>Expired link – Reference CID1002</h2>
+
+<p>
+The confirm email address link we send you has a time limit of 24 hours. If it has been more than 24 hours since you received the email, the link will not work.
+</p>
+
+<p>
+You need to go back to the website or app you were trying to access and enter your email address and password again. You will be sent another confirm email address link to set up your NHS login.
+</p>
+
+      <h2>Used link – Reference CID1003</h2>
+
+<p>
+The confirm email address link may not work because you have already used it and have successfully confirmed your email address.
+</p>
+
+<p>
+Try using your NHS login to log in to a website or app.
+</p>
 
 
+<hr>
+        <h2>
+        Related issues
+        </h2>
+    
 <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
   <h2 class="nhsuk-u-visually-hidden">Contents</h2>
   <ol class="nhsuk-contents-list__list">
-    <li class="nhsuk-contents-list__item">
+{# <li class="nhsuk-contents-list__item">
       <a class="nhsuk-contents-list__link" href="confirmemail">The confirm email address link in your email does not work</a>
-    </li>
+    </li> #}
     <li class="nhsuk-contents-list__item">
       <a class="nhsuk-contents-list__link" href="changeyouremail">How to change your NHS login email address</a>
     </li>

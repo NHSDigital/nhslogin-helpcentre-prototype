@@ -12,7 +12,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-        Mobile phone number
+The change phone number link in your backup email does not work
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -26,8 +26,10 @@
     <ol class="nhsuk-breadcrumb__list">
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/manage/hub">How to manage NHS login</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/manage/mobile/articlelist">Mobile phone number</a></li>
+
     </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/hub">Back to Help centre home</a></p>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/manage/mobile/articlelist">Back to Mobile phone number</a></p>
 </nav>
 
   <div class="nhsuk-grid-row">
@@ -36,13 +38,45 @@
 
 
 
+
       <h1>
-        Mobile phone number
+The change phone number link in your backup email does not work
         <span class="nhsuk-caption-xl nhsuk-caption--bottom"></span>
       </h1>
 
+<p>
+Your backup email address can be used if you lose access to the mobile phone number on your NHS login. To confirm changing your phone number, you must select the confirmation link we send you. If the link does not work, there are a number of possible reasons why.
+</p>
 
+      <h2>Expired link – Reference CID3006</h2>
+      
+<p>
+The link to confirm changing your phone number has a time limit of 24 hours. If it has been more than 24 hours since you received the link in your email, it will no longer work.
+</p>
 
+<p>
+You will need to try change your phone number again. We will then send you a new confirmation link in your email.
+</p>
+
+<p>
+Contact us if you did not mean to change your phone number or you think this is a mistake.
+</p>
+
+      <h2>Used link – Reference CID3007</h2>
+
+<p>
+The link to confirm changing your phone number may not work because you have already used it and have successfully confirmed your change of phone number. You can change your phone number again by visiting your <a href="https://settings.login.nhs.uk/">NHS login settings</a>.
+</p>
+
+<p>
+Contact us if you did not mean to change your phone number, or you do not have access to the new phone number.
+</p>
+
+<hr>
+        <h2>
+        Related issues
+        </h2>
+    
 <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
   <h2 class="nhsuk-u-visually-hidden">Contents</h2>
   <ol class="nhsuk-contents-list__list">
@@ -52,9 +86,9 @@
     <li class="nhsuk-contents-list__item">
       <a class="nhsuk-contents-list__link" href="lostaccesstophone">You have lost access to your mobile phone number</a>
     </li>
-    <li class="nhsuk-contents-list__item">
+{#     <li class="nhsuk-contents-list__item">
       <a class="nhsuk-contents-list__link" href="changephonenumberlink">The change phone number link in your backup email does not work</a>
-    </li>
+    </li> #}
     <li class="nhsuk-contents-list__item">
       <a class="nhsuk-contents-list__link" href="cancelchangephonenumberlink">The link to cancel changing your phone number does not work</a>
     </li>
