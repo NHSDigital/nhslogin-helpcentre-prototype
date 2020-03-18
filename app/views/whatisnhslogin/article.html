@@ -1,0 +1,146 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'helpcentre-detail.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+        How to set up NHS login
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/">Back to Help centre home</a></p>
+</nav>
+
+
+
+<div class="nhsuk-width-container">
+      <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+        
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-third">
+
+          
+<nav class="app-side-nav">
+
+  <ul class="nhsuk-list app-side-nav__list">
+
+
+
+    <h2 class="app-side-nav__heading">How to set up NHS login<span class="nhsuk-u-visually-hidden">navigation</span></h2>
+
+    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#whatis">What is NHS login?</a></li>
+
+    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#whatyouneed">What you need to set up an NHS login</a></li>
+
+    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#where">Where you can use NHS login</a></li>
+
+  </ul>
+
+</nav>
+
+        </div>
+
+        <div class="nhsuk-grid-column-two-thirds">
+
+
+
+  <h2 id="whatis">What is NHS login?</h2>
+
+<p>
+NHS login lets you access a variety of digital health and care websites and apps with just 1 username and password.
+</p>
+
+<p>
+When you set up your NHS login, you will need to prove who you are. This is so we can connect you to your NHS record and protect your health information.
+</p>
+
+<p>
+When you have proved who you are, you will be able to use your NHS login to access websites and apps wherever you see 'NHS login'.
+</p>
+
+    <p>Benefits include:
+      <ul>
+        <li>a one-time set up process</li>
+        <li>a single login for different websites and apps</li>
+        <li>secure and protected health and care data</li>
+      </ul>
+    </p>
+
+    <hr>
+
+  <h2 id="whatyouneed">What you need to set up an NHS login</h2>
+ 
+
+<p>You will need:
+<ul>
+<li>an email address</li>
+<li>a UK mobile phone number</li>
+</ul>
+</p>
+
+<h3>What you need to do</h3>
+
+<p>
+We will send you an email containing a link. Select this link to confirm your email address. Then return to the website or app you want to access and enter your NHS login email address and password. Here, you will be asked to give your mobile phone number.
+</p>
+
+<p>
+A 6-digit security code will be sent by text message to your mobile phone. You will be asked to enter this code to continue. A security code will be needed to log in every time, unless you select ‘remember this device and stop sending security codes’.
+</p>
+
+<p>
+There is currently no option to set up an NHS login if you do not own a mobile phone.
+</p>
+
+<p>
+For some websites and apps, you may need to prove who you are to keep your information secure. Visit the <a href="/">NHS login help centre home page</a> for more information on how to prove you are.
+</p>
+
+<hr>
+            
+ <h2 id="where">Where you can use NHS login</h2>
+ 
+<p>
+NHS login can be used on any website or app that shows the NHS login button.
+</p>
+                <img src="/images/ContinueWith_Original.svg" width="300px"><br><br>
+
+<p>
+Clicking this button will let you log into or create an account with the website or app you are visiting.  
+</p>
+
+<p>
+Visit the <a href="https://www.nhs.uk/using-the-nhs/nhs-services/nhs-login/">NHS login webpage</a> for a full list of websites and apps that allow you to use NHS login.
+</p>
+
+ 
+ 
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+      </main>
+    </div>
+{% endblock %}
