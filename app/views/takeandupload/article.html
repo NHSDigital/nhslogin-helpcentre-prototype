@@ -1,0 +1,302 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'helpcentre-detail.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+        How to record and upload a video
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/">Back to Help centre home</a></p>
+</nav>
+
+
+
+<div class="nhsuk-width-container">
+      <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+        
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-third">
+
+          
+<nav class="app-side-nav">
+
+  <ul class="nhsuk-list app-side-nav__list">
+
+
+
+    <h2 class="app-side-nav__heading">How to record and upload a video<span class="nhsuk-u-visually-hidden">navigation</span></h2>
+
+    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#brightness">How to turn up your phone screen’s brightness</a></li>
+
+    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#recordscan">How to record a scan of your face</a></li>
+
+    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#recordvideo">How to record a short video</a></li>
+
+    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#cameranotwork">Camera does not work when trying to record a video</a></li>
+    
+    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#unabletoreplay">Unable to replay or upload your video</a></li>
+    
+    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#filedamaged">What to do if your video file is damaged</a></li>
+    
+    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#cameraunavailable">Camera is unavailable when trying to record a video</a></li>
+    
+    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#cannotrecord">What to do if you cannot record or upload a video</a></li>
+    
+    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error4011">What does reference CID4011 mean?</a></li>
+    
+    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error4012">What does reference CID4012 mean?</a></li>
+
+
+  </ul>
+
+</nav>
+
+        </div>
+
+        <div class="nhsuk-grid-column-two-thirds">
+
+
+
+  <h2 id="brightness">How to turn up your phone screen’s brightness</h2>
+
+<h3>
+Android devices
+</h3>
+
+<p>
+<a href="https://support.google.com/android/answer/9084191?hl=en-GB">Change screen brightness on your Android phone</a>
+</p>
+
+<h3>
+iOS devices
+</h3>
+
+    <p>
+    <a href="https://support.google.com/android/answer/9084191?hl=en-GB">Change screen brightness on your Android phone</a>
+
+    </p>
+
+    <hr>
+
+  <h2 id="recordscan">How to record a scan of your face</h2>
+ 
+
+<p>
+When the scan starts you will see an outline of your face, and an oval. Make sure your face is inside the oval. Then simply follow the instructions given on the screen. For example, the instructions may ask you to move closer to your camera.
+</p>
+
+<p>
+Our automated face scan feature uses screens that will flash and change colour. If you have a photosensitive condition and you do not want to do the scan, you can send a short video instead.
+</p>
+
+<hr>
+            
+ <h2 id="recordvideo">How to record a short video</h2>
+ 
+<p>
+To record a good short video, make sure:
+<ul>
+<li>your entire face is visible</li>
+<li>you face the camera directly</li>
+<li>your face is not covered by a hat or glasses</li>
+</ul>
+</p>
+
+<p>
+You will be asked to repeat 4 randomly generated numbers. You can say the numbers out loud or write them down and show them.
+</p>
+
+<p>
+If you say the numbers, make sure your voice is loud and clear. If you write the numbers down, make sure they are clear and the paper is not held in front of your face.
+</p>
+
+<hr>
+
+  <h2 id="cameranotwork">Camera does not work when trying to record a video</h2>
+
+ <p>
+ If the camera does not open or shows a black screen when recording a video, this may be a problem with permissions.
+ </p>
+
+ <p>
+ You should make sure the web browser on your device has camera and microphone permissions. You must also give permission for the NHS login website to access your device’s camera and microphone.
+</p>
+
+<h3>iOS devices</h3>
+
+<p>
+If you have an iOS device, updating the iOS operating system software on your device to a newer version may also help, if available. Version 11.2 iOS will always show a black screen when trying to open the camera. There is an <a href="https://support.apple.com/en-gb">Apple support article</a> that describes how to check for updates.
+</p>
+          
+  <h3>Android devices</h3>
+
+  <p>
+  If you have an Android device, you should avoid the ‘camera’ option when given a choice of applications to record the video with. You should choose a video option instead, like ‘camcorder’ or ‘capture video’.
+</p>
+
+<p>
+<a href="../provewhoyouare/with/article#permission">How to give your web browser permission to access the camera and microphone</a>
+</p>
+
+<p>
+<a href="../provewhoyouare/with/article#ourpermission">How to give our website permission to access the camera and microphone</a>
+</p>
+
+<hr>
+
+<h2 id="unabletoreplay">Unable to replay or upload your video</h2>
+ 
+
+ <p>
+ If you cannot replay your video, this could be because the video format captured by your device camera is not supported by your browser.
+</p>
+
+<p>
+We are testing ways to support additional video formats. In the meantime, users can change the video format of the device to a supported format.
+</p>
+
+<p>
+For example:
+<ul>
+<li>video/mp4</li>
+<li>video/webm</li>
+</ul>
+</p>
+
+<p>
+If this does not work, you can also try recording a video on another device. For example, you can use another phone or tablet that belongs to you or a family member.
+</p>
+
+<hr>
+
+
+<h2 id="filedamaged">What to do if your video file is damaged</h2>
+
+<p>
+We run a virus check on your video file before it is verified. If the file you upload is infected or damaged, you can try and upload another one.
+</p>
+
+<p>
+If this keeps happening, there might be a problem with your device. You can try recording a video using a different device and upload it from there. For example, you could borrow a family member’s device to record and upload a video instead. Once verified, you can then use NHS login on your usual device as normal.
+</p>
+
+<p>
+<a href="../provewhoyouare/without/article">How to prove who you are without photo I.D.</a>
+</p>
+
+<hr>
+
+<h2 id="cameraunavailable">Camera is unavailable when trying to record a video</h2>
+
+<p>
+If your gallery or file manager opens instead of your camera when trying to record a video, you may have an issue with permissions.
+</p>
+
+<p>
+You must give permission for your web browser to access the camera and microphone. If your web browser does not have permission, you will not be given the option to use the camera.
+</p>
+
+<p>
+You must also give permission for the NHS login website to access your device’s camera and microphone.
+</p>
+
+<p>
+If this problem keeps happening even with permissions allowed, there might be a problem with your device. You can try opening your camera app separately to record a video.
+</p>
+
+<p>
+If this does not work, you can also try recording a video on another device. For example, you can use another phone or tablet that belongs to you or a family member.
+</p>
+
+<p>
+<a href="../provewhoyouare/with/article#permission">How to give your web browser permission to access the camera and microphone</a>
+</p>
+
+<p>
+<a href="../provewhoyouare/with/article#ourpermission">How to give our website permission to access the camera and microphone</a>
+</p>
+
+<hr>
+
+<h2 id="cannotrecord">What to do if you cannot record or upload a video</h2>
+
+<p>
+If you are registered for your GP surgery’s online services, you can use your registration details to prove who you are instead of using photo I.D. and a video. If you do not know or remember your registration details, you can ask your GP to give you them.
+</p>
+
+<p>
+The 3 details you need are:
+<ul>
+<li>Linkage Key (could be called Passphrase)</li>
+<li>O.D.S. Code (could be called Organisation Code or Practice I.D.)</li>
+<li>Account I.D.</li>
+</ul>
+</p>
+
+<p>
+If you are not registered for your GP surgery’s online services, tell your GP surgery that you want to register, and they will ask you to fill in a form. Your surgery will then give you the 3 registration details.
+</p>
+
+
+<hr>
+
+<h2 id="error4011">What does reference CID4011 mean?</h2>
+
+<p>
+If reference CID4011 is shown, this is because your video has failed to upload. If this keeps happening there may be a problem with your internet connection, or a technical problem on our side.
+</p>
+
+<p>
+You can try uploading your video another time or use a better internet connection. For example, you should make sure you are using a good Wi-Fi connection. Try using a different Wi-Fi connection if the one you are using doesn’t work.
+</p>
+
+<p>
+<a href="../provewhoyouare/without/article">How to prove who you are without photo I.D.</a>
+</p>
+
+<hr>
+
+<h2 id="error4012">What does reference CID4012 mean?</h2>
+
+<p>
+If reference CID4012 is shown, this means we are having technical problems on our side or it might be a problem with your internet connection. This is stopping us from validating your short video.
+</p>
+
+<p>
+You can try uploading your video another time or use a better internet connection. For example, you should make sure you are using a good Wi-Fi connection. Try using a different Wi-Fi connection if the one you are using doesn’t work.
+</p>
+
+<p>
+If you keep getting this message, please try again later.
+</p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+      </main>
+    </div>
+{% endblock %}
