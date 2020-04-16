@@ -34,6 +34,16 @@
   <input class="nhsuk-input nhsuk-u-width-one-half" id="one-half" name="one-half" type="text">
 </div>
 
+{# <div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="two-thirds">
+    Email
+  </label>
+    <span class="nhsuk-hint" id="input-with-hint-text-hint">
+  This is the email address we will contact you on.
+  </span>
+  <input class="nhsuk-input nhsuk-u-width-two-thirds" id="two-thirds" name="two-thirds" type="text" value="lydiateebay@gmail.com" readonly>
+</div> #}
+
 <div class="nhsuk-form-group">
   <label class="nhsuk-label" for="two-thirds">
     Email
@@ -41,8 +51,33 @@
     <span class="nhsuk-hint" id="input-with-hint-text-hint">
   This is the email address we will contact you on.
   </span>
-  <input class="nhsuk-input nhsuk-u-width-two-thirds" id="two-thirds" name="two-thirds" type="text">
+<p><b>lydiateebay@gmail.com</b></p>
 </div>
+
+<div class="nhsuk-form-group">
+  <fieldset class="nhsuk-fieldset" aria-describedby="nationality-hint">
+    <div class="nhsuk-checkboxes">
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="email-2" name="email-2" type="checkbox">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="email-2" conditional="true">
+        I would like to use a different contact email address
+        </label>
+        <div class="reveal-if-active">
+        <div class="nhsuk-inset-text">
+  <span class="nhsuk-u-visually-hidden">Information: </span>
+  <label class="nhsuk-label" for="two-thirds">
+    Contact email
+  </label>
+  <input class="nhsuk-input nhsuk-u-width-two-thirds" id="two-thirds" name="two-thirds" type="text">
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+
 
 <div class="nhsuk-form-group">
   <label class="nhsuk-label" for="select-1">

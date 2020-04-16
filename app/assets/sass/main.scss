@@ -85,3 +85,31 @@ html;*,*:before,*:after{-moz-box-sizing:inherit;-webkit-box-sizing:inherit;box-s
 
 //panel with icon white
 .panel-content-text{display:inline-block}@media (min-width: 924px){.panel-content-text{width:60%}}@media (min-width: 924px){.panel-content-img{width:30%;float:right;display:inline-block}}@media (max-width: 924px){.panel-content-img{display:none}}
+
+
+//conditional extra email
+.reveal-if-active {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 16px;
+    transform: scale(0.8);
+    transition: 0.5s;
+    
+    label {
+      display: block;
+      margin: 0 0 3px 0;
+    }
+    input[type=text] {
+      width: 100%;
+    }
+    
+    input[type="radio"]:checked ~ &,
+    input[type="checkbox"]:checked ~ & {
+      opacity: 1;
+      max-height: 100px;
+      transform: scale(1);
+      overflow: visible;
+    }
+    
+  }
