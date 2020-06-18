@@ -1,0 +1,110 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'helpcentre-detail.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact us
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+  <h2 class="nhsuk-app-contact-panel__heading">Contact us</h2>
+  
+    <div class="nhsuk-warning-callout">
+  <h2 class="nhsuk-warning-callout__label">COVID-19 app</h2>
+  <p>The NHS login team are unable to assist with NHS COVID-19 track and trace.</p>
+  <p>
+    <a href="https://faq.covid19.nhs.uk/">Information or feedback on the NHS COVID-19 app</a>
+  </p>
+</div>
+
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="one-half">
+    Name
+  </label>
+  <input class="nhsuk-input nhsuk-u-width-one-half" id="one-half" name="one-half" type="text">
+</div>
+
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="two-thirds">
+    Email address
+  </label>
+    <span class="nhsuk-hint" id="input-with-hint-text-hint">
+  This is the email address we will contact you on.
+  </span>
+  <input class="nhsuk-input nhsuk-u-width-two-thirds" id="two-thirds" name="two-thirds" type="text">
+</div>
+
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="select-1">
+    Problem or issue
+  </label>
+  <select class="nhsuk-select" id="select-1" name="select-1">
+    <option value="1" selected>CID3001: You have lost access to your mobile phone number</option>
+    <option value="2">CID3002: Expired link - The link to cancel changing your phone number does not work</option>
+    <option value="3">CID3003: Used link - The link to cancel changing your phone number does not work</option>
+    <option value="4">CID7004: What to do if your registration details from your GP surgery’s online services have already been used</option>
+    <option value="5">CID2011: There may be a problem with your NHS number</option>
+    <option value="6">CID2012: Your NHS login may have been disabled</option>
+    <option value="7">CID7023: You have already set up an NHS login</option>
+    <option value="8">CID7029: We cannot connect your NHS login to your GP surgery</option>
+    <option value="9">CID7100: Unable to connect to your GP surgery’s system</option>
+
+  
+  </select>
+</div>
+
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="example-longer">
+    Message
+  </label>
+  <span class="nhsuk-hint" id="example-longer-hint">
+Enter as much detail as you can, including any information we may have asked you to provide. The NHS login team cannot help with medical problems.
+</span>
+  <details class="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+    What to do if you need medical help
+    </span>
+  </summary>
+  <div class="nhsuk-details__text">
+      <p>If you think it's a life-threatening emergency:</p>
+        <ul>
+          <li>
+          <a href="tel: 999">call 999</a>
+          </li>
+        </ul>
+      <p>If you do not think it's an emergency:</p>
+    <ul>
+      <li><a href="tel:111">call 111</a> or go to <a href="https://111.nhs.uk">111 online</a></li>
+      <li>speak to a <a href="https://www.nhs.uk/service-search">pharmacist, GP or dentist</a></li>
+      <li>search the <a href="https://www.nhs.uk/conditions/"> NHS website health A-Z</a> for more advice about your condition</li>
+    </ul>
+  </div>
+</details>
+  <textarea class="nhsuk-textarea" id="example-longer" name="example-longer" rows=" 6 " aria-describedby="example-longer-hint"></textarea>
+</div>
+
+  			<a class="nhsuk-button" href="../contact-sent">Send message</a>
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}
