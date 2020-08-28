@@ -121,8 +121,14 @@ html;*,*:before,*:after{-moz-box-sizing:inherit;-webkit-box-sizing:inherit;box-s
     text-align: center;
   }
 
+  #hero-heading {
+    margin-bottom: 25px;
+  }
+
   .nhsuk-search__input {
-    min-width: 400px;
+    margin-top: 0px;
+    padding-top: 0px;
+    min-width: 450px;
   }
 
   .nhsuk-header__searchhub {
