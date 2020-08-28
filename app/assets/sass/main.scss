@@ -111,5 +111,21 @@ html;*,*:before,*:after{-moz-box-sizing:inherit;-webkit-box-sizing:inherit;box-s
       transform: scale(1);
       overflow: visible;
     }
-    
+  }
+
+  // Custom CSS
+
+  // HC homepage
+
+  .nhsuk-hero__wrapper {
+    text-align: center;
+  }
+
+  .nhsuk-search__input {
+    min-width: 400px;
+  }
+
+  .nhsuk-header__searchhub {
+    display: grid;
+    place-items: center;
   }
