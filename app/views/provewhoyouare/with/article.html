@@ -1,14 +1,5 @@
-<!-- Use this page as the index for your project -->
-
-<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
-
 <!-- Extends the layout from /views/layout.html -->
 {% extends 'helpcentre-detail.html' %}
-<!-- 
-  In /views/layout.html you can:
-    - change the header and footer 
-    - add custom CSS and JavaScript
--->
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
@@ -19,387 +10,420 @@ Use photo I.D. to prove who you are
 {% block beforeContent %}
 {% endblock %}
 
-<!-- Your page content goes inside the content block -->
-<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
 
-<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
-    <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/provewhoyouare/hub">How to prove who you are</a></li>
-    </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/provewhoyouare/hub">Back to How to prove who you are</a></p>
+<!-- Breadcrumb Navigation -->
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #F0F4F5">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/provewhoyouare/hub">How to prove who you
+        are</a></li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/provewhoyouare/hub">Back to How to
+      prove who you are</a></p>
 </nav>
 
-
+<!-- Main Body Content Start -->
 
 <div class="nhsuk-width-container">
-      <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-third">
+        <nav class="app-side-nav">
+
+          <!-- one-third-side-navigation -->
+
+          <ul class="nhsuk-list app-side-nav__list">
+
+            <h2 class="app-side-nav__heading">
+              Prove who you are with photo I.D.<span class="nhsuk-u-visually-hidden">navigation</span>
+            </h2>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#whatyouneed">What you need to prove who you are</a>
+            </li>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#howtotake">How to take a photo of your I.D.</a>
+            </li>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#blackscreen">Black screen shows when trying to take a photo</a>
+            </li>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#cameraunavailable">Camera unavailable when trying to take a photo</a>
+            </li>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#permission">How to give your web browser permission to access the camera and microphone</a>
+            </li>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#ourpermission">How to give our website permission to access the camera and microphone</a>
+            </li>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#photodamaged">What to do if your photo file is damaged</a>
+            </li>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#checkid">How long does it take to check photo I.D?</a>
+            </li>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#iddoesntpass">What to do if you do not pass the photo I.D. check</a>
+            </li>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error4002">Reference CID4002: Your photo I.D. has failed to upload</a>
+            </li>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error8002">Reference CID8002: Your photo I.D. has failed to upload</a>
+            </li>
+
+          </ul> <!-- /. side-nav list -->
+        </nav> <!-- /. side-nav -->
+      </div> <!-- /. one-third column -->
+
+      <!-- two-thirds-article-text -->
+
+      <!-- What you need to prove who you are -->
+
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <h2 id="whatyouneed">What you need to prove who you are</h2>
+
+        <p>You will be asked to:
+          <ol class="nhsuk-list nhsuk-list--number">
+            <li>take a photo of your I.D.</li>
+            <li>record your face using your device</li>
+            <li>enter your NHS number if you know it</li>
+          </ol>
+        </p>
+
+        <p>Your photo I.D. can be a:
+          <ul>
+            <li>passport</li>
+            <li>UK driving licence (full or provisional)</li>
+            <li>European driving licence (full)</li>
+            <li>European national identity card</li>
+          </ul>
+        </p>
+
+        <p>
+          We ask you to record your face so that we can compare it to your photo I.D. and prove who you are. We may ask
+          you for more details to help find your NHS record, like your date of birth or postcode.
+        </p>
+
+        <br>
+        <div style="height:3px; background-color:#005eb8; border:none;"></div>
+        <br>
+        <br>
+
+        <!-- How to take a photo of your I.D. -->
+
+        <h2 id="howtotake">How to take a photo of your I.D.</h2>
+
+        <h3>Passport</h3>
+
+        <p>To take a good photo of your passport make sure:
+          <ul>
+            <li>you have not covered any part of the page</li>
+            <li>all 4 edges of the page are in your photo</li>
+            <li>you can clearly see your face and all the text</li>
+            <li>there's no shine from a light or window</li>
+          </ul>
+        </p>
+
+        <h3>Driving licence</h3>
+
+        <p>To take a good photo of your driving licence make sure:
+          <ul>
+            <li>you do not cover any of the corners</li>
+            <li>you can clearly see your face and all the text</li>
+            <li>there's no shine from a light or window</li>
+          </ul>
+        </p>
+
+        <h3>European national identity card</h3>
+
+        <p>To take a good photo of your identity card make sure:
+          <ul>
+            <li>you do not cover any of the corners</li>
+            <li>you can clearly see your face and all the text</li>
+            <li>there's no shine from a light or window</li>
+          </ul>
+        </p>
+
+        <br>
+        <div style="height:3px; background-color:#005eb8; border:none;"></div>
+        <br>
+        <br>
+
+        <!-- Black screen shows when trying to take a photo -->
+
+        <h2 id="blackscreen">Black screen shows when trying to take a photo</h2>
+
+        <p>
+          If the camera does not open or shows a black screen when taking a photo, this may be a problem with
+          permissions or a known bug in the operating system.
+        </p>
+
+        <p>
+          You should make sure the web browser on your device has camera and microphone permissions. You must also give
+          permission for the NHS login website to access your device’s camera and microphone.
+        </p>
+
+        <p>
+          If you are using an iOS device, updating the iOS operating system software on your device to a newer version
+          may also help. Version 11.2 will always show a black screen when trying to open the camera.
+        </p>
+
+        <p>
+          There is an <a href="https://support.apple.com/en-gb">Apple support article</a> that describes how to check
+          for updates.
+        </p>
+
+        <br>
+        <div style="height:3px; background-color:#005eb8; border:none;"></div>
+        <br>
+        <br>
+
+        <!-- Camera unavailable when trying to take a photo -->
+
+        <h2 id="cameraunavailable">Camera unavailable when trying to take a photo</h2>
+
+        <p>
+          If your gallery or file manager opens instead of your camera when trying to take a photo, you may have an
+          issue with permissions.
+        </p>
+
+        <p>
+          You must give permission for your web browser to access the camera and microphone. If your web browser does
+          not have permission, you will not be given the option to use the camera. Instead, your device's photo gallery
+          or file manager app will open instead.
+        </p>
+
+        <p>
+          You must also give permission for the NHS login website to access your device’s camera and microphone.
+        </p>
+
+        <p>
+          If this problem keeps happening even with permissions allowed, there might be a problem with your device. You
+          can try opening your camera app separately to take a photo of your I.D. When you have taken a photo, you can
+          then start again and prove who you are by selecting ‘upload a photo’.
+        </p>
+
+        <p>
+          If this does not work, you can also try taking a photo on another device. For example, you can use another
+          phone or tablet that belongs to you or a family member.
+        </p>
+
+        <p>
+          <a href="../provewhoyouare/without/article">Find out how to prove who you are without using photo I.D.</a>
+        </p>
+
+        <br>
+        <div style="height:3px; background-color:#005eb8; border:none;"></div>
+        <br>
+        <br>
+
+        <!-- How to give your web browser access permission -->
+
+        <h2 id="permission">How to give your web browser permission to access the camera and microphone</h2>
+
+        <h3>Android devices</h3>
+
+        <p>
+          <a href="https://support.google.com/android/answer/9431959?hl=en-GB">Change permissions for apps on your
+            Android devices.</a>
+        </p>
+
+        <h3>iOS devices</h3>
+
+        <p>
+          <a href="https://support.apple.com/en-gb/HT203033">Change permissions for apps on your iOS devices.</a>
+        </p>
+
+        <br>
+        <div style="height:3px; background-color:#005eb8; border:none;"></div>
+        <br>
+        <br>
+
+        <!-- How to give our website access permission -->
+
+        <h2 id="ourpermission">How to give our website permission to access the camera and microphone</h2>
+
+        <p>
+          Your web browser should tell you any time a site requests access to your camera or microphone. This usually
+          happens when you visit a website for the first time. You will be given the option to select ‘allow’ or
+          ‘block’.
+        </p>
+
+        <p>
+          If you select ‘block’ the NHS login website will not be able to access your camera or microphone. You can
+          change this by going to your web browser settings.
+        </p>
+
+        <h3>Chrome</h3>
+
+        <p>
+          If you are using Google Chrome, select the icon to the left of the web page address in the address bar. This
+          will allow you to view and change the permissions for the website you are on.
+        </p>
+
+        <p>
+          You can also go to Chrome’s settings and select the ‘privacy and security’ tab. Select ‘site settings’ to view
+          and change permissions for your camera and microphone.
+        </p>
+
+        <h3>Internet Explorer</h3>
+
+        <p>
+          If you are using Internet Explorer, go to the web browser’s settings page. Select ‘advanced settings’ and then
+          ‘manage permissions’ to view and change permissions for your camera and microphone.
+        </p>
+
+        <h3>Firefox</h3>
+
+        <p>
+          If you are using Firefox, you can select the website’s icon in your address bar and click ‘more information’.
+        </p>
+
+        <p>
+          Firefox also has a permissions manager that lets you see which permissions you have set up for different
+          websites and change them all in one place. To access it, enter ‘about:permissions’ into your Firefox address
+          bar.
+        </p>
+
+        <h3>Safari</h3>
+
+        <p>If you are using Safari, select ‘preferences’ to open the preferences window. You can then select the
+          ‘security’ tab and ‘manage website settings’ to view and change permissions for your camera and microphone.
+        </p>
+
+        <br>
+        <div style="height:3px; background-color:#005eb8; border:none;"></div>
+        <br>
+        <br>
+
+        <!-- What to do if your photo file is damaged -->
+
+        <h2 id="photodamaged">What to do if your photo file is damaged</h2>
+
+        <p>
+          We run a virus check on the photo of your I.D. If the file you upload is infected or damaged, you can try and
+          upload another one.
+        </p>
+
+        <p>
+          If this keeps happening, there might be a problem with your device. Try taking a photo using a different
+          device. For example, you can use another phone or tablet that belongs to you or a family member.
+        </p>
+
+        <p>
+          Send the photo to your usual device and try uploading it again. Or, you can upload your photo from the other
+          device just to prove who you are. Once you have proven who you are, you can then use NHS login on your usual
+          device as normal.
+        </p>
+
+        <p>
+          <a href="../provewhoyouare/without/article">Find out how to prove who you are without using photo I.D.</a>
+        </p>
+
+        <br>
+        <div style="height:3px; background-color:#005eb8; border:none;"></div>
+        <br>
+        <br>
+
+        <!-- How long does it take to check photo I.D. -->
+
+        <h2 id="checkid">How long does it take to check photo I.D?</h2>
+
+        <p>
+          After you send your photo I.D. and video, your photo I.D. will be carefully checked and should be done within
+          2 hours. If you send between 9pm and 9am it may take longer. We will let you know by email whether the I.D.
+          check has been successful.
+        </p>
+
+        <br>
+        <div style="height:3px; background-color:#005eb8; border:none;"></div>
+        <br>
+        <br>
         
-<div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-one-third">
+        <!-- What happens if you do not pass the check? -->
 
-          
-<nav class="app-side-nav">
+        <h2 id="iddoesntpass">What happens if you do not pass the check?</h2>
 
-  <ul class="nhsuk-list app-side-nav__list">
+        <p>
+          If you do not pass the photo I.D. check, we will send you an email with some advice. We will tell you whether
+          you should try again and what you can do to pass.
+        </p>
 
+        <p>
+          If you keep getting the same problem, you can prove who you are without photo I.D. instead.
+        </p>
 
+        <p>
+          <a href="../provewhoyouare/without/article">Find out how to prove who you are without using photo I.D.</a>
+        </p>
 
-    <h2 class="app-side-nav__heading">Prove who you are with photo I.D.<span class="nhsuk-u-visually-hidden">navigation</span></h2>
+        <br>
+        <div style="height:3px; background-color:#005eb8; border:none;"></div>
+        <br>
+        <br>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#whatyouneed">What you need to prove who you are</a></li>
+        <!-- Reference CID4002: Your photo I.D. has failed to upload -->
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#howtotake">How to take a photo of your I.D.</a></li>
+        <h2 id="error4002">Reference CID4002: Your photo I.D. has failed to upload</h2>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#blackscreen">Black screen shows when trying to take a photo</a></li>
+        <p>
+          If you see the error reference code CID4002, this is because the picture of your photo I.D. has failed to
+          upload. If this keeps happening there may be a problem with your internet connection, or a technical problem
+          on our side.
+        </p>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#cameraunavailable">Camera unavailable when trying to take a photo</a></li>
+        <p>
+          You can try uploading a photo of your I.D. another time or use a better internet connection. For example, you
+          should make sure you are using Wi-Fi instead of your phone’s cellular data. Try using a different Wi-Fi
+          connection if the one you are using doesn’t work.
+        </p>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#permission">How to give your web browser permission to access the camera and microphone</a></li>
+        <p>
+          <a href="../provewhoyouare/without/article">Find out how to prove who you are without using photo I.D.</a>
+        </p>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#ourpermission">How to give our website permission to access the camera and microphone</a></li>
+        <br>
+        <div style="height:3px; background-color:#005eb8; border:none;"></div>
+        <br>
+        <br>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#photodamaged">What to do if your photo file is damaged</a></li>
+        <!-- Reference CID8002: Your photo I.D. has failed to upload -->
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#checkid">How long does it take to check photo I.D?</a></li>
+        <h2 id="error8002">Reference CID8002: Your photo I.D. has failed to upload</h2>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#iddoesntpass">What to do if you do not pass the photo I.D. check</a></li>
+        <p>
+          If you see the error reference code CID8002, this is because the picture of your photo I.D. has failed to
+          upload. If this keeps happening there may be a problem with your internet connection, or a technical problem
+          on our side.
+        </p>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error4002">Reference CID4002: Your photo I.D. has failed to upload</a></li>
+        <p>
+          You can try uploading a photo of your I.D. another time or use a better internet connection. For example, you
+          should make sure you are using Wi-Fi instead of your phone’s cellular data. Try using a different Wi-Fi
+          connection if the one you are using doesn’t work.
+        </p>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error8002">Reference CID8002: Your photo I.D. has failed to upload</a></li>
+        <p>
+          <a href="../provewhoyouare/without/article">Find out how to prove who you are without using photo I.D.</a>
+        </p>
 
-  </ul>
+      </div> <!-- /. grid-column-two-thirds -->
+    </div> <!-- /. parent-grid-row -->
+  </main> <!-- /. main-wrapper -->
+</div> <!-- /. width-container -->
 
-</nav>
-
-        </div>
-
-        <div class="nhsuk-grid-column-two-thirds">
-
-
-
-  <h2 id="whatyouneed">What you need to prove who you are</h2>
-
-<p>You will be asked to:
-<ol class="nhsuk-list nhsuk-list--number">
-<li>take a photo of your I.D.</li>
-<li>record your face using your device</li>
-<li>enter your NHS number if you know it</li>
-</ol>
-</p>
-
-<p>Your photo I.D. can be a:
-<ul>
-<li>passport</li>
-<li>UK driving licence (full or provisional)</li>
-<li>European driving licence (full)</li>
-<li>European national identity card</li>
-</ul>
-</p>
-
-<p>
-We ask you to record your face so that we can compare it to your photo I.D. and prove who you are. We may ask you for more details to help find your NHS record, like your date of birth or postcode.
-</p>
-
-    <br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
-  <h2 id="howtotake">How to take a photo of your I.D.</h2>
- 
-<h3>Passport</h3>
-
-<p>To take a good photo of your passport make sure:
-<ul>
-<li>you have not covered any part of the page</li>
-<li>all 4 edges of the page are in your photo</li>
-<li>you can clearly see your face and all the text</li>
-<li>there's no shine from a light or window</li>
-</ul>
-</p>
-
-
-<h3>Driving licence</h3>
-
-<p>To take a good photo of your driving licence make sure:
-<ul>
-<li>you do not cover any of the corners</li>
-<li>you can clearly see your face and all the text</li>
-<li>there's no shine from a light or window</li>
-</ul>
-</p>
-
-
-<h3>European national identity card</h3>
-
-<p>To take a good photo of your identity card make sure:
-<ul>
-<li>you do not cover any of the corners</li>
-<li>you can clearly see your face and all the text</li>
-<li>there's no shine from a light or window</li>
-</ul>
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
- 
-  <h2 id="blackscreen">Black screen shows when trying to take a photo</h2>
-
-<p>
-If the camera does not open or shows a black screen when taking a photo, this may be a problem with permissions or a known bug in the operating system.
-</p>
-
-<p>
-You should make sure the web browser on your device has camera and microphone permissions. You must also give permission for the NHS login website to access your device’s camera and microphone.
-</p>
-
-<p>
-If you are using an iOS device, updating the iOS operating system software on your device to a newer version may also help. Version 11.2 will always show a black screen when trying to open the camera.
-</p>
-
-<p>
-There is an <a href="https://support.apple.com/en-gb">Apple support article</a> that describes how to check for updates.
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
-
- <h2 id="cameraunavailable">Camera unavailable when trying to take a photo</h2>
-
-
-<p>
-If your gallery or file manager opens instead of your camera when trying to take a photo, you may have an issue with permissions.
-</p>
-
-<p>
-You must give permission for your web browser to access the camera and microphone. If your web browser does not have permission, you will not be given the option to use the camera. Instead, your device's photo gallery or file manager app will open instead.
-</p>
-
-<p>
-You must also give permission for the NHS login website to access your device’s camera and microphone.
-</p>
-
-<p>
-If this problem keeps happening even with permissions allowed, there might be a problem with your device. You can try opening your camera app separately to take a photo of your I.D. When you have taken a photo, you can then start again and prove who you are by selecting ‘upload a photo’.
-</p>
-
-<p>
-If this does not work, you can also try taking a photo on another device. For example, you can use another phone or tablet that belongs to you or a family member.
-</p>
-
-<p>
-  <a href="../provewhoyouare/without/article">Find out how to prove who you are without using photo I.D.</a>
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
- <h2 id="permission">How to give your web browser permission to access the camera and microphone</h2>
-
- <h3>Android devices</h3>
-
-<p>
-<a href="https://support.google.com/android/answer/9431959?hl=en-GB">Change permissions for apps on your Android devices.</a>
-</p>
-
-<h3>iOS devices</h3>
-
-<p>
-<a href="https://support.apple.com/en-gb/HT203033">Change permissions for apps on your iOS devices.</a>
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
- <h2 id="ourpermission">How to give our website permission to access the camera and microphone</h2>
-
- <p>
- Your web browser should tell you any time a site requests access to your camera or microphone. This usually happens when you visit a website for the first time. You will be given the option to select ‘allow’ or ‘block’.
- </p>
-
-<p>
-If you select ‘block’ the NHS login website will not be able to access your camera or microphone. You can change this by going to your web browser settings.
-</p>
-
-<h3>Chrome</h3>
-
-<p>
-If you are using Google Chrome, select the icon to the left of the web page address in the address bar. This will allow you to view and change the permissions for the website you are on.
-</p>
-
-<p>
-You can also go to Chrome’s settings and select the ‘privacy and security’ tab. Select ‘site settings’ to view and change permissions for your camera and microphone.
-</p>
-
-<h3>Internet Explorer</h3>
-
-<p>
-If you are using Internet Explorer, go to the web browser’s settings page. Select ‘advanced settings’ and then ‘manage permissions’ to view and change permissions for your camera and microphone.
-</p>
-
-<h3>Firefox</h3>
-
-<p>
-If you are using Firefox, you can select the website’s icon in your address bar and click ‘more information’.
-</p>
-
-<p>
-Firefox also has a permissions manager that lets you see which permissions you have set up for different websites and change them all in one place. To access it, enter ‘about:permissions’ into your Firefox address bar.
-</p>
-
-<h3>Safari</h3>
-
-<p>If you are using Safari, select ‘preferences’ to open the preferences window. You can then select the ‘security’ tab and ‘manage website settings’ to view and change permissions for your camera and microphone.</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
-
- <h2 id="photodamaged">What to do if your photo file is damaged</h2>
-
- <p>
- We run a virus check on the photo of your I.D. If the file you upload is infected or damaged, you can try and upload another one.
- </p>
-
-<p>
-If this keeps happening, there might be a problem with your device. Try taking a photo using a different device. For example, you can use another phone or tablet that belongs to you or a family member.
-</p>
-
-<p>
-Send the photo to your usual device and try uploading it again. Or, you can upload your photo from the other device just to prove who you are. Once you have proven who you are, you can then use NHS login on your usual device as normal.
-</p>
-
-<p>
-  <a href="../provewhoyouare/without/article">Find out how to prove who you are without using photo I.D.</a>
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
-
-
- <h2 id="checkid">How long does it take to check photo I.D?</h2>
-
- <p>
- After you send your photo I.D. and video, your photo I.D. will be carefully checked and should be done within 2 hours. If you send between 9pm and 9am it may take longer. We will let you know by email whether the I.D. check has been successful.
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
- <h2 id="iddoesntpass">What happens if you do not pass the check?</h2>
-
- <p>
-If you do not pass the photo I.D. check, we will send you an email with some advice. We will tell you whether you should try again and what you can do to pass.
-</p>
-
-<p>
-If you keep getting the same problem, you can prove who you are without photo I.D. instead.
-</p>
-
-<p>
-  <a href="../provewhoyouare/without/article">Find out how to prove who you are without using photo I.D.</a>
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
- <h2 id="error4002">Reference CID4002: Your photo I.D. has failed to upload</h2>
-
- <p>
- If you see the error reference code CID4002, this is because the picture of your photo I.D. has failed to upload. If this keeps happening there may be a problem with your internet connection, or a technical problem on our side.
-</p>
-
-<p>
-You can try uploading a photo of your I.D. another time or use a better internet connection. For example, you should make sure you are using Wi-Fi instead of your phone’s cellular data. Try using a different Wi-Fi connection if the one you are using doesn’t work.
-</p>
-
-<p>
-  <a href="../provewhoyouare/without/article">Find out how to prove who you are without using photo I.D.</a>
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
-
- <h2 id="error8002">Reference CID8002: Your photo I.D. has failed to upload</h2>
-
-<p>
-If you see the error reference code CID8002, this is because the picture of your photo I.D. has failed to upload. If this keeps happening there may be a problem with your internet connection, or a technical problem on our side.
-</p>
-
-<p>
-You can try uploading a photo of your I.D. another time or use a better internet connection. For example, you should make sure you are using Wi-Fi instead of your phone’s cellular data. Try using a different Wi-Fi connection if the one you are using doesn’t work.
-</p>
-
-<p>
-  <a href="../provewhoyouare/without/article">Find out how to prove who you are without using photo I.D.</a>
-</p>
-
-<br>
-            
-<div class="nhsuk-grid-full-width" style="margin-top:32px;border-top:3px solid #005eb8"></div>
-  <br>
-
-<div id="contact" class="nhsuk-panel nhsuk-u-margin-bottom-2 nhsuk-u-margin-top-5">
-  <h2 class="nhsuk-heading-m app-feedback__heading">Did you find what you were looking for?</h2>
-
-  <div class="nhsuk-form-group">
-
-  <fieldset class="nhsuk-fieldset">
-
-    <div class="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-          Yes
-        </label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-          No
-        </label>
-      </div>
-    </div>
-  </fieldset>
-
-</div>
-			<a class="nhsuk-button" href="../../contact">Continue</a>
-		</div>
-  </div>
-</div>
-
-          
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-      </main>
-    </div>
 {% endblock %}
