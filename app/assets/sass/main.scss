@@ -135,3 +135,12 @@ html;*,*:before,*:after{-moz-box-sizing:inherit;-webkit-box-sizing:inherit;box-s
     display: grid;
     place-items: center;
   }
+
+  // Global Article Styles
+
+  .article-divider {
+    height:3px;
+    background-color:#005eb8;
+    border:none;
+    margin: 50px 0px 50px 0px;
+  }
