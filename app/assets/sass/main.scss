@@ -80,11 +80,11 @@ html;*,*:before,*:after{-moz-box-sizing:inherit;-webkit-box-sizing:inherit;box-s
 
 // panel with icon
 
-.visual-hub-box-content{display:grid;width:100%} .visual-hub-box-content a{background-color:#dee2e5;display:block;padding:16px;text-decoration:none;color:#425563;box-shadow:0 4px 0 0 #98A4AD;overflow:hidden}.visual-hub-box-content a:active{background-color:#FFF884}.visual-hub-box-content a h2{text-decoration:underline;color:#005eb8;font-size:24px;line-height:26pt}.visual-hub-box-content a:hover,.visual-hub-box-content a:focus{background-color:#FFF1CC;box-shadow:0 0 0 4px #ffcd60}.visual-hub-box-content a:hover h2,.visual-hub-box-content a:focus h2{text-decoration:none}.visual-hub-box-content-text{display:inline-block}@media (min-width: 924px){.visual-hub-box-content-text{width:60%}}@media (min-width: 924px){.visual-hub-box-content-img{width:30%;float:right;display:inline-block}}@media (max-width: 924px){.visual-hub-box-content-img{display:none}}
+.visual-hub-box-content{display:grid;width:100%} .visual-hub-box-content a{background-color:#dee2e5;display:block;padding:16px;text-decoration:none;color:#425563;box-shadow:0 4px 0 0 #98A4AD;overflow:hidden}.visual-hub-box-content a:active{background-color:#FFF884}.visual-hub-box-content a h2{text-decoration:underline;color:#005eb8;font-size:24px;line-height:26pt}.visual-hub-box-content a:hover,.visual-hub-box-content a:focus{background-color:#FFF1CC;box-shadow:0 0 0 4px #ffcd60}.visual-hub-box-content a:hover h2,.visual-hub-box-content a:focus h2{text-decoration:none}.visual-hub-box-content-text{display:inline-block}@media (min-width: 924px){.visual-hub-box-content-text{width:60%}}@media (min-width: 924px){.visual-hub-box-content-img{width:30%;float:right;}}@media (max-width: 924px){.visual-hub-box-content-img{display:none}}
 
 
 //panel with icon white
-.panel-content-text{display:inline-block}@media (min-width: 924px){.panel-content-text{width:60%}}@media (min-width: 924px){.panel-content-img{width:30%;float:right;display:inline-block}}@media (max-width: 924px){.panel-content-img{display:none}}
+.panel-content-text{display:inline-block}@media (min-width: 924px){.panel-content-text{width:60%}}@media (min-width: 924px){.panel-content-img{width:30%;float:right;}}@media (max-width: 924px){.panel-content-img{display:none}}
 
 
 //conditional extra email
