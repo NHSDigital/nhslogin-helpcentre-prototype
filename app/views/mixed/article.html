@@ -1,420 +1,412 @@
-<!-- Use this page as the index for your project -->
-
-<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
-
-<!-- Extends the layout from /views/layout.html -->
 {% extends 'helpcentre-detail.html' %}
-<!-- 
-  In /views/layout.html you can:
-    - change the header and footer 
-    - add custom CSS and JavaScript
--->
 
-<!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-        Mixed reference support
+Mixed reference support
 {% endblock %}
 
-<!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
 {% endblock %}
 
-<!-- Your page content goes inside the content block -->
-<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
 
-<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
-    <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
-    </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/">Back to Help centre home</a></p>
+<!-- Breadcrumb -->
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #F0F4F5">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/">Back to Help centre home</a></p>
 </nav>
-
-
 
 <div class="nhsuk-width-container">
-      <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
-        
-<div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-one-third">
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
 
-          
-<nav class="app-side-nav">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-third">
 
-  <ul class="nhsuk-list app-side-nav__list">
+        <nav class="app-side-nav">
 
+          <ul class="nhsuk-list app-side-nav__list">
 
+            <h2 class="app-side-nav__heading">Mixed reference support<span class="nhsuk-u-visually-hidden">navigation</span></h2>
 
-    <h2 class="app-side-nav__heading">Mixed reference support<span class="nhsuk-u-visually-hidden">navigation</span></h2>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error2011">Reference CID2011: There may be a problem with your NHS number</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error2011">Reference CID2011: There may be a problem with your NHS number</a></li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error2012">Reference CID2012: Your NHS login may have been disabled</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error2012">Reference CID2012: Your NHS login may have been disabled</a></li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error2024">Reference CID2024: There is a technical issue on our side</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error2024">Reference CID2024: There is a technical issue on our side</a></li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error7020">Reference CID7020: Unable to connect to your GP surgery’s system</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error7020">Reference CID7020: Unable to connect to your GP surgery’s system</a></li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error7021">Reference CID7021: Permission to use your GP surgery’s online services</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error7021">Reference CID7021: Permission to use your GP surgery’s online services</a></li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error7022">Reference CID7022: Unable to connect to your GP surgery’s system</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error7022">Reference CID7022: Unable to connect to your GP surgery’s system</a></li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error7023">Reference CID7023: Unable to connect to your GP surgery’s system</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error7023">Reference CID7023: Unable to connect to your GP surgery’s system</a></li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error7024">Reference CID7024: Unable to connect to your GP surgery’s system</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error7024">Reference CID7024: Unable to connect to your GP surgery’s system</a></li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error7026">Reference CID7026: Unable to connect to your GP surgery’s system</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error7026">Reference CID7026: Unable to connect to your GP surgery’s system</a></li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error7027">Reference CID7027: Unable to connect to your GP surgery’s system</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error7027">Reference CID7027: Unable to connect to your GP surgery’s system</a></li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error7029">Reference CID7029: We cannot connect your NHS login to your GP surgery</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error7029">Reference CID7029: We cannot connect your NHS login to your GP surgery</a></li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error7100">Reference CID7100: Unable to connect to your GP surgery’s system</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#error7100">Reference CID7100: Unable to connect to your GP surgery’s system</a></li>
+          </ul>
 
+        </nav> <!-- /. side-nav -->
+      </div> <!-- /. one-thirds -->
 
+      <!-- Main article body content start -->
 
-  </ul>
+      <div class="nhsuk-grid-column-two-thirds">
 
-</nav>
+      <!-- Reference CID2011: There may be a problem with your NHS number -->
 
-        </div>
+        <h2 id="error2011">Reference CID2011: There may be a problem with your NHS number</h2>
 
-        <div class="nhsuk-grid-column-two-thirds">
+        <p>
+          Every time you log in to a website or app using your NHS login, we check your NHS number. This allows us to
+          connect you to your information securely.
+        </p>
 
+        <p>
+          If you see reference CID2011, this can mean there is a problem with your NHS number.
+        </p>
 
+        <p>
+          <a href="../contact">Contact us</a> so we can try to fix the problem. You will need to tell us the email
+          address you use for your NHS login.
+        </p>
 
-  <h2 id="error2011">Reference CID2011: There may be a problem with your NHS number</h2>
+        <div class="article-divider"></div>
 
+      <!-- Reference CID2012: Your NHS login may have been disabled -->
 
-<p>
-Every time you log in to a website or app using your NHS login, we check your NHS number. This allows us to connect you to your information securely.
-</p>
+        <h2 id="error2012">Reference CID2012: Your NHS login may have been disabled</h2>
 
-    <p>
-If you see reference CID2011, this can mean there is a problem with your NHS number.
-    </p>
+        <p>
+          Every time you log in to a website or app using your NHS login, we check your NHS number. This allows us to
+          connect you to your information securely.
+        </p>
 
-    <p>
-  <a href="../contact">Contact us</a> so we can try to fix the problem. You will need to tell us the email address you use for your NHS login.
-    </p>
+        <p>
+          If reference CID2012 is shown, this can mean your information has errors or it is being used by someone else.
+          If this happens to you, your NHS login will be disabled.
+        </p>
 
-    <br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
+        <p>
+          <a href="../contact">Contact us</a> so we can try to fix the problem. You will need to tell us the email
+          address you use for your NHS login.
+        </p>
+
+        <div class="article-divider"></div>
+      
+      <!-- Reference CID2024: There is a technical issue on our side -->
 
-  <h2 id="error2012">Reference CID2012: Your NHS login may have been disabled</h2>
- 
+        <h2 id="error2024">Reference CID2024: There is a technical issue on our side</h2>
 
-<p>
-Every time you log in to a website or app using your NHS login, we check your NHS number. This allows us to connect you to your information securely.
-</p>
+        <p>
+          If reference CID2024 is shown, this means we do not know what website or app you are trying to log into. This
+          is a technical issue on our side.
+        </p>
 
-<p>
-  If reference CID2012 is shown, this can mean your information has errors or it is being used by someone else. If this happens to you, your NHS login will be disabled.
-</p>
+        <div class="article-divider"></div>
 
-<p>
-<a href="../contact">Contact us</a> so we can try to fix the problem. You will need to tell us the email address you use for your NHS login.
-</p>
+      <!-- Reference CID7020: Unable to connect to your GP surgery’s system -->
 
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-            
- <h2 id="error2024">Reference CID2024: There is a technical issue on our side</h2>
- 
-<p>
-If reference CID2024 is shown, this means we do not know what website or app you are trying to log into. This is a technical issue on our side.
-</p>
+        <h2 id="error7020">Reference CID7020: Unable to connect to your GP surgery’s system</h2>
 
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
+        <p>
+          If reference CID7020 is shown, this means the website or app you are trying to visit needs to connect to your
+          GP surgery’s system and we have not been able to make that connection.
+        </p>
 
-  <h2 id="error7020">Reference CID7020: Unable to connect to your GP surgery’s system</h2>
+        <p>
+          There could be a problem with your details, or with your GP surgery's system.
+        </p>
 
- <p>
-If reference CID7020 is shown, this means the website or app you are trying to visit needs to connect to your GP surgery’s system and we have not been able to make that connection.
- </p>
+        <p>
+          To connect to your GP surgery’s system, ask your GP surgery for your registration details for their GP online
+          services.
+        </p>
 
- <p>
-There could be a problem with your details, or with your GP surgery's system.
-</p>
+        <p>
+          You will need:
+          <ul>
+            <li>Linkage Key (could be called Passphrase)</li>
+            <li>O.D.S. Code (could be called Organisation Code or Practice I.D.)</li>
+            <li>Account I.D.</li>
+          </ul>
+        </p>
 
-<p>
-To connect to your GP surgery’s system, ask your GP surgery for your registration details for their GP online services.
-</p>
+        <p>
+          Once you have these details, log into the website or app you were trying to access again. You will see the
+          same message with reference CID7020. It will ask you to try another way to connect your NHS login to your GP
+          surgery. Select this and then select ‘Enter your registration details’.
+        </p>
 
-<p>
-You will need:
-<ul>
-<li>Linkage Key (could be called Passphrase)</li>
-<li>O.D.S. Code (could be called Organisation Code or Practice I.D.)</li>
-<li>Account I.D.</li>
-</ul>
-</p>
-          
-  <p>
-Once you have these details, log into the website or app you were trying to access again. You will see the same message with reference CID7020. It will ask you to try another way to connect your NHS login to your GP surgery. Select this and then select ‘Enter your registration details’.
-</p>
+        <div class="article-divider"></div>
 
+      <!-- Reference CID7021: Permission to use your GP surgery’s online services -->
 
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
+        <h2 id="error7021">Reference CID7021: Permission to use your GP surgery’s online services</h2>
 
-<h2 id="error7021">Reference CID7021: Permission to use your GP surgery’s online services</h2>
- 
+        <p>
+          If reference CID7021 is shown, this means the website or app you are trying to visit needs to connect to your
+          GP surgery’s system and we have not been able to make that connection.
+        </p>
 
- <p>
-If reference CID7021 is shown, this means the website or app you are trying to visit needs to connect to your GP surgery’s system and we have not been able to make that connection.
-</p>
+        <p>
+          This might be because you do not have permission from your GP to use your GP surgery’s online services.
+        </p>
 
-<p>
-This might be because you do not have permission from your GP to use your GP surgery’s online services.
-</p>
+        <p>
+          You should ask your GP surgery to check if you are able to use their online services.
+        </p>
 
-<p>
-You should ask your GP surgery to check if you are able to use their online services.
-</p>
+        <div class="article-divider"></div>
 
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
+      <!-- Reference CID7022: Unable to connect to your GP surgery’s system -->
 
+        <h2 id="error7022">Reference CID7022: Unable to connect to your GP surgery’s system</h2>
 
-<h2 id="error7022">Reference CID7022: Unable to connect to your GP surgery’s system</h2>
+        <p>
+          If reference CID7022 is shown, this means the website or app you are trying to visit needs to connect to your
+          GP surgery’s system and we have not been able to make that connection.
+        </p>
 
-<p>
-If reference CID7022 is shown, this means the website or app you are trying to visit needs to connect to your GP surgery’s system and we have not been able to make that connection.
-</p>
+        <p>
+          There could be a problem with your details, or with your GP surgery's system.
+        </p>
 
-<p>
-There could be a problem with your details, or with your GP surgery's system.
-</p>
+        <p>
+          To connect to your GP surgery’s system, ask your GP surgery for your registration details for their GP online
+          services.
+        </p>
 
-<p>
-To connect to your GP surgery’s system, ask your GP surgery for your registration details for their GP online services.
-</p>
+        <p>
+          You will need:
+          <ul>
+            <li>Linkage Key (could be called Passphrase)</li>
+            <li>O.D.S. Code (could be called Organisation Code or Practice I.D.)</li>
+            <li>Account I.D.</li>
+          </ul>
+        </p>
 
-<p>
-You will need:
-<ul>
-<li>Linkage Key (could be called Passphrase)</li>
-<li>O.D.S. Code (could be called Organisation Code or Practice I.D.)</li>
-<li>Account I.D.</li>
-</ul>
-</p>
-
-<p>
-Once you have these details, log into the website or app you were trying to access again. You will see the same message with reference CID7022. It will ask you to try another way to connect your NHS login to your GP surgery. Select this and then select ‘Enter your registration details’.
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
-<h2 id="error7023">Reference CID7023: Unable to connect to your GP surgery’s system</h2>
+        <p>
+          Once you have these details, log into the website or app you were trying to access again. You will see the
+          same message with reference CID7022. It will ask you to try another way to connect your NHS login to your GP
+          surgery. Select this and then select ‘Enter your registration details’.
+        </p>
 
-<p>
-  If reference CID7023 is shown, this means the website or app you are trying to visit needs to connect to your GP surgery’s system and we have not been able to make that connection. If this happens to you, there are a number of possible reasons why.
-</p>
+        <div class="article-divider"></div>
 
-<h3>You have already set up an NHS login</h3>
-
-<p>
-The details we use to make the connection have already been used to connect you to the website or app you are trying to visit.
-</p>
-
-<p>This can happen if you have already set up an NHS login using a different email address. We will have connected that NHS login to your GP surgery’s system. You can only connect 1 NHS login to your GP surgery’s system.
-</p>
-
-<p>
-If you want to change the email address on your NHS login you can do so in your <a href="https://settings.login.nhs.uk/">NHS login settings</a>.
-</p>
-
-<h3>The details we use are invalid</h3>
-
-<p>The details we use to make the connection are invalid.</p>
-
-<p>This can happen if:
-  <ul>
-  <li>you have changed GP surgery</li>
-  <li>your GP surgery has changed systems</li>
-  <li>you no longer have permission to use your GP surgery’s online services</li>
-  </ul>
-  </p>
-
-<p>You can ask your GP for new registration details for their online services.</p>
-
-<p>
-<a href="../contact">Contact us</a> if you need help or if you still have problems.
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
-<h2 id="error7024">Reference CID7024: Unable to connect to your GP surgery’s system</h2>
-
-<p>
-If reference CID7024 is shown, this means the website or app you are trying to visit needs to connect to your GP surgery’s system and we have not been able to make that connection.
-</p>
-
-<p>
-This is because we are having some technical problems. Please try again later, or you could try another way to connect by asking your GP surgery for your registration details for their GP online services.
-</p>
-
-<p>
-You will need:
-<ul>
-<li>Linkage Key (could be called Passphrase)</li>
-<li>O.D.S. Code (could be called Organisation Code or Practice I.D.)</li>
-<li>Account I.D.</li>
-</ul>
-</p>
-
-<p>
-Once you have these details, log into the website or app you were trying to access again. If you see the same message again with reference CID7024, select the option ‘if you keep getting this message’. Then select ‘Enter your registration details’.
-</p>
-
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
-<h2 id="error7026">Reference CID7026: Unable to connect to your GP surgery’s system</h2>
-
-<p>
-If reference CID7026 is shown, this means the website or app you are trying to visit needs to connect to your GP surgery’s system and we have not been able to make that connection.
-</p>
-
-<p>
-This could be because we are having some technical problems or your GP surgery’s system is currently unavailable. Please try again later, or you could try another way to connect by asking your GP surgery for your registration details for their GP online services.
-</p>
-
-<p>
-You will need:
-<ul>
-<li>Linkage Key (could be called Passphrase)</li>
-<li>O.D.S. Code (could be called Organisation Code or Practice I.D.)</li>
-<li>Account I.D.</li>
-</ul>
-</p>
-
-<p>
-Once you have these details, log into the website or app you were trying to access again. If you see the same message again with reference CID7026, select the option ‘if you keep getting this message’. Then select ‘Enter your registration details’.
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
-<h2 id="error7027">Reference CID7027: Unable to connect to your GP surgery’s system</h2>
-
-<p>
-If reference CID7027 is shown, this means the website or app you are trying to visit needs to connect to your GP surgery’s system and we have not been able to make that connection.
-</p>
-
-<p>
-This could be because we are having some technical problems or your GP surgery’s system is currently unavailable. Please try again later, or you could try another way to connect by asking your GP surgery for your registration details for their GP online services.
-</p>
-
-<p>
-You will need:
-<ul>
-<li>Linkage Key (could be called Passphrase)</li>
-<li>O.D.S. Code (could be called Organisation Code or Practice I.D.)</li>
-<li>Account I.D.</li>
-</ul>
-</p>
-
-<p>
-Once you have these details, log into the website or app you were trying to access again. If you see the same message again with reference CID7027, select the option ‘if you keep getting this message’. Then select ‘Enter your registration details’.
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
-<h2 id="error7029">Reference CID7029: We cannot connect your NHS login to your GP surgery</h2>
-
-<p>
-If you see reference CID7029, this means we cannot connect your NHS login to your GP surgery. There could be a problem with your details, or with your GP surgery's system.
-</p>
-
-<p>
-<a href="../contact">Contact us</a> so we can find out what is causing the problem. You will need to tell us the email address you use for your NHS login.
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
-<h2 id="error7100">Reference CID7100: Unable to connect to your GP surgery’s system</h2>
-
-<p>
-If reference CID7100 is shown, this means the website or app you are trying to visit needs to connect to your GP surgery’s system and we have not been able to make that connection.
-</p>
-
-<p>
-There could be a problem with your details, or with your GP surgery's system.
-</p>
-
-<p>
-<a href="../contact">Contact us</a> so we can check you have been given the right registration details. You will need to tell us the email address you use for your NHS login.
-</p>
-
-<br>
-            
-<div class="nhsuk-grid-full-width" style="margin-top:32px;border-top:3px solid #005eb8"></div>
-  <br>
-
-<div id="contact" class="nhsuk-panel nhsuk-u-margin-bottom-2 nhsuk-u-margin-top-5">
-  <h2 class="nhsuk-heading-m app-feedback__heading">Did you find what you were looking for?</h2>
-
-  <div class="nhsuk-form-group">
-
-  <fieldset class="nhsuk-fieldset">
-
-    <div class="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-          Yes
-        </label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-          No
-        </label>
-      </div>
-    </div>
-  </fieldset>
-
-</div>
-			<a class="nhsuk-button" href="../contact">Continue</a>
-		</div>
-  </div>
-</div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-      </main>
-    </div>
+      <!-- Reference CID7023: Unable to connect to your GP surgery’s system -->
+
+        <h2 id="error7023">Reference CID7023: Unable to connect to your GP surgery’s system</h2>
+
+        <p>
+          If reference CID7023 is shown, this means the website or app you are trying to visit needs to connect to your
+          GP surgery’s system and we have not been able to make that connection. If this happens to you, there are a
+          number of possible reasons why.
+        </p>
+
+        <h3>You have already set up an NHS login</h3>
+
+        <p>
+          The details we use to make the connection have already been used to connect you to the website or app you are
+          trying to visit.
+        </p>
+
+        <p>This can happen if you have already set up an NHS login using a different email address. We will have
+          connected that NHS login to your GP surgery’s system. You can only connect 1 NHS login to your GP surgery’s
+          system.
+        </p>
+
+        <p>
+          If you want to change the email address on your NHS login you can do so in your <a
+            href="https://settings.login.nhs.uk/">NHS login settings</a>.
+        </p>
+
+        <h3>The details we use are invalid</h3>
+
+        <p>The details we use to make the connection are invalid.</p>
+
+        <p>This can happen if:
+          <ul>
+            <li>you have changed GP surgery</li>
+            <li>your GP surgery has changed systems</li>
+            <li>you no longer have permission to use your GP surgery’s online services</li>
+          </ul>
+        </p>
+
+        <p>You can ask your GP for new registration details for their online services.</p>
+
+        <p>
+          <a href="../contact">Contact us</a> if you need help or if you still have problems.
+        </p>
+
+        <div class="article-divider"></div>
+
+      <!-- Reference CID7024: Unable to connect to your GP surgery’s system -->
+
+        <h2 id="error7024">Reference CID7024: Unable to connect to your GP surgery’s system</h2>
+
+        <p>
+          If reference CID7024 is shown, this means the website or app you are trying to visit needs to connect to your
+          GP surgery’s system and we have not been able to make that connection.
+        </p>
+
+        <p>
+          This is because we are having some technical problems. Please try again later, or you could try another way to
+          connect by asking your GP surgery for your registration details for their GP online services.
+        </p>
+
+        <p>
+          You will need:
+          <ul>
+            <li>Linkage Key (could be called Passphrase)</li>
+            <li>O.D.S. Code (could be called Organisation Code or Practice I.D.)</li>
+            <li>Account I.D.</li>
+          </ul>
+        </p>
+
+        <p>
+          Once you have these details, log into the website or app you were trying to access again. If you see the same
+          message again with reference CID7024, select the option ‘if you keep getting this message’. Then select ‘Enter
+          your registration details’.
+        </p>
+
+        <div class="article-divider"></div>
+
+      <!-- Reference CID7026: Unable to connect to your GP surgery’s system -->
+
+        <h2 id="error7026">Reference CID7026: Unable to connect to your GP surgery’s system</h2>
+
+        <p>
+          If reference CID7026 is shown, this means the website or app you are trying to visit needs to connect to your
+          GP surgery’s system and we have not been able to make that connection.
+        </p>
+
+        <p>
+          This could be because we are having some technical problems or your GP surgery’s system is currently
+          unavailable. Please try again later, or you could try another way to connect by asking your GP surgery for
+          your registration details for their GP online services.
+        </p>
+
+        <p>
+          You will need:
+          <ul>
+            <li>Linkage Key (could be called Passphrase)</li>
+            <li>O.D.S. Code (could be called Organisation Code or Practice I.D.)</li>
+            <li>Account I.D.</li>
+          </ul>
+        </p>
+
+        <p>
+          Once you have these details, log into the website or app you were trying to access again. If you see the same
+          message again with reference CID7026, select the option ‘if you keep getting this message’. Then select ‘Enter
+          your registration details’.
+        </p>
+
+        <div class="article-divider"></div>
+
+      <!-- Reference CID7027: Unable to connect to your GP surgery’s system -->
+
+        <h2 id="error7027">Reference CID7027: Unable to connect to your GP surgery’s system</h2>
+
+        <p>
+          If reference CID7027 is shown, this means the website or app you are trying to visit needs to connect to your
+          GP surgery’s system and we have not been able to make that connection.
+        </p>
+
+        <p>
+          This could be because we are having some technical problems or your GP surgery’s system is currently
+          unavailable. Please try again later, or you could try another way to connect by asking your GP surgery for
+          your registration details for their GP online services.
+        </p>
+
+        <p>
+          You will need:
+          <ul>
+            <li>Linkage Key (could be called Passphrase)</li>
+            <li>O.D.S. Code (could be called Organisation Code or Practice I.D.)</li>
+            <li>Account I.D.</li>
+          </ul>
+        </p>
+
+        <p>
+          Once you have these details, log into the website or app you were trying to access again. If you see the same
+          message again with reference CID7027, select the option ‘if you keep getting this message’. Then select ‘Enter
+          your registration details’.
+        </p>
+
+        <div class="article-divider"></div>
+
+      <!-- Reference CID7029: We cannot connect your NHS login to your GP surgery -->
+
+        <h2 id="error7029">Reference CID7029: We cannot connect your NHS login to your GP surgery</h2>
+
+        <p>
+          If you see reference CID7029, this means we cannot connect your NHS login to your GP surgery. There could be a
+          problem with your details, or with your GP surgery's system.
+        </p>
+
+        <p>
+          <a href="../contact">Contact us</a> so we can find out what is causing the problem. You will need to tell us
+          the email address you use for your NHS login.
+        </p>
+
+        <div class="article-divider"></div>
+
+      <!-- Reference CID7100: Unable to connect to your GP surgery’s system -->
+
+        <h2 id="error7100">Reference CID7100: Unable to connect to your GP surgery’s system</h2>
+
+        <p>
+          If reference CID7100 is shown, this means the website or app you are trying to visit needs to connect to your
+          GP surgery’s system and we have not been able to make that connection.
+        </p>
+
+        <p>
+          There could be a problem with your details, or with your GP surgery's system.
+        </p>
+
+        <p>
+          <a href="../contact">Contact us</a> so we can check you have been given the right registration details. You
+          will need to tell us the email address you use for your NHS login.
+        </p>
+
+      </div> <!-- /. two-thirds-column -->
+    </div> <!-- /. grid-row -->
+  </main> <!-- /. main-wrapper -->
+</div> <!-- /. widht-container -->
+
 {% endblock %}
