@@ -6,58 +6,27 @@
     <div class="nhsuk-grid-row">
       <div class="nhsuk-hero__wrapper">
         <!-- Hero Title-->
-        <h1 class="nhsuk-heading-xl" id="hero-heading">NHS login help centre</h1>
+        <h1 class="nhsuk-u-margin-bottom-3">NHS login help centre</h1>
 
-          <div class="nhsuk-header__searchhub">
-
-          <!-- Search Toggle -->  
+        <div class="nhsuk-hub__search">
           
-          <button class="nhsuk-header__search-toggle" id="toggle-search" aria-controls="search"
-            aria-label="Open search">
-            <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              aria-hidden="true" focusable="false">
-              <path
-                d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z">
-              </path>
-            </svg>
-            <span class="nhsuk-u-visually-hidden">Enter search term or reference code</span>
-          </button>
-
-          <!-- Search Input and Button -->
-          
-          <div class="nhsuk-header__search-wrap" id="wrap-search">
-            <form class="nhsuk-header__search-form" id="search" action="https://help.login.nhs.uk/search" method="get" role="search">
+          <div class="nhsuk-header__search-wrap nhsuk-hub__search-wrap" id="wrap-search">
+            <form class="nhsuk-header__search-form nhsuk-hub__search-form" id="search" action="/search" method="get" role="search">
               <label class="nhsuk-u-visually-hidden" for="search-field">
                 Enter search term or reference code
               </label>
               <!-- Search input field -->
-              <input class="nhsuk-search__input" id="search-field" name="q" type="search" placeholder="Enter search term or reference code" autocomplete="off">
+              <input autocomplete="off" class="autocomplete__input autocomplete__input--default nhsuk-hub__search-input" id="search-field" name="q" placeholder="Enter search term or reference code" type="text">
               <!-- Search Button -->
-              <button class="nhsuk-search__submit" type="submit">
-                <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                  aria-hidden="true" focusable="false">
-                  <path
-                    d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z">
-                  </path>
+                <button class="nhsuk-search__submit nhsuk-hub__search-submit" type="submit">
+                <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
                 </svg>
                 <span class="nhsuk-u-visually-hidden">Enter search term or reference code</span>
               </button>
-
-              <!-- Search Close -->
-              
-              <button class="nhsuk-search__close" id="close-search">
-                <svg class="nhsuk-icon nhsuk-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                  aria-hidden="true" focusable="false">
-                  <path
-                    d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z">
-                  </path>
-                </svg>
-                <span class="nhsuk-u-visually-hidden">Close search</span>
-              </button>
-
-            </form> <!-- /. Form -->
-          </div> <!-- /. Seach input and button -->
-        </div> <!-- /. Search hub -->
+            </form>
+          </div> <!-- /. nhsuk-header__search-wrap ->
+        </div> <!-- /. nhsuk-hub__search-->
       </div> <!-- /. Hero wrapper -->
     </div> <!-- /. grid row -->
   </div> <!-- /. width container -->
