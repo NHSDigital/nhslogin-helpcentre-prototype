@@ -1,165 +1,80 @@
-<!-- Use this page as the index for your project -->
-
-<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
-
 <!-- Extends the layout from /views/layout.html -->
 {% extends 'helpcentre-detail.html' %}
-<!-- 
-  In /views/layout.html you can:
-    - change the header and footer 
-    - add custom CSS and JavaScript
--->
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-        Manage and delete
+Manage and delete
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
 {% endblock %}
 
-<!-- Your page content goes inside the content block -->
-<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
 
-<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
-    <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/manage/hub">How to manage NHS login</a></li>
-    </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/manage/hub">Back to How to manage NHS login</a></p>
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #F0F4F5">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/manage/hub">How to manage NHS login</a>
+    </li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="/manage/hub">Back to How to manage NHS login</a>
+  </p>
 </nav>
-
-
 
 <div class="nhsuk-width-container">
-      <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
-        
-<div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-one-third">
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-third">
 
-          
-<nav class="app-side-nav">
+        <nav class="app-side-nav">
+          <ul class="nhsuk-list app-side-nav__list">
+            <h2 class="app-side-nav__heading">Manage and delete<span class="nhsuk-u-visually-hidden">navigation</span></h2>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#manageapps">How to manage your NHS login within websites and apps</a>
+            </li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#delete">How to delete NHS login</a>
+            </li>
+          </ul>
+        </nav>
 
-  <ul class="nhsuk-list app-side-nav__list">
-
-
-
-    <h2 class="app-side-nav__heading">Manage and delete<span class="nhsuk-u-visually-hidden">navigation</span></h2>
-
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#manageapps">How to manage your NHS login within websites and apps</a></li>
-
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#managenhsapp">Managing NHS login from the NHS App</a></li>
-
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#delete">How to delete NHS login</a></li>
-
-  </ul>
-
-</nav>
-
-        </div>
-
-        <div class="nhsuk-grid-column-two-thirds">
-
-
-
-  <h2 id="manageapps">How to manage your NHS login within websites and apps</h2>
-
-<p>
-You should be able to manage your NHS login settings from within the websites and apps that use NHS login. Each website and app you visit may offer a different way for you to access your <a href="https://settings.login.nhs.uk">NHS login settings</a>.
-</p>
-
-<p>
-Contact the providers of the website or app you are using if you cannot find a way to access your NHS login settings.
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
-  <h2 id="managenhsapp">Managing NHS login from the NHS App</h2>
- 
-<p>
-At present there is no option to manage your NHS login settings within the NHS App. This is something we are currently working towards.
-</p>
-      
-      <p>
-However, you can do this by selecting this link:
-</p>
-
-<p>
-<a href="https://settings.login.nhs.uk/">https://settings.login.nhs.uk/</a></p>
-
-<p>
-For security reasons, you will need to log in with your usual NHS login details before you can change any of your details.
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-            
- <h2 id="delete">How to delete NHS login</h2>
- <p>
-You can delete your NHS login by visiting your <a href="https://settings.login.nhs.uk">NHS login settings</a>.
-</p>
-      
-      <p>
-Scroll down to the bottom and select ‘delete NHS login’. You will be asked to enter your password to confirm.
-</p>
-
-<p>
-Once you delete your NHS login, you will not be able to use it to access any websites or apps. If you are trying to delete your account with just one website or app in particular, you should contact them directly. You may then still use your NHS login to access other websites and apps.
-</p>
-
-<p>
-If you delete your NHS login, any websites or apps you have used with NHS login may keep some information about you in line with their terms and conditions and privacy notice. We may also keep some information about you in line with <a href="https://account.login.nhs.uk/#/account/termsofuse/privacynotice">NHS login's privacy notice</a>.
-</p>
-
-<br>
-            
-<div class="nhsuk-grid-full-width" style="margin-top:32px;border-top:3px solid #005eb8"></div>
-  <br>
-
-<div id="contact" class="nhsuk-panel nhsuk-u-margin-bottom-2 nhsuk-u-margin-top-5">
-  <h2 class="nhsuk-heading-m app-feedback__heading">Did you find what you were looking for?</h2>
-
-  <div class="nhsuk-form-group">
-
-  <fieldset class="nhsuk-fieldset">
-
-    <div class="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-          Yes
-        </label>
       </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-          No
-        </label>
-      </div>
-    </div>
-  </fieldset>
 
-</div>
-			<a class="nhsuk-button" href="../../contact">Continue</a>
-		</div>
-  </div>
-</div>
- 
- 
-          
+      <div class="nhsuk-grid-column-two-thirds">
 
-        </div>
+        <h2 id="manageapps">How to manage your NHS login within websites and apps</h2>
+
+        <p>You should be able to manage your NHS login settings from within the websites and apps that use NHS login. Each website and app you visit may offer a different way for you to access your <a href="https://settings.login.nhs.uk">NHS login settings</a>.</p>
+
+        <p>For example, in the NHS App you can change your NHS login email address, password and phone number by selecting ‘Settings’ and ‘NHS login’.</p>
+
+        <p>Contact the providers of the website or app you are using if you cannot find a way to access your NHS login settings.</p>
+
+        <div class="article-divider"></div>
+
+        <h2 id="delete">How to delete NHS login</h2>
+
+        <h3>NHS login settings</h3>
+
+        <p>You can delete your NHS login by visiting your <a href="https://settings.login.nhs.uk">NHS login settings</a>.</p>
+
+        <p>Scroll down to the bottom and select ‘delete NHS login’. You will be asked to enter your password to confirm.</p>
+
+        <h3>The NHS App</h3>
+
+        <p>You can delete your NHS login from the NHS App. Go to ‘Settings’ in the NHS App and select ‘NHS login’.</p>
+
+        <h3>What happens when you delete your NHS login</h3>
+
+        <p>Once you delete your NHS login, you will not be able to use it to access any websites or apps. If you are trying to delete your account with just one website or app in particular, you should contact them directly. You may then still use your NHS login to access other websites and apps.</p>
+
+        <p>If you delete your NHS login, any websites or apps you have used with NHS login may keep some information about you in line with their terms and conditions and privacy notice. We may also keep some information about you in line with <a href="https://account.login.nhs.uk/#/account/termsofuse/privacynotice">NHS login's privacy notice</a>.</p>
+
       </div>
     </div>
   </div>
+</main>
 
-      </main>
-    </div>
 {% endblock %}
