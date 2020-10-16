@@ -1,14 +1,5 @@
-<!-- Use this page as the index for your project -->
-
-<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
-
 <!-- Extends the layout from /views/layout.html -->
 {% extends 'helpcentre-detail.html' %}
-<!-- 
-  In /views/layout.html you can:
-    - change the header and footer 
-    - add custom CSS and JavaScript
--->
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
@@ -19,19 +10,12 @@
 {% block beforeContent %}
 {% endblock %}
 
-<!-- Your page content goes inside the content block -->
-<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
-
-  <h2 class="nhsuk-app-contact-panel__heading">Message sent</h2>
-  
-  <p class="app-contact-panel__body">Thanks for the message, we will look into this for you.</p>
-
-
-      <!-- End of content -->
-
+      <h2 class="nhsuk-app-contact-panel__heading">Message sent</h2>
+      <p class="app-contact-panel__body">Thanks for the message, it has been sent to our support team, who will look into this for you.</p>
+      <p class="app-contact-panel__body">We will send you an email telling you what the next steps are.</p>
     </div>
   </div>
 {% endblock %}
