@@ -5,60 +5,86 @@ How to manage NHS login
 {% endblock %}
 
 {% block content %}
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
 
-    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
-    <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
-    </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/">Back to Help centre home</a></p>
-</nav>
+    <!-- Breadcrumb navigation -->
 
+    <nav class="nhsuk-breadcrumb nhsuk-u-padding-bottom-5" aria-label="Breadcrumb" style="background-color: #F0F4F5">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/">Back to Help centre home</a></p>
+    </nav>
 
+    <h1 class="nhsuk-heading-xl">How to manage NHS login</h1>
 
-      <h1>
-        How to manage NHS login
-        <span class="nhsuk-caption-xl nhsuk-caption--bottom"></span>
-      </h1>
+    <!-- Panels -->
 
-<div class="nhsuk-grid-row nhsuk-panel-group">
-  <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
-    {{ promo({
+    <div class="nhsuk-grid-row nhsuk-panel-group">
+
+      <!-- Passwords panel -->
+
+      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+        {{ promo({
             "href": "/manage/passwords/article",
             "heading": "Passwords",
             "headingLevel": 2,
-            "description": "How to change your password and what to do if you have problems."    }) }}
-  </div>
-  <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
-    {{ promo({
+            "description": "How to change your password and what to do if you have problems."
+          })
+        }}
+      </div>
+
+      <!-- Email address panel -->
+
+      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+        {{ promo({
             "href": "/manage/email/article",
             "heading": "Email addresses",
             "headingLevel": 2,
-            "description": "How to change your NHS login email address and add a backup email address."    }) }}
-  </div>
-    <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
-    {{ promo({
+            "description": "How to change your NHS login email address and add a backup email address."
+          })
+        }}
+      </div>
+
+      <!-- Mobile phone number panel -->
+
+      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+        {{ promo({
             "href": "/manage/mobile/article",
             "heading": "Mobile phone number",
             "headingLevel": 2,
-            "description": "How to change your mobile phone number and what to do if you have problems."    }) }}
-  </div>
-    <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
-    {{ promo({
+            "description": "How to change your mobile phone number and what to do if you have problems."
+          })
+        }}
+      </div>
+
+      <!-- Remembered devices panel -->
+
+      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+        {{ promo({
             "href": "/manage/devices/article",
             "heading": "Remembered devices",
             "headingLevel": 2,
-            "description": "How to add or remove remembered devices from your NHS login."    }) }}
-  </div>
-    <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
-    {{ promo({
+            "description": "How to add or remove remembered devices from your NHS login."
+          })
+        }}
+      </div>
+
+      <!-- Manage and delete panel -->
+
+      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+        {{ promo({
             "href": "/manage/delete/article",
             "heading": "Manage and delete",
             "headingLevel": 2,
-            "description": "How to delete NHS login and manage it from other services."    }) }}
-  </div>
+            "description": "How to delete NHS login and manage it from other services."
+          })
+        }}
+      </div>
 
-    </div>
-  </div>
+    </div> <!-- end nhsuk-panel-group -->
+  </div> <!-- end nhsuk-grid-column-full -->
+</div> <!-- end nhsuk-grid-row -->
+
 {% endblock %}

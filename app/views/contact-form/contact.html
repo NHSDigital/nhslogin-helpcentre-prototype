@@ -1,0 +1,130 @@
+{% extends 'helpcentre-detail.html' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Contact us
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <h2 class="nhsuk-app-contact-panel__heading">Contact us</h2>
+
+    <p>Use this form to get help or advice for a problem or issue with NHS login. The NHS login team cannot help with medical problems.</p>
+
+    <!-- Details component - Medical help -->
+
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          What to do if you need medical help
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        <span class="nhsuk-u-visually-hidden">Urgent advice: </span>
+        <p>If you think it's a life-threatening emergency:</p>
+        <ul>
+          <li>
+            <a href="tel: 999">call 999</a>
+          </li>
+        </ul>
+        <span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>
+        <p>If you do not think it's an emergency:</p>
+        <ul>
+          <li><a href="tel:111">call 111</a> or go to <a href="https://111.nhs.uk">111 online</a></li>
+          <li>speak to a <a href="https://www.nhs.uk/service-search">pharmacist, GP or dentist</a></li>
+          <li>search the <a href="https://www.nhs.uk/conditions/"> NHS website health A-Z</a> for more advice about your condition</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- Name input field -->
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="one-half">
+        Name
+      </label>
+      <input class="nhsuk-input nhsuk-u-width-one-half" id="one-half" name="one-half" type="text">
+    </div>
+
+    <!-- Email address -->
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="two-thirds">
+        Email address
+      </label>
+      <span class="nhsuk-hint" id="input-with-hint-text-hint">
+        This should be the email address you use for NHS login.
+      </span>
+      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="two-thirds" name="two-thirds" type="text">
+    </div>
+
+    <!-- Problem or issue dropdown -->
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="select-1">
+        Problem or issue
+      </label>
+      <select class="nhsuk-select" id="select-1" name="select-1">
+        <option style="display:none;"></option>
+        <option value="1">CID1005: The NHS record we found does not match your details</option>
+        <option value="2">CID3001: You have lost access to your mobile phone number</option>
+        <option value="3">CID3002: Expired link - The link to cancel changing your phone number does not work</option>
+        <option value="4">CID3003: Used link - The link to cancel changing your phone number does not work</option>
+        <option value="5">CID7004: What to do if your registration details from your GP surgery’s online services have already been used</option>
+        <option value="6">CID2011: There may be a problem with your NHS number</option>
+        <option value="7">CID2012: Your NHS login may have been disabled</option>
+        <option value="8">CID7023: You have already set up an NHS login</option>
+        <option value="9">CID7029: We cannot connect your NHS login to your GP surgery</option>
+        <option value="10">CID7100: Unable to connect to your GP surgery’s system</option>
+      </select>
+    </div>
+
+    <!-- Website or app dropdown -->
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="website-or-app">
+        Please select the website or app you are trying to visit
+      </label>
+      <select class="nhsuk-select" id="website-or-app" name="website-or-app">
+        <option value="1" selected>Select an option</option>
+        <option value="2">I am not trying to visit a website or app</option>
+        <option value="3">Airmid</option>
+        <option value="4">Chain SMS</option>
+        <option value="5">Co-Op Health App</option>
+        <option value="6">Digital Redbook</option>
+        <option value="7">Doctorlink App</option>
+        <option value="8">Echo</option>
+        <option value="9">eRedbook</option>
+        <option value="10">eRS</option>
+        <option value="11">Evergreen Life PHR</option>
+        <option value="12">GM Patient Portal</option>
+        <option value="13">HELM</option>
+        <option value="14">myCareCentric PHR</option>
+        <option value="15">NHS App</option>
+        <option value="16">Patient Pack</option>
+        <option value="17">Patients Know Best</option>
+        <option value="18">Push Doctor Website and App</option>
+        <option value="19">Web-GP</option>
+        <option value="20">The website or app I am trying to visit is not on this list</option>
+      </select>
+    </div>
+
+    <!-- Message -->
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="example-longer">Message</label>
+      <span class="nhsuk-hint" id="example-longer-hint">Enter as much detail as you can, including any information we may have asked you to provide.</span>
+      <textarea class="nhsuk-textarea" id="example-longer" name="example-longer" rows="6" aria-describedby="example-longer-hint"></textarea>
+    </div>
+
+    <a class="nhsuk-button" href="../contact-sent">Send message</a>
+
+  </div>
+</div>
+{% endblock %}

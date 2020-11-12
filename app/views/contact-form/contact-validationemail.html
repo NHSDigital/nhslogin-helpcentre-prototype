@@ -1,14 +1,4 @@
-<!-- Use this page as the index for your project -->
-
-<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
-
-<!-- Extends the layout from /views/layout.html -->
 {% extends 'helpcentre-detail.html' %}
-<!-- 
-  In /views/layout.html you can:
-    - change the header and footer 
-    - add custom CSS and JavaScript
--->
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
@@ -19,42 +9,26 @@ Contact us
 {% block beforeContent %}
 {% endblock %}
 
-<!-- Your page content goes inside the content block -->
-<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
 
     <h2 class="nhsuk-app-contact-panel__heading">Contact us</h2>
 
+    <!-- Error Summary -->
 
-    <p>Use this form to get help or advice for a problem or issue with NHS login. The NHS login team cannot help with
-      medical problems.</p>
-
-    <details class="nhsuk-details">
-      <summary class="nhsuk-details__summary">
-        <span class="nhsuk-details__summary-text">
-          What to do if you need medical help
-        </span>
-      </summary>
-      <div class="nhsuk-details__text">
-        <span class="nhsuk-u-visually-hidden">Urgent advice: </span>
-        <p>If you think it's a life-threatening emergency:</p>
-        <ul>
-          <li>
-            <a href="tel: 999">call 999</a>
-          </li>
-        </ul>
-        <span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>
-        <p>If you do not think it's an emergency:</p>
-        <ul>
-          <li><a href="tel:111">call 111</a> or go to <a href="https://111.nhs.uk">111 online</a></li>
-          <li>speak to a <a href="https://www.nhs.uk/service-search">pharmacist, GP or dentist</a></li>
-          <li>search the <a href="https://www.nhs.uk/conditions/"> NHS website health A-Z</a> for more advice about your
-            condition</li>
+    <div class="nhsuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
+      <h2 class="nhsuk-error-summary__title" id="error-summary-title">
+        There is a problem
+      </h2>
+      <div class="nhsuk-error-summary__body">
+        <ul class="nhsuk-list nhsuk-error-summary__list">
+          <li> <a href="#two-thirds">Enter your email address in the correct format</a></li>
         </ul>
       </div>
-    </details>
+    </div>
+
+    <!-- Name -->
 
     <div class="nhsuk-form-group">
       <label class="nhsuk-label" for="one-half">
@@ -63,15 +37,22 @@ Contact us
       <input class="nhsuk-input nhsuk-u-width-one-half" id="one-half" name="one-half" type="text">
     </div>
 
-    <div class="nhsuk-form-group">
+    <!-- Email address -->
+
+    <div class="nhsuk-form-group nhsuk-form-group--error">
       <label class="nhsuk-label" for="two-thirds">
         Email address
       </label>
       <span class="nhsuk-hint" id="input-with-hint-text-hint">
-        This should be the email address you use for NHS login.
+        This is the email address we will contact you on.
+      </span>
+      <span id="input-with-error-message-error" class="nhsuk-error-message">
+        Enter an email address in the correct format, like name@example.com
       </span>
       <input class="nhsuk-input nhsuk-u-width-two-thirds" id="two-thirds" name="two-thirds" type="text">
     </div>
+
+    <!-- Problem or issue -->
 
     <div class="nhsuk-form-group">
       <label class="nhsuk-label" for="select-1">
@@ -92,6 +73,8 @@ Contact us
         <option value="10">CID7100: Unable to connect to your GP surgery’s system</option>
       </select>
     </div>
+
+    <!-- Website or App -->
 
     <div class="nhsuk-form-group">
       <label class="nhsuk-label" for="website-or-app">
@@ -121,15 +104,13 @@ Contact us
       </select>
     </div>
 
-    <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="example-longer">
-        Message
-      </label>
-      <span class="nhsuk-hint" id="example-longer-hint">
-        Enter as much detail as you can, including any information we may have asked you to provide.
-      </span>
-      <textarea class="nhsuk-textarea" id="example-longer" name="example-longer" rows=" 6 "
-        aria-describedby="example-longer-hint"></textarea>
+    <!-- Message -->
+
+    <div class="nhsuk-form-group nhsuk-form-group--error">
+      <label class="nhsuk-label" for="example-longer">Message</label>
+      <span class="nhsuk-hint" id="example-longer-hint">Enter as much detail as you can, including any information we may have asked you to provide.</span>
+      <span id="input-with-error-message-error" class="nhsuk-error-message">Enter your message</span>
+      <textarea class="nhsuk-textarea" id="example-longer" name="example-longer" rows="6" aria-describedby="example-longer-hint"></textarea>
     </div>
 
     <a class="nhsuk-button" href="../contact-sent">Send message</a>

@@ -1,193 +1,127 @@
-<!-- Use this page as the index for your project -->
-
-<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
-
-<!-- Extends the layout from /views/layout.html -->
 {% extends 'helpcentre-detail.html' %}
-<!-- 
-  In /views/layout.html you can:
-    - change the header and footer 
-    - add custom CSS and JavaScript
--->
 
 <!-- Set the page title inside the pageTitle block -->
+
 {% block pageTitle %}
-        Mobile phone number
+  Mobile phone number
 {% endblock %}
 
-<!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
 {% endblock %}
 
-<!-- Your page content goes inside the content block -->
-<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
 
-<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
-    <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/manage/hub">How to manage NHS login</a></li>
-    </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/manage/hub">Back to How to manage NHS login</a></p>
+<!-- Bradcrumb navigation -->
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #F0F4F5">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/manage/hub">How to manage NHS login</a>
+    </li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="/manage/hub">Back to How to manage NHS login</a>
+  </p>
 </nav>
 
-
+<!-- Main Body Content Start -->
 
 <div class="nhsuk-width-container">
-      <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
-        
-<div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-one-third">
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-third">
+        <nav class="app-side-nav">
 
-          
-<nav class="app-side-nav">
+          <!-- one-third-side-navigation -->
 
-  <ul class="nhsuk-list app-side-nav__list">
+          <ul class="nhsuk-list app-side-nav__list">
 
+            <h2 class="app-side-nav__heading">Mobile phone number<span class="nhsuk-u-visually-hidden">navigation</span></h2>
 
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#changemobile">How to change your mobile phone number</a>
+            </li>
 
-    <h2 class="app-side-nav__heading">Mobile phone number<span class="nhsuk-u-visually-hidden">navigation</span></h2>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#lostaccess">You have lost access to your mobile phone number</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#changemobile">How to change your mobile phone number</a></li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#cancellink">The link to cancel changing your phone number does not work</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#lostaccess">You have lost access to your mobile phone number</a></li>
+          </ul> <!-- end nhsuk-list -->
+        </nav> <!-- end app-side-nav -->
+      </div> <!-- end nhsuk-grid-column-one-third -->
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#cancellink">The link to cancel changing your phone number does not work</a></li>
+      <!-- Two-thirds-article-text -->
 
-  </ul>
+      <!-- The confirm email address link in your email does not work article -->
 
-</nav>
+      <div class="nhsuk-grid-column-two-thirds">
 
-        </div>
+        <h2 id="changemobile">How to change your mobile phone number</h2>
 
-        <div class="nhsuk-grid-column-two-thirds">
+        <p>You can change your phone number by visiting your <a href="https://settings.login.nhs.uk/">NHS login settings</a>. Under the heading ‘your personal information’ select ‘change phone number’.</p>
 
+        <p>To visit your NHS login settings, you first need to log in with your NHS login details. To do this, you need access to your previous mobile phone or phone number that is currently on your NHS login.</p>
 
+        <div class="article-divider"></div>
 
-  <h2 id="changemobile">How to change your mobile phone number</h2>
+        <!-- You have lost access to your mobile phone number -->
 
+        <h2 id="lostaccess">You have lost access to your mobile phone number</h2>
 
-<p>
-You can change your phone number by visiting your <a href="https://settings.login.nhs.uk/">NHS login settings</a>. Under the heading ‘your personal information’ select ‘change phone number’.
-</p>
+        <p>If you see reference CID3001, this is because you no longer have access to the phone number on your NHS login. You can change the phone number on your NHS login if you have a backup email address, or by telling us your NHS number.</p>
 
-<p>
-To visit your NHS login settings, you first need to log in with your NHS login details. To do this, you need access to your previous mobile phone or phone number that is currently on your NHS login.
-</p>
+        <p>
+          <a href="../contact">Contact us</a> if you do not have a backup email address and you do not know your NHS number.
+        </p>
 
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
+        <p>You will need to tell us:
+          <ul>
+            <li>the email address for your NHS login</li>
+            <li>the current phone number for your NHS login</li>
+            <li>your new phone number</li>
+          </ul>
+        </p>
 
-  <h2 id="lostaccess">You have lost access to your mobile phone number</h2>
- 
-<p>
-If you see reference CID3001, this is because you no longer have access to the phone number on your NHS login. You can change the phone number on your NHS login if you have a backup email address, or by telling us your NHS number.
-</p>
+        <p>It will also help if you can tell us about a recent time when you have tried to log into a website or app using your NHS login. Tell us the date and time, if possible.</p>
 
-<p>
-<a href="../contact">Contact us</a> if you do not have a backup email address and you do not know your NHS number.
-</p>
+        <p>To do this you can:
+          <ol class="nhsuk-list nhsuk-list--number">
+            <li>visit a website or app that uses NHS login</li>
+            <li>enter your username and password</li>
+            <li>press continue</li>
+            <li>note the date and time</li>
+          </ol>
+        </p>
 
-<p>You will need to tell us:
-<ul>
-<li>the email address for your NHS login</li>
-<li>the current phone number for your NHS login</li>
-<li>your new phone number</li>
-</ul>
-</p>
+        <div class="article-divider"></div>
 
-<p>
-It will also help if you can tell us about a recent time when you have tried to log into a website or app using your NHS login. Tell us the date and time, if possible.
-</p>
+        <!-- The link to cancel changing your phone number does not work -->
 
-<p>To do this you can:
-<ol class="nhsuk-list nhsuk-list--number">
-<li>visit a website or app that uses NHS login</li>
-<li>enter your username and password</li>
-<li>press continue</li>
-<li>note the date and time</li>
-</ol>
-</p>
- 
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
+        <h2 id="cancellink">The link to cancel changing your phone number does not work</h2>
 
-  <h2 id="cancellink">The link to cancel changing your phone number does not work</h2>
- 
-<p>
-To cancel changing your phone number on NHS login, you must select the confirmation link we send you. If the link does not work, there are a number of possible reasons why.
-</p>
+        <p>To cancel changing your phone number on NHS login, you must select the confirmation link we send you. If the link does not work, there are a number of possible reasons why.</p>
 
-      <h3>Expired link – Reference CID3002</h3>
-      
-      <p>
-The link to cancel changing your phone number has a time limit of 24 hours. If it has been more than 24 hours since you received the link in your email, it will no longer work.
-</p>
+        <h3>Expired link – Reference CID3002</h3>
 
-<p>
-As it has been more than 24 hours, it may be too late to cancel as the phone number may have already been changed. You can check or change your phone number by visiting your <a href="https://settings.login.nhs.uk">NHS login settings</a>.
-</p>
+        <p>The link to cancel changing your phone number has a time limit of 24 hours. If it has been more than 24 hours since you received the link in your email, it will no longer work.</p>
+        <p>As it has been more than 24 hours, it may be too late to cancel as the phone number may have already been changed. You can check or change your phone number by visiting your <a href="https://settings.login.nhs.uk">NHS login settings</a>.</p>
+        <p><a href="../contact">Contact us</a> if you did not mean to change your phone number, or you do not have access to the phone number on your NHS login.</p>
 
-<p>
-<a href="../contact">Contact us</a> if you did not mean to change your phone number, or you do not have access to the phone number on your NHS login.
-</p>
+        <h3>Used link – Reference CID3003</h3>
 
+        <p>The link to cancel changing your phone number may not work because you have already used it and have successfully cancelled changing your phone number. You can check or change your phone number by visiting your <a href="https://settings.login.nhs.uk">NHS login settings</a>.</p>
 
-      <h3>Used link – Reference CID3003</h3>
+        <p>
+          <a href="../contact">Contact us</a> if you do not have access to the phone number on your NHS login.
+        </p>
 
-<p>
-The link to cancel changing your phone number may not work because you have already used it and have successfully cancelled changing your phone number. You can check or change your phone number by visiting your <a href="https://settings.login.nhs.uk">NHS login settings</a>.
-</p>
+      </div> <!-- end grid-column-two-thirds -->
+    </div> <!-- end nhsuk-grid-row -->
+  </main> <!-- end nhsuk-main-wrapper -->
+</div> <!-- end nhsuk-width-container -->
 
-<p>
-<a href="../contact">Contact us</a> if you do not have access to the phone number on your NHS login.
-</p>
-
-<br>
-            
-<div class="nhsuk-grid-full-width" style="margin-top:32px;border-top:3px solid #005eb8"></div>
-  <br>
-
-<div id="contact" class="nhsuk-panel nhsuk-u-margin-bottom-2 nhsuk-u-margin-top-5">
-  <h2 class="nhsuk-heading-m app-feedback__heading">Did you find what you were looking for?</h2>
-
-  <div class="nhsuk-form-group">
-
-  <fieldset class="nhsuk-fieldset">
-
-    <div class="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-          Yes
-        </label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-          No
-        </label>
-      </div>
-    </div>
-  </fieldset>
-
-</div>
-			<a class="nhsuk-button" href="../../contact">Continue</a>
-		</div>
-  </div>
-</div>
-
-          
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-      </main>
-    </div>
 {% endblock %}

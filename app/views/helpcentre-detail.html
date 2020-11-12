@@ -1,7 +1,8 @@
-<!-- 
-  This is the main layout where you can:
-    - change the header and footer 
-    - add custom CSS and JavaScript
+
+<!--
+
+  !!! This page is used as a global template for each of the help center article pages !!!
+
 -->
 
 <!-- Extends the layout from /docs/views/template.html -->
@@ -17,11 +18,12 @@
 NHS login help centre
 {% endblock %}
 
-<!-- Header goes inside the header block -->
-<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
 {% block header %}
 <header class="nhsuk-header" role="banner">
   <div class="nhsuk-width-container nhsuk-header__container">
+
+    <!-- This section contains the NHS login logo in the header as well as tge navbar-brand -->
+
     <div class="nhsuk-header__logo">
       <a class="nhsuk-header__link nhsuk-header__link--service nhsuk-header__link--service-short-name" href="/index"
         aria-label="NHS.UK prototype kit home">
@@ -37,7 +39,10 @@ NHS login help centre
           NHS login help centre
         </span>
       </a>
-    </div>
+    </div> <!-- end nhsuk-header__logo -->
+
+    <!-- This section contains the search bar -->
+
     <div class="nhsuk-header__content" id="content-header">
       <div class="nhsuk-header__menu">
         <button class="nhsuk-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation"
@@ -79,10 +84,13 @@ NHS login help centre
               <span class="nhsuk-u-visually-hidden">Close search</span>
             </button>
           </form>
-        </div>
-      </div>
-    </div>
-  </div>
+        </div> <!-- end nshuk-header__search-wrap -->
+      </div> <!-- end nhsuk-header__search -->
+    </div> <!-- end nhsuk-header__content -->
+  </div> <!-- nhsuk-width-container -->
+
+  <!-- This section contains the navigation links in the header -->
+
   <nav class="nhsuk-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation"
     aria-labelledby="label-navigation">
     <div class="nhsuk-width-container">
@@ -99,17 +107,9 @@ NHS login help centre
         </button>
       </p>
       <ul class="nhsuk-header__navigation-list">
-        <li class="nhsuk-header__navigation-item nhsuk-header__navigation-item--for-mobile">
-          <a class="nhsuk-header__navigation-link" href="/">
-            Home
-            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              aria-hidden="true">
-              <path
-                d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z">
-              </path>
-            </svg>
-          </a>
-        </li>
+
+        <!-- Set-up navigation link -->
+
         <li class="nhsuk-header__navigation-item">
           <a class="nhsuk-header__navigation-link" href="/whatisnhslogin/article">
             Set up
@@ -121,6 +121,9 @@ NHS login help centre
             </svg>
           </a>
         </li>
+
+        <!-- Manage navigation link -->
+
         <li class="nhsuk-header__navigation-item">
           <a class="nhsuk-header__navigation-link" href="/manage/hub">
             Manage
@@ -132,6 +135,9 @@ NHS login help centre
             </svg>
           </a>
         </li>
+
+        <!-- Prove who you are navigation link -->
+
         <li class="nhsuk-header__navigation-item">
           <a class="nhsuk-header__navigation-link" href="/provewhoyouare/hub">
             Prove who you are
@@ -143,6 +149,9 @@ NHS login help centre
             </svg>
           </a>
         </li>
+
+        <!-- Record a video navigation link -->
+
         <li class="nhsuk-header__navigation-item">
           <a class="nhsuk-header__navigation-link" href="/takeandupload/article">
             Record a video
@@ -154,6 +163,9 @@ NHS login help centre
             </svg>
           </a>
         </li>
+
+        <!-- Mixed reference support navigation link -->
+
         <li class="nhsuk-header__navigation-item">
           <a class="nhsuk-header__navigation-link" href="/mixed/article">
             Mixed reference support
@@ -165,16 +177,14 @@ NHS login help centre
             </svg>
           </a>
         </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+
+      </ul> <!-- end nhsuk-header__navigation-list -->
+    </div> <!-- end nhsuk-width-container -->
+  </nav> <!-- end nhsuk-header-navigation -->
+</header> <!-- end nhsuk-header -->
 
 {% endblock %}
 
-
-<!-- Footer goes inside the footer block -->
-<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
 {% block footer %}
 {{ footer({
     "links": [

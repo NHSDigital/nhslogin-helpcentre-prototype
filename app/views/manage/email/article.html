@@ -1,161 +1,101 @@
-<!-- Use this page as the index for your project -->
-
-<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
-
-<!-- Extends the layout from /views/layout.html -->
 {% extends 'helpcentre-detail.html' %}
-<!-- 
-  In /views/layout.html you can:
-    - change the header and footer 
-    - add custom CSS and JavaScript
--->
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-        Email addresses
+Email addresses
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
 {% endblock %}
 
-<!-- Your page content goes inside the content block -->
-<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
 
-<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
-    <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/manage/hub">How to manage NHS login</a></li>
-    </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/manage/hub">Back to How to manage NHS login</a></p>
-</nav>
+<!-- Breadcrumb navigation -->
 
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #F0F4F5">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item">
+      <a class="nhsuk-breadcrumb__link" href="/">Help centre home</a>
+    </li>
+    <li class="nhsuk-breadcrumb__item">
+      <a class="nhsuk-breadcrumb__link" href="/manage/hub">How to manage NHS login</a>
+    </li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/manage/hub">Back to How to manage NHS
+      login</a></p>
+</nav> <!-- end breadcrumb -->
 
+<!-- Main Body Content Start -->
 
 <div class="nhsuk-width-container">
-      <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
-        
-<div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-one-third">
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-third">
+        <nav class="app-side-nav">
 
-          
-<nav class="app-side-nav">
+          <!-- one-third-side-navigation -->
 
-  <ul class="nhsuk-list app-side-nav__list">
+          <ul class="nhsuk-list app-side-nav__list">
 
+            <h2 class="app-side-nav__heading">Email addresses<span class="nhsuk-u-visually-hidden">navigation</span></h2>
 
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#confirmemail">The confirm email address link in your email does not work</a>
+            </li>
 
-    <h2 class="app-side-nav__heading">Email addresses<span class="nhsuk-u-visually-hidden">navigation</span></h2>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#changeemail">How to change your NHS login email address</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#confirmemail">The confirm email address link in your email does not work</a></li>
+          </ul> <!-- end nhsuk-list -->
+        </nav> <!-- end app-side-nav -->
+      </div> <!-- end grid-column-one-third -->
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#changeemail">How to change your NHS login email address</a></li>
+      <!-- Two-thirds-article-text -->
 
+      <!-- The confirm email address link in your email does not work article -->
 
-  </ul>
+      <div class="nhsuk-grid-column-two-thirds">
 
-</nav>
+        <h2 id="confirmemail">The confirm email address link in your email does not work</h2>
 
-        </div>
+        <p>You need to confirm your email address when you set up an NHS login. To do this, you must select the confirm email address link we send you. If the link in your email does not work, there are a number of possible reasons why.</p>
 
-        <div class="nhsuk-grid-column-two-thirds">
+        <h3>Broken link – Reference CID1001</h3>
 
+        <p>A broken link can happen if:
+          <ul>
+            <li>you copy or type the link from the email and make a mistake</li>
+            <li>a technical error occurs</li>
+          </ul>
+        </p>
 
+        <p>If this happens, you can try selecting the link in your email again. If you type the web address, check it is correct. If you paste the web address, make sure you copy the full address.</p>
 
-  <h2 id="confirmemail">The confirm email address link in your email does not work</h2>
+        <h3>Expired link – Reference CID1002</h3>
 
+        <p>The confirm email address link we send you has a time limit of 24 hours. If it has been more than 24 hours since you received the email, the link will not work.</p>
+        <p>You need to go back to the website or app you were trying to access and enter your email address and password again. You will be sent another confirm email address link to set up your NHS login.</p>
 
-<p>
-You need to confirm your email address when you set up an NHS login. To do this, you must select the confirm email address link we send you. If the link in your email does not work, there are a number of possible reasons why.
-</p>
+        <h3>Used link – Reference CID1003</h3>
 
-      <h3>Broken link – Reference CID1001</h3>
-      
-      <p>A broken link can happen if:
-      <ul>
-      <li>you copy or type the link from the email and make a mistake</li>
-      <li>a technical error occurs</li>
-      </ul>
-      </p>
+        <p>The confirm email address link may not work because you have already used it and have successfully confirmed your email address.</p>
+        <p>Try using your NHS login to log in to a website or app.</p>
 
-<p>
-If this happens, you can try selecting the link in your email again. If you type the web address, check it is correct. If you paste the web address, make sure you copy the full address.
-      </p>
+        <div class="article-divider"></div>
 
-      <h3>Expired link – Reference CID1002</h3>
+        <!-- How to change your NHS login email address article -->
 
-<p>
-The confirm email address link we send you has a time limit of 24 hours. If it has been more than 24 hours since you received the email, the link will not work.
-</p>
+        <h2 id="changeemail">How to change your NHS login email address</h2>
 
-<p>
-You need to go back to the website or app you were trying to access and enter your email address and password again. You will be sent another confirm email address link to set up your NHS login.
-</p>
+        <p>You can change your email address by going to your <a href="https://settings.login.nhs.uk/">NHS login settings</a>. Under the heading ‘your personal information’ select ‘change email address’.</p>
 
-      <h3>Used link – Reference CID1003</h3>
+        <p>You will be asked to enter your new email address and your password. A confirmation email will be sent to your new email address. Select the confirm email address link in the email to finish.</p>
 
-<p>
-The confirm email address link may not work because you have already used it and have successfully confirmed your email address.
-</p>
+      </div> <!-- end grid-column-two-thirds -->
+    </div> <!-- end nhsuk-grid-row -->
+  </main> <!-- end nhsuk-main-wrapper -->
+</div> <!-- end nhsuk-width-container -->
 
-<p>
-Try using your NHS login to log in to a website or app.
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
-  <h2 id="changeemail">How to change your NHS login email address</h2>
- 
-<p>
-You can change your email address by going to your <a href="https://settings.login.nhs.uk/">NHS login settings</a>. Under the heading ‘your personal information’ select ‘change email address’.
-</p>
-
-<p>
-You will be asked to enter your new email address and your password. A confirmation email will be sent to your new email address. Select the confirm email address link in the email to finish.
-</p>
-
-<div class="nhsuk-grid-full-width" style="margin-top:32px;border-top:3px solid #005eb8"></div>
-  <br>
-
-<div id="contact" class="nhsuk-panel nhsuk-u-margin-bottom-2 nhsuk-u-margin-top-5">
-  <h2 class="nhsuk-heading-m app-feedback__heading">Did you find what you were looking for?</h2>
-
-  <div class="nhsuk-form-group">
-
-  <fieldset class="nhsuk-fieldset">
-
-    <div class="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-          Yes
-        </label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-          No
-        </label>
-      </div>
-    </div>
-  </fieldset>
-
-</div>
-			<a class="nhsuk-button" href="../../contact">Continue</a>
-		</div>
-  </div>
-</div>
-          
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-      </main>
-    </div>
 {% endblock %}

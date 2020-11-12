@@ -1,134 +1,78 @@
-<!-- Use this page as the index for your project -->
-
-<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
-
-<!-- Extends the layout from /views/layout.html -->
 {% extends 'helpcentre-detail.html' %}
-<!-- 
-  In /views/layout.html you can:
-    - change the header and footer 
-    - add custom CSS and JavaScript
--->
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-        Remembered devices
+Remembered devices
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
 {% endblock %}
 
-<!-- Your page content goes inside the content block -->
-<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
 
-<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
-    <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/manage/hub">How to manage NHS login</a></li>
-    </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/manage/hub">Back to How to manage NHS login</a></p>
-</nav>
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #F0F4F5">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item">
+      <a class="nhsuk-breadcrumb__link" href="/">Help centre home</a>
+    </li>
+    <li class="nhsuk-breadcrumb__item">
+      <a class="nhsuk-breadcrumb__link" href="/manage/hub">How to manage NHS login</a>
+    </li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="/manage/hub">Back to How to manage NHS login</a>
+  </p>
+</nav> <!-- end breadcrumb navigation -->
 
-
+<!-- Main Body Content Start -->
 
 <div class="nhsuk-width-container">
-      <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
-        
-<div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-one-third">
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-third">
+        <nav class="app-side-nav">
 
-          
-<nav class="app-side-nav">
+          <!-- one-third-side-navigation -->
 
-  <ul class="nhsuk-list app-side-nav__list">
+          <ul class="nhsuk-list app-side-nav__list">
 
+            <h2 class="app-side-nav__heading">Remembered devices<span class="nhsuk-u-visually-hidden">navigation</span></h2>
 
+            <li class="app-side-nav__item"><a class="app-side-nav__link" href="#adddevice">How to add a remembered device</a></li>
 
-    <h2 class="app-side-nav__heading">Remembered devices<span class="nhsuk-u-visually-hidden">navigation</span></h2>
+            <li class="app-side-nav__item"><a class="app-side-nav__link" href="#removedevice">How to remove a remembered device</a></li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#adddevice">How to add a remembered device</a></li>
+          </ul> <!-- end nhsuk-list -->
+        </nav> <!-- end app-side-nav -->
+      </div> <!-- end grid-column-one-third -->
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#removedevice">How to remove a remembered device</a></li>
+      <div class="nhsuk-grid-column-two-thirds">
 
-  </ul>
+        <h2 id="adddevice">How to add a remembered device</h2>
 
-</nav>
+        <p>
+          When you log in and enter your 6-digit security code, you have the option to select ‘remember this device and
+          stop sending security codes’. If you select this, you will not need to enter a security code each time you log
+          in with the same device in future.
+        </p>
 
-        </div>
+        <p>
+          To keep your NHS login secure, you should only do this on your own personal or trusted devices. For security,
+          we may ask you from time to time if you still want us to remember your device.
+        </p>
 
-        <div class="nhsuk-grid-column-two-thirds">
+        <div class="article-divider"></div>
 
+        <h2 id="removedevice">How to remove a remembered device</h2>
 
+        <p>You can remove any of your remembered devices by going to your <a href="https://settings.login.nhs.uk">NHS login settings</a>. Under the heading ‘remembered devices’ select ‘remove device’ next to the device you want to remove from your NHS login.</p>
 
-  <h2 id="adddevice">How to add a remembered device</h2>
+        <p>If you use NHS login on that device again, you will need to enter a security code we send to your phone.</p>
 
+      </div> <!-- end grid-column-two-thirds -->
+    </div> <!-- end nhsuk-grid-row -->
+  </main> <!-- end nhsuk-main-wrapper -->
+</div> <!-- end nhsuk-width-container -->
 
-<p>
-When you log in and enter your 6-digit security code, you have the option to select ‘remember this device and stop sending security codes’. If you select this, you will not need to enter a security code each time you log in with the same device in future.
-</p>
-
-<p>
-To keep your NHS login secure, you should only do this on your own personal or trusted devices. For security, we may ask you from time to time if you still want us to remember your device.
-</p>
-
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-
-  <h2 id="removedevice">How to remove a remembered device</h2>
- 
-<p>
-You can remove any of your remembered devices by going to your <a href="https://settings.login.nhs.uk">NHS login settings</a>. Under the heading ‘remembered devices’ select ‘remove device’ next to the device you want to remove from your NHS login.
-</p>
-
-<p>
-If you use NHS login on that device again, you will need to enter a security code we send to your phone.
-</p>
- 
- <br>
-            
-<div class="nhsuk-grid-full-width" style="margin-top:32px;border-top:3px solid #005eb8"></div>
-  <br>
-
-<div id="contact" class="nhsuk-panel nhsuk-u-margin-bottom-2 nhsuk-u-margin-top-5">
-  <h2 class="nhsuk-heading-m app-feedback__heading">Did you find what you were looking for?</h2>
-
-  <div class="nhsuk-form-group">
-
-  <fieldset class="nhsuk-fieldset">
-
-    <div class="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-          Yes
-        </label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-          No
-        </label>
-      </div>
-    </div>
-  </fieldset>
-
-</div>
-			<a class="nhsuk-button" href="../../contact">Continue</a>
-		</div>
-  </div>
-</div>
- 
-          
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-      </main>
-    </div>
 {% endblock %}

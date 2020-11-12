@@ -1,184 +1,122 @@
-<!-- Use this page as the index for your project -->
-
-<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
-
 <!-- Extends the layout from /views/layout.html -->
 {% extends 'helpcentre-detail.html' %}
-<!-- 
-  In /views/layout.html you can:
-    - change the header and footer 
-    - add custom CSS and JavaScript
--->
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-        How to set up NHS login
+How to set up NHS login
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
 {% endblock %}
 
-<!-- Your page content goes inside the content block -->
-<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
 
-<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #ffffff00">
-    <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help centre home</a></li>
-    </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/">Back to Help centre home</a></p>
-</nav>
+<!-- Breadcrumb Navigation -->
 
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #F0F4F5">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item">
+      <a class="nhsuk-breadcrumb__link" href="/">Help centre home</a>
+    </li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="/">Back to Help centre home</a>
+  </p>
+</nav> <!-- end nhsuk-breadcrumb -->
 
+<!-- Main Body Content Start -->
 
 <div class="nhsuk-width-container">
-      <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
-        
-<div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-one-third">
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-third">
+        <nav class="app-side-nav">
 
-          
-<nav class="app-side-nav">
+          <!-- one-third-side-navigation -->
 
-  <ul class="nhsuk-list app-side-nav__list">
+          <ul class="nhsuk-list app-side-nav__list">
 
+            <h2 class="app-side-nav__heading">How to set up NHS login<span class="nhsuk-u-visually-hidden">navigation</span></h2>
 
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#whatis">What is NHS login?</a>
+            </li>
 
-    <h2 class="app-side-nav__heading">How to set up NHS login<span class="nhsuk-u-visually-hidden">navigation</span></h2>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#whatyouneed">What you need to set up an NHS login</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#whatis">What is NHS login?</a></li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#where">Where you can use NHS login</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#whatyouneed">What you need to set up an NHS login</a></li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#know">Know how you can use NHS login</a>
+            </li>
 
-    <li class="app-side-nav__item"><a class="app-side-nav__link" href="#where">Where you can use NHS login</a></li>
+          </ul> <!-- nhsuk-list -->
+        </nav> <!-- end app-side-nav -->
+      </div> <!-- end grid-column-one-third -->
+      
+      <!-- two-thirds-article-text -->
 
-  </ul>
+      <!-- What is NHS login article -->
 
-</nav>
+      <div class="nhsuk-grid-column-two-thirds">
 
-        </div>
+        <h2 id="whatis">What is NHS login?</h2>
+        <p class="nhsuk-body">NHS login lets you access a variety of digital health and care websites and apps with just 1 username and password.</p>
+        <p class="nhsuk-body">To access some websites and apps, you may need to prove who you are. You only have to do this once. This is so we can connect you to your NHS record and protect your health information.</p>
+        <p class="nhsuk-body">When you have proved who you are, you will be able to use your NHS login to access websites and apps wherever you see 'NHS login'.</p>
 
-        <div class="nhsuk-grid-column-two-thirds">
+        <p class="nhsuk-body">Benefits include:
+          <ul>
+            <li>a one-time set up process</li>
+            <li>a single login for different websites and apps</li>
+            <li>secure and protected health and care data</li>
+          </ul>
+        </p>
 
+        <p class="nhsuk-body"><a href="../provewhoyouare/hub">More information on how to prove who you are</a></p>
 
+        <div class="article-divider"></div>
 
-  <h2 id="whatis">What is NHS login?</h2>
+        <!-- What you need to set up an NHS login article  --> 
 
-<p>
-NHS login lets you access a variety of digital health and care websites and apps with just 1 username and password.
-</p>
+        <h2 class="nhsuk-heading-l" id="whatyouneed">What you need to set up an NHS login</h2>
 
-<p>
-To access some websites and apps, you may need to prove who you are. You only have to do this once. This is so we can connect you to your NHS record and protect your health information.
-</p>
+        <p class="nhsuk-body">You will need:
+          <ul>
+            <li>an email address</li>
+            <li>a UK mobile phone number</li>
+          </ul>
+        </p>
 
-<p>
-When you have proved who you are, you will be able to use your NHS login to access websites and apps wherever you see 'NHS login'.
-</p>
+        <h3 class="nhsuk-heading-m">What you need to do</h3>
 
-    <p>Benefits include:
-      <ul>
-        <li>a one-time set up process</li>
-        <li>a single login for different websites and apps</li>
-        <li>secure and protected health and care data</li>
-      </ul>
-    </p>
+        <p class="nhsuk-body">We will send you an email containing a link. Select this link to confirm your email address. Then return to the website or app you want to access and enter your NHS login email address and password. Here, you will be asked to give your mobile phone number.</p>
 
-    <p>
-    <a href="../provewhoyouare/hub">More information on how to prove who you are</a>
-    </p>
+        <p class="nhsuk-body">A 6-digit security code will be sent by text message to your mobile phone. You will be asked to enter this code to continue. A security code will be needed to log in every time, unless you select ‘remember this device and stop sending security codes’.</p>
 
-    <br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
+        <p class="nhsuk-body">There is currently no option to set up an NHS login if you do not own a mobile phone.</p>
 
-  <h2 id="whatyouneed">What you need to set up an NHS login</h2>
- 
+        <div class="article-divider"></div>
 
-<p>You will need:
-<ul>
-<li>an email address</li>
-<li>a UK mobile phone number</li>
-</ul>
-</p>
+        <!-- Where you can use NHS login article -->
 
-<h3>What you need to do</h3>
+        <h2 class="nhsuk-heading-l" id="where">Where you can use NHS login</h2>
 
-<p>
-We will send you an email containing a link. Select this link to confirm your email address. Then return to the website or app you want to access and enter your NHS login email address and password. Here, you will be asked to give your mobile phone number.
-</p>
+        <p class="nhsuk-body">NHS login can be used on any website or app that shows the NHS login button.</p>
+        <img src="/images/ContinueWith_Original.svg" width="300px" style="margin-bottom: 20px;">
 
-<p>
-A 6-digit security code will be sent by text message to your mobile phone. You will be asked to enter this code to continue. A security code will be needed to log in every time, unless you select ‘remember this device and stop sending security codes’.
-</p>
+        <p class="nhsuk-body">Clicking this button will let you log into or create an account with the website or app you are visiting.</p>
 
-<p>
-There is currently no option to set up an NHS login if you do not own a mobile phone.
-</p>
+        <p class="nhsuk-body">Visit the <a href="https://www.nhs.uk/using-the-nhs/nhs-services/nhs-login/">NHS login webpage</a> for a full list of websites and apps that allow you to use NHS login.</p>
 
-<br>
-<div style="height:3px; background-color:#005eb8; border:none;"></div>
-<br>
-<br>
-            
- <h2 id="where">Where you can use NHS login</h2>
+      </div> <!-- end nhsuk-grid-column-two-thirds -->
+    </div> <!-- end nhsuk-grid-row -->
+  </main> <!-- end main-wrapper -->
+</div> <!-- end nhsuk-width-container -->
 
-<p>
-NHS login can be used on any website or app that shows the NHS login button.
-</p>
-                <img src="/images/ContinueWith_Original.svg" width="300px"><br><br>
-
-<p>
-Clicking this button will let you log into or create an account with the website or app you are visiting.  
-</p>
-
-<p>
-Visit the <a href="https://www.nhs.uk/using-the-nhs/nhs-services/nhs-login/">NHS login webpage</a> for a full list of websites and apps that allow you to use NHS login.
-</p>
-
-<br>
-            
-<div class="nhsuk-grid-full-width" style="margin-top:32px;border-top:3px solid #005eb8"></div>
-  <br>
-
-<div id="contact" class="nhsuk-panel nhsuk-u-margin-bottom-2 nhsuk-u-margin-top-5">
-  <h2 class="nhsuk-heading-m app-feedback__heading">Did you find what you were looking for?</h2>
-
-  <div class="nhsuk-form-group">
-
-  <fieldset class="nhsuk-fieldset">
-
-    <div class="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-          Yes
-        </label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-          No
-        </label>
-      </div>
-    </div>
-  </fieldset>
-
-</div>
-			<a class="nhsuk-button" href="../contact">Continue</a>
-		</div>
-  </div>
-</div>
-
-          
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-      </main>
-    </div>
 {% endblock %}
