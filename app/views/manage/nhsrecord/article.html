@@ -1,0 +1,83 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'helpcentre-detail.html' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+NHS record contact details
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #F0F4F5">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help Centre Home</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/manage/hub">How to manage NHS login</a>
+    </li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="/manage/hub">Back to How to manage NHS login</a>
+  </p>
+</nav> <!-- end breadcrumb navigation -->
+
+<!-- Main Body Content Start -->
+
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-third">
+        <nav class="app-side-nav">
+          
+          <!-- one-third-side-navigation -->
+
+          <ul class="nhsuk-list app-side-nav__list">
+
+            <h2 class="app-side-nav__heading">NHS record contact details<span class="nhsuk-u-visually-hidden">navigation</span></h2>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#changecontact">How to change your contact details on your NHS record</a>
+            </li>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#different">Your NHS login contact details are different to the contact details on your NHS record</a>
+            </li>
+
+          </ul> <!-- end nhsuk-list -->
+        </nav> <!-- end app-side-nav -->
+      </div> <!-- end grid-column-one-third -->
+
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <h2 id="changecontact">How to change your contact details on your NHS record</h2>
+
+        <p>When you set up an NHS login, the phone number and email address you use are not added to your NHS record.</p>
+
+        <p>However, we may ask you if you would like to update your NHS record if your NHS login contact details are different from those on your NHS record.</p>
+
+        <p>This will mean that your GP surgery, and any other NHS services, will be updated with the contact details you use for NHS login.</p>
+
+        <p>Before we can ask you this, you must prove who you are to the highest level of verification. You must also log in to a website or app three times with your NHS login.</p>
+        
+        <p><a href="../../whatisnhslogin/article">More information on what NHS login is and how to set one up</a></p>
+
+        <div class="article-divider"></div>
+
+        <h2 id="different">Your NHS login contact details are different to the contact details on your NHS record</h2>
+
+        <p>The contact details on your NHS login may be different to those on your NHS record. If this is the case, we may ask you if you would like to update them on your NHS record.</p>
+
+        <p>We will show you the contact details we have for you. For example, we will show you the phone number we have from your NHS login and phone numbers on your NHS record. You can then choose which one the NHS should use to contact you. We will update your NHS record with this phone number. After this, the other phone numbers will not be in use on your NHS record.</p>
+
+        <p>If some contact details are missing from your NHS record, we will ask if you would like to add the details from your NHS login. For example, if your NHS record does not have an email address, we will ask if you would like to update it with the email address you use for NHS login.</p>
+
+        <p>Some NHS services, like your GP surgery, may continue to use your previous contact details. This is because there may be a delay before they check your updated NHS record.</p>
+        
+        </div> <!-- end grid-column-two-thirds -->
+      </div> <!-- end nhsuk-grid-row -->
+    </main> <!-- end nhsuk-main-wrapper -->
+  </div> <!-- end nhsuk-width-container -->
+    
+{% endblock %}
