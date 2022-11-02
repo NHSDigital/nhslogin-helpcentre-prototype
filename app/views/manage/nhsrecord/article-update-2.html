@@ -1,0 +1,93 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'helpcentre-detail.html' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+NHS record contact details
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #F0F4F5">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Help Centre Home</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/manage/hub">How to manage NHS login</a>
+    </li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="/manage/hub">Back to How to manage NHS login</a>
+  </p>
+</nav> <!-- end breadcrumb navigation -->
+
+<!-- Main Body Content Start -->
+
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-third">
+        <nav class="app-side-nav">
+          
+          <!-- one-third-side-navigation -->
+
+          <ul class="nhsuk-list app-side-nav__list">
+
+            <h2 class="app-side-nav__heading">NHS record contact details<span class="nhsuk-u-visually-hidden">navigation</span></h2>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#update">Updating your NHS record with your NHS login details</a>
+            </li>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#change">How to change your contact details on your NHS record</a>
+            </li>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#change">What to do if you recieve an email or text message</a>
+            </li>
+
+          </ul> <!-- end nhsuk-list -->
+        </nav> <!-- end app-side-nav -->
+      </div> <!-- end grid-column-one-third -->
+
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <div class="nhsuk-warning-callout">
+          <h3 class="nhsuk-warning-callout__label">
+            <span role="text">
+              <span class="nhsuk-u-visually-hidden">Important: Your NHS contact details and NHS login details</span>
+              Your NHS contact details and NHS login details
+            </span>
+          </h3>
+          <p>When you create an NHS login account, the phone number and <a href="https://settings.login.nhs.uk/manage-contact-details">email address</a> you use are only stored on this account. These are your NHS login details. Your NHS login details are used to log in to your NHS account and other healthcare apps and websites.</p>
+          <p>Your NHS contact details are the details that your GP and other NHS services use to contact you. </p>
+        </div>
+        <div class="article-divider"></div>
+
+        <h2 id="update">How to update your NHS contact details on NHS record</h2>
+
+        <p>You can update your contact details by <a href="https://settings.login.nhs.uk/manage-contact-details">logging into your NHS account</a> or by <a href="https://www.nhsapp.service.nhs.uk/login">using the NHS App</a>.</p>
+
+        <div class="article-divider"></div>
+
+        <h2 id="change">Ah! I've been contacted, what do I do?!</h2>
+
+        <p>We might contact you if things are missing from your NHS record, or if any of your details are in an incorrect forma. If you're unsure, use the links above.</p>
+
+        <div class="article-divider"></div>
+
+        <h2 id="change">There may be a delay</h2>
+
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+        <p>Some NHS services, like your GP surgery, may continue to use your previous contact details. This is because there may be a delay before they check your updated NHS record.</p>
+        </div>
+        </div> <!-- end grid-column-two-thirds -->
+      </div> <!-- end nhsuk-grid-row -->
+    </main> <!-- end nhsuk-main-wrapper -->
+  </div> <!-- end nhsuk-width-container -->
+    
+{% endblock %}
