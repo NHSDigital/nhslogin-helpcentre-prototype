@@ -1,13 +1,15 @@
 {% extends 'helpcentre-detail.html' %}
 
 {% block pageTitle %}
-Mixed reference support
+Error messages and support
 {% endblock %}
 
 {% block beforeContent %}
 {% endblock %}
 
 {% block content %}
+
+
 
 <!-- Breadcrumb -->
 
@@ -23,37 +25,45 @@ Mixed reference support
 <div class="nhsuk-width-container">
   <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
 
-    <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-row" >
       <div class="nhsuk-grid-column-one-third">
 
         <nav class="app-side-nav">
 
           <ul class="nhsuk-list app-side-nav__list">
 
-            <h2 class="app-side-nav__heading">Mixed reference support<span class="nhsuk-u-visually-hidden">navigation</span></h2>
+            <h2 class="app-side-nav__heading">Error messages and support<span class="nhsuk-u-visually-hidden">navigation</span></h2>
 
             <!--<li class="app-side-nav__item">
               <a class="app-side-nav__link" href="#error0003">Reference CID0003: Our website has accessibility issues</a>
             </li>-->
 
             <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="#error2011">Reference CID2011: There may be a problem with your NHS number</a>
+              <a class="app-side-nav__link" href="#error2011">CID2011: There may be a problem with your NHS number</a>
             </li>
 
             <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="#error2012">Reference CID2012: Your NHS login may have been disabled</a>
+              <a class="app-side-nav__link" href="#error2012">CID2012: Your NHS login may have been disabled</a>
             </li>
 
             <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="#reference2014">Reference CID2014: You cannot use your NHS login</a>
+              <a class="app-side-nav__link" href="#reference2014">CID2014: You cannot use your NHS login</a>
             </li>
 
             <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="#error7023">Reference CID7023: Unable to connect to your GP surgery’s system</a>
+              <a class="app-side-nav__link" href="#reference3002">CID3002: The link to cancel the update to your phone number has expired</a>
             </li>
 
             <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="#error7029">Reference CID7029: We cannot connect your NHS login to your GP surgery</a>
+              <a class="app-side-nav__link" href="#reference3003">CID3003: The link to cancel the update to your phone number has already been used</a>
+            </li>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error7023">CID7023: Unable to connect to your GP surgery’s system</a>
+            </li>
+
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="#error7029">CID7029: We cannot connect your NHS login to your GP surgery</a>
             </li>
 
             <!--<li class="app-side-nav__item">
@@ -67,7 +77,7 @@ Mixed reference support
 
       <!-- Main article body content start -->
 
-      <div class="nhsuk-grid-column-two-thirds">
+      <div class="nhsuk-grid-column-two-thirds" >
 
       <!-- Reference CID0003: Our website has accessibility issues [MOVED TO LOGIN ACCESSIBILITY PAGE] -->
 
@@ -85,7 +95,7 @@ Mixed reference support
 
       <!-- Reference CID2011: There may be a problem with your NHS number -->
 
-        <h2 id="error2011">Reference CID2011: There may be a problem with your NHS number</h2>
+        <h2 id="error2011">CID2011: There may be a problem with your NHS number</h2>
 
         <p>
           Every time you log in to a website or app using your NHS login, we check your NHS number. This allows us to
@@ -105,7 +115,7 @@ Mixed reference support
 
       <!-- Reference CID2012: Your NHS login may have been disabled -->
 
-        <h2 id="error2012">Reference CID2012: Your NHS login may have been disabled</h2>
+        <h2 id="error2012">CID2012: Your NHS login may have been disabled</h2>
 
         <p>
           Every time you log in to a website or app using your NHS login, we check your NHS number. This allows us to
@@ -126,7 +136,7 @@ Mixed reference support
 
       <!-- Reference CID2014: You cannot use your NHS login -->
 
-        <h2 id="reference2014">Reference CID2014: You cannot use your NHS login</h2>
+        <h2 id="reference2014">CID2014: You cannot use your NHS login</h2>
 
         <p>There is a problem that we are looking at. You will not be able to use your NHS login until we have fixed the problem. This is to keep your health information secure.</p>
 
@@ -138,9 +148,31 @@ Mixed reference support
 
         <div class="article-divider"></div>
 
+        <!-- Reference CID3002: The link to cancel the update to your phone number has expired -->
+
+        <h2 id="reference3002">CID3002: The link to cancel the update to your phone number has expired</h2>
+
+        <p>The link to cancel the update to your phone number expires 24 hours after we email it to you.</p>
+        <p>We may have already updated the phone number you use to log in. In this case you would have received a confirmation email.</p>
+        <p>You can check or change your login and security settings in <a href="#">your NHS account</a>.</p>
+ 
+        <p><a href="../contact-form/contact?error=CID3002">Contact us</a> if you did not mean to change your phone number, or you do not have access to it.</p>
+
+        <div class="article-divider"></div>
+
+        <!-- Reference CID3003: The link to cancel the update to your phone number has already been used -->
+
+        <h2 id="reference3003">CID3003: The link to cancel the update to your phone number has already been used</h2>
+
+        <p>The link to cancel the update to your phone number will not work if you have already used it and cancelled the update.</p>
+        <p>You can check or change your login and security settings in <a href="#">your NHS account</a>.</p>
+        <p><a href="../contact-form/contact?error=CID3003">Contact us</a>  if you did not mean to change your phone number, or you do not have access to it.</p>
+
+        <div class="article-divider"></div>
+
       <!-- Reference CID7023: Unable to connect to your GP surgery’s system -->
 
-        <h2 id="error7023">Reference CID7023: Unable to connect to your GP surgery’s system</h2>
+        <h2 id="error7023">CID7023: Unable to connect to your GP surgery’s system</h2>
 
         <p>
           If reference CID7023 is shown, this means the website or app you are trying to visit needs to connect to your GP surgery’s system and we have not been able to make that connection. If this happens to you, there are a number of possible reasons why.
@@ -157,8 +189,8 @@ Mixed reference support
         </p>
 
         <p>
-          If you want to change the email address on your NHS login you can do so in your
-          <a href="https://settings.login.nhs.uk/" class="nhsuk-link">NHS login settings</a>.
+          If you want to change the email address on your NHS login you can do so in
+          <a href="https://settings.login.nhs.uk/" class="nhsuk-link">your NHS account</a>.
         </p>
 
         <h3>The details we use are invalid</h3>
@@ -183,7 +215,7 @@ Mixed reference support
 
       <!-- Reference CID7029: We cannot connect your NHS login to your GP surgery -->
 
-        <h2 id="error7029">Reference CID7029: We cannot connect your NHS login to your GP surgery</h2>
+        <h2 id="error7029">CID7029: We cannot connect your NHS login to your GP surgery</h2>
 
         <p>
           If you see reference CID7029, this means we cannot connect your NHS login to your GP surgery. There could be a
@@ -220,5 +252,7 @@ Mixed reference support
     </div> <!-- /. grid-row -->
   </main> <!-- /. main-wrapper -->
 </div> <!-- /. widht-container -->
+
+
 
 {% endblock %}
