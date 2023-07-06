@@ -33,7 +33,7 @@ NHS login help centre
 
     <!-- This section contains the search bar -->
 
-    <div class="nhsuk-header__content" id="content-header">
+    <!--<div class="nhsuk-header__content" id="content-header">
       <div class="nhsuk-header__menu">
         <button class="nhsuk-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation"
           aria-label="Open menu">Menu</button>
@@ -74,16 +74,18 @@ NHS login help centre
               <span class="nhsuk-u-visually-hidden">Close search</span>
             </button>
           </form>
-        </div> <!-- end nshuk-header__search-wrap -->
-      </div> <!-- end nhsuk-header__search -->
-    </div> <!-- end nhsuk-header__content -->
-  </div> <!-- nhsuk-width-container -->
+        </div> {add <!-- back in} end nshuk-header__search-wrap -->
+      <!--</div> <!-- end nhsuk-header__search -->
+    <!--</div> <!-- end nhsuk-header__content -->
+  <!--</div> <!-- nhsuk-width-container -->
 
   <!-- This section contains the navigation links in the header -->
 
+  
+
   <nav class="nhsuk-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation"
     aria-labelledby="label-navigation">
-    <div class="nhsuk-width-container">
+    <!-- <div class="nhsuk-width-container">
       <p class="nhsuk-header__navigation-title">
         <span id="label-navigation">Menu</span>
         <button class="nhsuk-header__navigation-close" id="close-menu">
@@ -96,11 +98,11 @@ NHS login help centre
           <span class="nhsuk-u-visually-hidden">Close menu</span>
         </button>
       </p>
-      <ul class="nhsuk-header__navigation-list">
+      <ul class="nhsuk-header__navigation-list"> -->
 
         <!-- Set-up navigation link -->
 
-        <li class="nhsuk-header__navigation-item">
+        <!-- <li class="nhsuk-header__navigation-item">
           <a class="nhsuk-header__navigation-link" href="/whatisnhslogin/article">
             Set up
             <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -110,11 +112,11 @@ NHS login help centre
               </path>
             </svg>
           </a>
-        </li>
+        </li> -->
 
         <!-- Manage navigation link -->
 
-        <li class="nhsuk-header__navigation-item">
+        <!-- <li class="nhsuk-header__navigation-item">
           <a class="nhsuk-header__navigation-link" href="/manage/hub">
             Manage
             <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -124,11 +126,11 @@ NHS login help centre
               </path>
             </svg>
           </a>
-        </li>
+        </li> -->
 
         <!-- Prove who you are navigation link -->
 
-        <li class="nhsuk-header__navigation-item">
+        <!-- <li class="nhsuk-header__navigation-item">
           <a class="nhsuk-header__navigation-link" href="/provewhoyouare/hub">
             Prove who you are
             <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -138,11 +140,11 @@ NHS login help centre
               </path>
             </svg>
           </a>
-        </li>
+        </li> -->
 
         <!-- Record a video navigation link -->
 
-        <li class="nhsuk-header__navigation-item">
+        <!-- <li class="nhsuk-header__navigation-item">
           <a class="nhsuk-header__navigation-link" href="/takeandupload/article">
             Record a video
             <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -152,11 +154,11 @@ NHS login help centre
               </path>
             </svg>
           </a>
-        </li>
+        </li> -->
 
         <!-- Mixed reference support navigation link -->
 
-        <li class="nhsuk-header__navigation-item">
+        <!-- <li class="nhsuk-header__navigation-item">
           <a class="nhsuk-header__navigation-link" href="/mixed/article">
             Mixed reference support
             <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -166,7 +168,7 @@ NHS login help centre
               </path>
             </svg>
           </a>
-        </li>
+        </li> -->
 
       </ul> <!-- end nhsuk-header__navigation-list -->
     </div> <!-- end nhsuk-width-container -->
@@ -176,21 +178,31 @@ NHS login help centre
 {% endblock %}
 
 {% block footer %}
-{{ footer({
-    "links": [
-      {
-        "URL": "https://digital.nhs.uk/services/nhs-login",
-        "label": "NHS login for partners and developers"
-      }
-    ]
-  })}}
+
+<footer role="contentinfo">
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+          <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+          <ul class="nhsuk-footer__list">
+            <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="https://digital.nhs.uk/services/nhs-login">NHS login for partners and developers</a></li>
+            <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="https://access.login.nhs.uk/terms-and-conditions">Our policies</a></li>
+          </ul>
+
+          <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 {% endblock %}
 
 {% block bodyEnd %}
 {% block scripts %}
-<!-- Custom JavaScript files can be added to this file -->
 {% include "includes/scripts.html" %}
-<!-- For adding page specific JavsScript -->
 {% block pageScripts %}{% endblock %}
 {% endblock %}
 {% endblock %}

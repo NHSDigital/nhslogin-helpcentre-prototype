@@ -1,4 +1,12 @@
-{% extends 'layout.html' %}
+{% if data.research === 'true' %}
+
+  {% extends 'layouthome.html' %}
+
+{% else %}
+
+  {% extends 'layout.html' %}
+
+{% endif %}
 
 {% block beforeContent %}
 <section class="nhsuk-hero">
@@ -6,7 +14,16 @@
     <div class="nhsuk-grid-row">
       <div class="nhsuk-hero__wrapper">
         <!-- Hero Title-->
+        {% if data.research === 'true' %}
+
+        <h1 class="nhsuk-u-margin-bottom-3">How can we help you?</h1>
+
+
+        {% else %}
+
         <h1 class="nhsuk-u-margin-bottom-3">NHS login help centre</h1>
+
+        {% endif %}
 
         <div class="nhsuk-hub__search">
           
@@ -36,13 +53,54 @@
 {% block content %}
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
+
+    {% if data.research === 'true' %}
+
+        <!-- FAQs -->
+
+        <h2 class="nhsuk-heading-m">Frequently found issues</h2>
+
+        <!-- How to set up NHS login panel -->
+          
+        <div class="nhsuk-grid-column-full nhsuk-panel-group__item nhsuk-u-padding-0 nhsuk-u-margin-bottom-0">
+            {{ card({
+              "href": "#",
+              "clickable": "true",
+              "heading": "I'm not receiving my security code",
+              "headingLevel": 2,
+              "headingClasses": "nhsuk-heading-s",
+              "description": ""
+              
+            }) 
+          }}
+        </div>
+
+        <div class="nhsuk-grid-column-full nhsuk-panel-group__item nhsuk-u-padding-0 nhsuk-u-margin-bottom-0">
+          {{ card({
+              "href": "#",
+              "clickable": "true",
+              "heading": "My photo ID isn't working",
+              "headingLevel": 2,
+              "headingClasses": "nhsuk-heading-s",
+              "description": ""
+            }) 
+          }}
+        </div>
+
+        <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible nhsuk-u-padding-0">
+
+        {% else %}
+
+        {% endif %}
+
     <div class="nhsuk-grid-row nhsuk-panel-group">
 
       <!-- How to set up NHS login panel -->
       
-      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
         {{ card({
             "href": "/whatisnhslogin/article",
+            "clickable": "true",
             "heading": "How to set up NHS login",
             "headingLevel": 2,
             "headingClasses": "nhsuk-heading-m",
@@ -53,9 +111,10 @@
 
       <!-- How to manage NHS login panel -->
 
-      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
         {{ card({
             "href": "/manage/hub",
+            "clickable": "true",
             "heading": "How to manage NHS login",
             "headingLevel": 2,
             "headingClasses": "nhsuk-heading-m",
@@ -64,9 +123,10 @@
 
       <!-- How to prove who you are panel -->
 
-      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
         {{ card({
             "href": "/provewhoyouare/hub",
+            "clickable": "true",
             "heading": "How to prove who you are",
             "headingLevel": 2,
             "headingClasses": "nhsuk-heading-m",
@@ -75,9 +135,10 @@
 
       <!-- How to record a video panel -->
 
-      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
         {{ card({
             "href": "/takeandupload/article",
+            "clickable": "true",
             "heading": "How to record and upload a video",
             "headingLevel": 2,
             "headingClasses": "nhsuk-heading-m",
@@ -86,9 +147,10 @@
 
       <!-- Mixed reference support panel -->
 
-      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
         {{ card({
             "href": "/mixed/article",
+            "clickable": "true",
             "heading": "Error messages and support",
             "headingLevel": 2,
             "headingClasses": "nhsuk-heading-m",
