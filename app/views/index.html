@@ -61,31 +61,25 @@
         <h2 class="nhsuk-heading-m">Frequently found issues</h2>
 
         <!-- How to set up NHS login panel -->
-          
-        <div class="nhsuk-grid-column-full nhsuk-panel-group__item nhsuk-u-padding-0 nhsuk-u-margin-bottom-0">
-            {{ card({
-              "href": "#",
-              "clickable": "true",
-              "heading": "I'm not receiving my security code",
-              "headingLevel": 2,
-              "headingClasses": "nhsuk-heading-s",
-              "description": ""
-              
-            }) 
-          }}
+
+        <div class="nhsuk-card nhsuk-card--clickable cardmargin">
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-s">
+              <a class="nhsuk-card__link" href="#">I am not receiving my security code</a>
+            </h2>
+            <!-- <p class="nhsuk-card__description">lorem ipsum</p> -->
+          </div>
         </div>
 
-        <div class="nhsuk-grid-column-full nhsuk-panel-group__item nhsuk-u-padding-0 nhsuk-u-margin-bottom-0">
-          {{ card({
-              "href": "#",
-              "clickable": "true",
-              "heading": "My photo ID isn't working",
-              "headingLevel": 2,
-              "headingClasses": "nhsuk-heading-s",
-              "description": ""
-            }) 
-          }}
+        <div class="nhsuk-card nhsuk-card--clickable cardmargin">
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-s">
+              <a class="nhsuk-card__link" href="#">My photo ID isn't working</a>
+            </h2>
+            <!-- <p class="nhsuk-card__description">lorem ipsum</p> -->
+          </div>
         </div>
+          
 
         <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible nhsuk-u-padding-0">
 
@@ -93,71 +87,87 @@
 
         {% endif %}
 
-    <div class="nhsuk-grid-row nhsuk-panel-group">
+    <!-- <div class="nhsuk-grid-row nhsuk-panel-group"> -->
 
       <!-- How to set up NHS login panel -->
-      
-      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
-        {{ card({
-            "href": "/whatisnhslogin/article",
-            "clickable": "true",
-            "heading": "How to set up NHS login",
-            "headingLevel": 2,
-            "headingClasses": "nhsuk-heading-m",
-            "description": "Find out what NHS login is, how to set one up and where you can use it."
-          }) 
-        }}
+
+      <div class="nhsuk-grid-row nhsuk-panel-group"> 
+        <!-- This div wrappere ^ is NB, if removed, panel group will break and cards will not scale or wrap responsively as desired -->
+
+        <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
+          <div class="nhsuk-card nhsuk-card--clickable cardmargin">
+            <div class="nhsuk-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-s">
+                <a class="nhsuk-card__link" href="/whatisnhslogin/article">How to set up NHS login</a>
+              </h2>
+              <p class="nhsuk-card__description">Find out what NHS login is, how to set one up and where you can use it.</p>
+            </div>
+          </div>
+        </div>
+        <!-- How to manage NHS login panel -->
+        <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
+          <div class="nhsuk-card nhsuk-card--clickable cardmargin">
+            <div class="nhsuk-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-s">
+                <a class="nhsuk-card__link" href="/manage/hub">How to manage NHS login</a>
+              </h2>
+              <p class="nhsuk-card__description">Learn how to manage, edit and delete your NHS login.</p>
+            </div>
+          </div>
+        </div>
+        <!-- How to prove who you are panel -->
+        <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
+          <div class="nhsuk-card nhsuk-card--clickable cardmargin">
+            <div class="nhsuk-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-s">
+                <a class="nhsuk-card__link" href="/provewhoyouare/hub">How to prove who you are</a>
+              </h2>
+              <p class="nhsuk-card__description">You can use photo ID and a video, or the registration details from your GP surgery’s online services.</p>
+            </div>
+          </div>
+        </div>
+        <!-- How to record a video panel -->
+        <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
+          <div class="nhsuk-card nhsuk-card--clickable cardmargin">
+            <div class="nhsuk-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-s">
+                <a class="nhsuk-card__link" href="/takeandupload/article">How to record and upload a video</a>
+              </h2>
+              <p class="nhsuk-card__description">Steps on how to record and upload a video that can be used to prove who you are.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Mixed reference support panel -->
+        <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
+          <div class="nhsuk-card nhsuk-card--clickable cardmargin">
+            <div class="nhsuk-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-s">
+                <a class="nhsuk-card__link" href="/mixed/article">Error messages and support</a>
+              </h2>
+              <p class="nhsuk-card__description">Help with issues accessing the service, what it means if you see an error reference and what you can do.</p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- How to manage NHS login panel -->
-
-      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
-        {{ card({
-            "href": "/manage/hub",
-            "clickable": "true",
-            "heading": "How to manage NHS login",
-            "headingLevel": 2,
-            "headingClasses": "nhsuk-heading-m",
-            "description": "Learn how to manage, edit and delete your NHS login."    }) }}
-      </div>
-
-      <!-- How to prove who you are panel -->
-
-      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
-        {{ card({
-            "href": "/provewhoyouare/hub",
-            "clickable": "true",
-            "heading": "How to prove who you are",
-            "headingLevel": 2,
-            "headingClasses": "nhsuk-heading-m",
-            "description": "You can use photo ID and a video, or the registration details from your GP surgery’s online services."    }) }}
-      </div>
-
-      <!-- How to record a video panel -->
-
-      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
-        {{ card({
-            "href": "/takeandupload/article",
-            "clickable": "true",
-            "heading": "How to record and upload a video",
-            "headingLevel": 2,
-            "headingClasses": "nhsuk-heading-m",
-            "description": "Steps on how to record and upload a video that can be used to prove who you are."    }) }}
-      </div>
-
-      <!-- Mixed reference support panel -->
-
-      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
-        {{ card({
-            "href": "/mixed/article",
-            "clickable": "true",
-            "heading": "Error messages and support",
-            "headingLevel": 2,
-            "headingClasses": "nhsuk-heading-m",
-            "description": "Help with issues accessing the service, what it means if you see an error reference and what you can do."    }) }}
-      </div>
       
     </div> <!-- /.nhsuk-panel-group -->
   </div> <!-- /. nhsuk-grid-column-full --->
 </div> <!-- /. grid-row -->
+
+<style>
+  @media screen and (max-width: 1824px) {
+      .cardmargin {
+          margin-bottom: 32px;
+       }
+  }
+
+  @media screen and (max-width: 1024px) {
+      .cardmargin {
+          margin-bottom: 24px;
+       }
+  }
+  
+  </style>
+
 {% endblock %}
