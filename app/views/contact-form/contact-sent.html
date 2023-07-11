@@ -11,11 +11,61 @@
 {% endblock %}
 
 {% block content %}
-  <div class="nhsuk-grid-row">
+
+<div class="nhsuk-width-container">
+  
+    <div class="nhsuk-grid-row">
+
+      <div class="nhsuk-grid-column-two-thirds">
+        
+        <div class="nhsuk-card">
+          <div class="nhsuk-card__content">
+            <h1 class="nhsuk-card__heading">
+              Message Sent
+            </h1>
+            <p class="nhsuk-card__description nhsuk-u-font-size-24">Your reference number <br> <strong class="nhsuk-u-font-size-32">HDJ2123F</strong></p>
+          </div>
+        </div>
+
+        <p>Your message has been sent to our support team, who will look into this for you. A confirmation email has been sent.</p>
+
+        <h2>What happens next</h2>
+        <p>Check your inbox for the confirmation email, which will list the next steps.</p>
+
+
+        <details class="nhsuk-details">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              Not received your email reminder?
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <p>If you did not get your email reminder, you can:</p>
+            <p class="nhsuk-body">
+              <ul>
+                <li>
+                  try checking your spam or junk folder
+                </li>
+                <li>
+                  <a href="capped_out_mail">request a new email reminder</a>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </details>
+
+
+      </div>
+
+
+
+    </div>
+</div>
+  <!-- <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <h2 class="nhsuk-app-contact-panel__heading">Message sent</h2>
       <p class="app-contact-panel__body">Thanks for the message, it has been sent to our support team, who will look into this for you.</p>
       <p class="app-contact-panel__body">We will send you an email telling you what the next steps are.</p>
     </div>
-  </div>
+  </div> -->
 {% endblock %}
