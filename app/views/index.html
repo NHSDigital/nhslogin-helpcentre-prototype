@@ -1,12 +1,4 @@
-{% if data.hsResearch === 'true' %}
-
-  {% extends 'layouthome.html' %}
-
-{% else %}
-
-  {% extends 'layout.html' %}
-
-{% endif %}
+{% extends 'layout.html' %}
 
 {% block beforeContent %}
 <section class="nhsuk-hero">
@@ -17,7 +9,6 @@
         {% if data.hsResearch === 'true' %}
 
         <h1 class="nhsuk-u-margin-bottom-3">How can we help you?</h1>
-
 
         {% else %}
 
@@ -137,7 +128,7 @@
             </div>
           </div>
         </div>
-        <!-- Mixed reference support panel -->
+        <!-- Error messages and support panel -->
         <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item nhsuk-u-margin-bottom-0">
           <div class="nhsuk-card nhsuk-card--clickable cardmargin">
             <div class="nhsuk-card__content">
