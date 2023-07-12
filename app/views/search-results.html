@@ -1,0 +1,66 @@
+{% extends 'helpcentre-detail.html' %}
+
+{% block pageTitle %}
+Search results
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Main body content start -->
+
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+
+    <div class="nhsuk-grid-row" >
+
+      <div class="nhsuk-grid-column-two-thirds" >
+
+      <!-- Reference CID0003: Our website has accessibility issues [MOVED TO LOGIN ACCESSIBILITY PAGE] -->
+
+        <!--<h2 id="error0003">Reference CID0003: Our website has accessibility issues</h2>-->
+
+        <!--<p>
+          We have designed the NHS login website to be accessible and as simple as possible to understand for all users. Some content on our website does not meet the standard and we are working to fix this as soon as we can.
+        </p>-->
+
+        <!--<p>
+          <a href="../contact-form/contact">Contact us</a> if you want to report any accessibility problems that are not listed on our <a href="https://access.login.nhs.uk/accessibility" class="nhsuk-link">accessibility statement</a>, or to give us feedback on any issues you have seen. 
+        </p>-->
+
+        <!--<div class="article-divider"></div>-->
+
+      <!-- Reference CID2011: There may be a problem with your NHS number -->
+
+      {% if data.search-results === 'error' %}
+
+      <h1 class="nhsuk-heading-l">Search results for {{ data['search-results']}}</h1>
+
+      <p>
+        Error
+      </p>
+
+      <hr>
+      
+      {% else %}
+
+      <h1 class="nhsuk-heading-l">Search results</h1>
+
+      <p>
+        No results
+      </p>
+
+      <hr>
+      
+      {% endif %} 
+        
+      </div> <!-- /. two-thirds-column -->
+    </div> <!-- /. grid-row -->
+  </main> <!-- /. main-wrapper -->
+</div> <!-- /. widht-container -->
+
+
+
+{% endblock %}
