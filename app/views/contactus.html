@@ -1,0 +1,137 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'helpcentre-detail.html' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Contact us
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-width-container">
+        <!-- back link open -->
+        <div class="nhsuk-back-link">
+
+            <a class="nhsuk-back-link__link" href="index?hsResearch=true">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+              </svg>
+              Go back</a>
+          </div>
+          <!-- back link close -->
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+
+                <h1 class="nhsuk-heading-xl">NHS login support</h1>
+
+                <!-- inset text -->
+
+                <div class="nhsuk-inset-text">
+                    <span class="nhsuk-u-visually-hidden">Information: </span>
+                    <p>The NHS login team can only provide technical support. We cannot help with medical issues.</p>
+                  </div>
+
+                <!-- Urgent care card to avoid urgent medical queries-->
+
+                <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--emergency">
+                    <div class="nhsuk-card--care__heading-container">
+                    <h2 class="nhsuk-card--care__heading">
+                        <span role="text"><span class="nhsuk-u-visually-hidden">Immediate action required: </span>If you have a medical emergency:</span>
+                    </h2>
+                    <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+                    </div>
+                
+                    <div class="nhsuk-card__content">
+                
+                    <ul>
+                        <li>call 999</li>
+                        <li><a href="https://www.nhs.uk/service-search/other-services/Accident-and-emergency-services/LocationSearch/428/">find your nearest A&amp;E</a></li>
+                        <li><a href="https://www.nhs.uk/nhs-services/mental-health-services/get-urgent-help-for-mental-health/">get urgent help for mental health</a></li>
+                    </ul>
+                    
+                
+                    </div>
+                </div>
+
+                <!-- non-urgent care card to avoid medical queries-->
+
+                <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+                    <div class="nhsuk-card--care__heading-container">
+                    <h2 class="nhsuk-card--care__heading">
+                        <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>If you have a non-urgent medical query:</span>
+                    </h2>
+                    <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+                    </div>
+                
+                    <div class="nhsuk-card__content">
+                
+                    <ul>
+                        <li>go to <a href="https://111.nhs.uk/">111.nhs.uk</a> or call 111</li>
+                        <li><a href="https://www.nhs.uk/nhs-services/services-near-you/">speak to a pharmacist, GP or dentist</a></li>
+                        <li>search the <a href="https://www.nhs.uk/conditions/">NHS website health A-Z</a> for more advice about your condition</li>
+                        <li>find information and support for your <a href="https://www.nhs.uk/mental-health/">mental health on the NHS website</a></li>
+                    </ul>
+                
+                    </div>
+                </div>
+
+                <!-- First contact option: call us -->
+
+                <div class="nhsuk-card">
+                    <div class="nhsuk-card__content">
+                    <h3 class="nhsuk-card__heading">
+                        Call us
+                    </h3>
+                    <p><a href="">08FAK E00000</a></p>
+                    <p class="nhsuk-card__description">We are availible for non-medical support 9:00am-5:00pm (BST) Monday-Friday.</a></p>
+                    </div>
+                </div>
+
+                <!-- Third contact option: live chat -->
+
+                <div class="nhsuk-card nhsuk-card--clickable">
+                    <div class="nhsuk-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                        <a class="nhsuk-card__link" href="/research/help-and-support/live-chat">Chat live</a>
+                    </h2>
+                    <p class="nhsuk-card__description">We are available for non-medical support 9:00am-5:00pm (BST) Monday-Friday.</p>
+                    </div>
+                </div>
+
+                <!-- Second contact option: form --> 
+
+                <div class="nhsuk-card nhsuk-card--clickable">
+                    <div class="nhsuk-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                        <!-- may need a spinner here so that it shows we are moving out of login main area into help centre -->
+                        <a class="nhsuk-card__link" href="https://prototype-nhs-login-help-87153c4cb7ee.herokuapp.com/contact-form/contact?hsResearch=true">Send us a message</a>
+                    </h2>
+                    <p class="nhsuk-card__description">Use our form to send us details of your issue. We'll get back to you with help or advice within 48 hours.</p>
+                    </div>
+                </div>
+
+                 <!-- Fourth contact option: self service -->
+
+                 <div class="nhsuk-card nhsuk-card--clickable">
+                    <div class="nhsuk-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                        <a class="nhsuk-card__link" href="https://prototype-nhs-login-help-87153c4cb7ee.herokuapp.com/?hsResearch=true">NHS login help centre</a>
+                    </h2>
+                    <p class="nhsuk-card__description">Find helpful information, guidance and support for issues with NHS login.</p>
+                    </div>
+                </div>
+
+                <!-- closing divs -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}        
