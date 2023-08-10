@@ -13,85 +13,105 @@ Contact us
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
 
-    <h2 class="nhsuk-app-contact-panel__heading">Contact us</h2>
+    <h1 class="nhsuk-app-contact-panel__heading">Contact technical support</h1>
 
-    <p>Use this form to get help or advice for a problem or issue with NHS login. The NHS login team cannot help with medical problems.</p>
+    <!-- <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+        <p>Use this form to get help or advice for a problem or issue with NHS login. The NHS login team cannot help with medical problems.</p>
+        <p>The support team will get back to you within 24 hours.</p> -->
+        <!-- Details component - Medical help -->
 
-    <!-- Details component - Medical help -->
+        <!-- <details class="nhsuk-details">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              What to do if you need medical help
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <span class="nhsuk-u-visually-hidden">Urgent advice: </span>
+            <p>If you think it's a life-threatening emergency:</p>
+            <ul>
+              <li>
+                <a href="tel: 999">call 999</a>
+              </li>
+            </ul>
+            <span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>
+            <p>If you do not think it's an emergency:</p>
+            <ul>
+              <li><a href="tel:111">call 111</a> or go to <a href="https://111.nhs.uk">111 online</a></li>
+              <li>speak to a <a href="https://www.nhs.uk/service-search">pharmacist, GP or dentist</a></li>
+              <li>search the <a href="https://www.nhs.uk/conditions/"> NHS website health A-Z</a> for more advice about your condition</li>
+            </ul>
+          </div>
+        </details>
+    </div> -->
 
-    <details class="nhsuk-details">
-      <summary class="nhsuk-details__summary">
-        <span class="nhsuk-details__summary-text">
-          What to do if you need medical help
+
+    <div class="nhsuk-warning-callout">
+      <h3 class="nhsuk-warning-callout__label">
+        <span role="text">
+          <span class="nhsuk-u-visually-hidden">Important: </span>
+          We cannot help with medical problems
         </span>
-      </summary>
-      <div class="nhsuk-details__text">
-        <span class="nhsuk-u-visually-hidden">Urgent advice: </span>
-        <p>If you think it's a life-threatening emergency:</p>
-        <ul>
-          <li>
-            <a href="tel: 999">call 999</a>
-          </li>
-        </ul>
-        <span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>
-        <p>If you do not think it's an emergency:</p>
-        <ul>
-          <li><a href="tel:111">call 111</a> or go to <a href="https://111.nhs.uk">111 online</a></li>
-          <li>speak to a <a href="https://www.nhs.uk/service-search">pharmacist, GP or dentist</a></li>
-          <li>search the <a href="https://www.nhs.uk/conditions/"> NHS website health A-Z</a> for more advice about your condition</li>
-        </ul>
-      </div>
-    </details>
+      </h3>
+      <p>Use this form to get help or advice for a problem or issue with NHS login. The NHS login team cannot help with medical problems.</p>
+      <p>The support team will get back to you within 24 hours.</p>
+      <!-- Details component - Medical help -->
+
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            What to do if you need medical help
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <span class="nhsuk-u-visually-hidden">Urgent advice: </span>
+          <p>If you think it's a life-threatening emergency:</p>
+          <ul>
+            <li>
+              <a href="tel: 999">call 999</a>
+            </li>
+          </ul>
+          <span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>
+          <p>If you do not think it's an emergency:</p>
+          <ul>
+            <li><a href="tel:111">call 111</a> or go to <a href="https://111.nhs.uk">111 online</a></li>
+            <li>speak to a <a href="https://www.nhs.uk/service-search">pharmacist, GP or dentist</a></li>
+            <li>search the <a href="https://www.nhs.uk/conditions/"> NHS website health A-Z</a> for more advice about your condition</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
 
     <!-- Name input field -->
 
     <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="one-half">
-        Name
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="one-half" >
+       Full Name
       </label>
-      <input class="nhsuk-input nhsuk-u-width-one-half" id="one-half" name="one-half" type="text">
+      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="one-half" name="one-half" type="text">
     </div>
 
     <!-- Email address -->
 
     <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="two-thirds">
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="two-thirds">
         Email address
       </label>
       <span class="nhsuk-hint" id="input-with-hint-text-hint">
-        This should be the email address you use for NHS login.
+        This should be the email address you use for NHS login
       </span>
       <input class="nhsuk-input nhsuk-u-width-two-thirds" id="two-thirds" name="two-thirds" type="text">
     </div>
 
-    <!-- Problem or issue dropdown
-
-    <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="select-1">
-        Problem or issue
-      </label>
-      <select class="nhsuk-select" id="select-1" name="select-1">
-        <option style="display:none;"></option>
-        <option value="1">CID1005: The NHS record we found does not match your details</option>
-        <option value="2">CID3001: You have lost access to your mobile phone number</option>
-        <option value="3">CID3002: Expired link - The link to cancel changing your phone number does not work</option>
-        <option value="4">CID3003: Used link - The link to cancel changing your phone number does not work</option>
-        <option value="5">CID7004: What to do if your registration details from your GP surgery’s online services have already been used</option>
-        <option value="6">CID2011: There may be a problem with your NHS number</option>
-        <option value="7">CID2012: Your NHS login may have been disabled</option>
-        <option value="8">CID7023: You have already set up an NHS login</option>
-        <option value="9">CID7029: We cannot connect your NHS login to your GP surgery</option>
-        <option value="10">CID7100: Unable to connect to your GP surgery’s system</option>
-      </select>
-    </div> -->
-
     <!-- Website or app dropdown -->
 
     <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="website-or-app">
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="website-or-app">
         Please select the website or app you are trying to visit
       </label>
-      <select class="nhsuk-select" id="website-or-app" name="website-or-app">
+      <select class="nhsuk-select nhsuk-u-width-two-thirds" id="website-or-app" name="website-or-app">
         <option value="visit_i_am_not_trying_to_visit_a_website_or_app">I am not trying to visit a website or app</option>
         <option value="accurx">Accurx</option>
         <option value="accurx_patient_portal">Accurx Patient Portal</option>
@@ -182,16 +202,126 @@ Contact us
       </select>
     </div>
 
+    <!-- CID code input field -->
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="cidCode">
+       If you have an error code, can you tell us what it is? (optional)
+      </label>
+      <span class="nhsuk-hint" id="example-longer-hint">For example, CID1005</span>
+      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="cidCode" name="cidCode" type="text">
+    </div>
+
+    <!-- Problem or issue dropdown -->
+
+    <!-- <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="select-1">
+        Problem or issue
+      </label>
+      <select class="nhsuk-select" id="select-1" name="select-1">
+        <option style="display:none;"></option>
+        <option value="1">CID1005: The NHS record we found does not match your details</option>
+        <option value="2">CID3001: You have lost access to your mobile phone number</option>
+        <option value="3">CID3002: Expired link - The link to cancel changing your phone number does not work</option>
+        <option value="4">CID3003: Used link - The link to cancel changing your phone number does not work</option>
+        <option value="5">CID7004: What to do if your registration details from your GP surgery’s online services have already been used</option>
+        <option value="6">CID2011: There may be a problem with your NHS number</option>
+        <option value="7">CID2012: Your NHS login may have been disabled</option>
+        <option value="8">CID7023: You have already set up an NHS login</option>
+        <option value="9">CID7029: We cannot connect your NHS login to your GP surgery</option>
+        <option value="10">CID7100: Unable to connect to your GP surgery’s system</option>
+      </select>
+    </div>  -->
+
+
+    <!-- Radio selection for issue -->
+
+    <fieldset class="nhsuk-fieldset">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs nhsuk-u-font-weight-bold">
+          Select the technical problem you are having today
+      </legend>
+  
+    
+      <div class="nhsuk-form-group">
+    
+        <div class="nhsuk-radios">
+    
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-hints-1" name="example-hints" type="radio" value="yes">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
+              The NHS record found does not match my details
+            </label>
+          </div>
+    
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="no">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
+              There is already an existing account 
+            </label>
+          </div>
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="no">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
+              I do not have access to my mobile phone
+            </label>
+          </div>
+    
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="not sure">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+              Something else
+            </label>
+          </div>
+    
+        </div>
+      </div>
+    
+    </fieldset>
+
+    
+
     <!-- Message -->
 
     <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="example-longer">Message</label>
-      <span class="nhsuk-hint" id="example-longer-hint">Enter as much detail as you can, including any information we may have asked you to provide.</span>
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="example-longer">Describe your technical problem in more detail</label>
+      <span class="nhsuk-hint" id="example-longer-hint">Do not include personal or medical information like your NHS number or medical history</span>
       <textarea class="nhsuk-textarea" id="example-longer" name="example-longer" rows="6" aria-describedby="example-longer-hint"></textarea>
+      <span class="nhsuk-hint" id="example-longer-hint">You have 1500 characters remaining</span>
     </div>
 
-    <a class="nhsuk-button" href="contact-sent">Send message</a>
 
-  </div>
-</div>
+    {% if data.hsResearch === 'true' %}
+    
+    <!-- PRIVACY POLICYT AGREEMENT -->
+
+        <div class="nhsuk-u-margin-bottom-6 nhsuk-form-group">
+          <label class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Privacy policy agreement</label>
+          <p>
+            You must confirm you have read and understood the <a href="https://www.nhs.uk/using-the-nhs/nhs-services/the-nhs-app/privacy-policy/" target="_blank" rel="noopener noreferrer">
+              NHS account privacy policy (opens in new tab)
+            </a> before sending your message.
+          </p>
+          
+          <div class="nhsuk-checkboxes">
+      
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="PrivacyPolicyAgreement" type="checkbox" value="true" aria-describedby="privacy_hint" data-val="true" data-val-required="The PrivacyPolicyAgreement field is required." name="PrivacyPolicyAgreement">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="PrivacyPolicyAgreement" id="privacy_hint">
+                I have read and understood the privacy policy
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <a class="nhsuk-button" href="contact-sent">Send message</a>
+
+    {% else %}
+
+        <a class="nhsuk-button" href="contact-sent">Send message</a>
+
+      </div>
+    </div>
+    {% endif %}
+
 {% endblock %}
