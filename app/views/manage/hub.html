@@ -36,6 +36,7 @@ How to manage NHS login
         }}
       </div>
 
+      {% if data.passkey === 'true' %}
       <!-- Passkeys -->
 
       <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
@@ -48,6 +49,7 @@ How to manage NHS login
           })
         }}
       </div>      
+      {% endif %}
 
       <!-- Email address panel -->
 

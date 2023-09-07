@@ -30,49 +30,50 @@ Passkeys
 <div class="nhsuk-width-container">
   <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
     <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-one-third">
-        <nav class="app-side-nav">
+      <div class="nhsuk-grid-column-one-third sticky-nav">
+        <div class="article-section-nav-wrapper">
+          <div class="article-section-nav">
+            <h2 class="article-section-nav__title">Passkeys<span class="nhsuk-u-visually-hidden">navigation</span></h2>
+            <nav> 
 
-          <!-- one-third-side-navigation -->
+              <ol class="article-section-nav__list">
 
-          <ul class="nhsuk-list app-side-nav__list">
+                <li>
+                  <a class="active" href="#what">What is a passkey?</a>
+                </li>
 
-            <h2 class="app-side-nav__heading">Passkeys<span class="nhsuk-u-visually-hidden">navigation</span></h2>
+                <li>
+                  <a class="" href="#why">Why you should use a passkey</a>
+                </li>
 
-            <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="#passkeyexplained">What is a passkey?</a>
-            </li>
+                <li>
+                  <a class="" href="#need">What you need to set up a passkey</a>
+                </li>
 
-            <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="#resetlink">Why you should use a passkey</a>
-            </li>
+                <li>
+                  <a class="" href="#setup">How to set up a passkey</a>
+                </li>
 
-            <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="#resetlink">What you need to set up a passkey</a>
-            </li>
+                <li>
+                  <a class="" href="#login">How to log in with a passkey</a>
+                </li>
 
-            <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="#resetlink">How to set up a passkey</a>
-            </li>
+                <li>
+                  <a class="" href="#synch">Synch and use your passkey across your devices</a>
+                </li>
 
-            <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="#resetlink">How to log in with a passkey</a>
-            </li>
+                <li>
+                  <a class="" href="#lose">If you lose your device</a>
+                </li>
 
-            <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="#resetlink">Synch and use your passkey across your devices</a>
-            </li>
+                <li>
+                  <a class="" href="#change">If you change your device</a>
+                </li>
 
-            <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="#resetlink">If you lose your device</a>
-            </li>
-
-            <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="#resetlink">If you change your device</a>
-            </li>
-
-          </ul> <!-- end nhsuk-list -->
-        </nav> <!-- end app-side-nav -->
+              </ol> <!-- end nhsuk-list -->
+            </nav> <!-- end app-side-nav -->
+          </div>
+        </div>
       </div> <!-- end grid-column-one-third -->
 
       <!-- two-thirds-article-text -->
@@ -96,17 +97,15 @@ Passkeys
         //.......................................................
        -->
 
-      <div class="nhsuk-grid-column-two-thirds">
+      <div class="nhsuk-grid-column-two-thirds article-content">
 
-        <h2 id="passkeyexplained">What is a passkey?</h2>
+        <h2 id="what">What is a passkey?</h2>
 
-        <p>Passkeys are a secure alternative to password.</p>
+        <p>A passkey is a secure alternative to passwords. It is created and safely stored on your device.</p>
 
-        <p>There is no need to remember or enter it when logging in.</p>
-
-        <p>It is a digital key that is created and safely stored on your device.</p>
+        <p>Unlike passwords, which you need to remember and enter when you log in, you never have to type or enter your passkey.</p>
         
-        <p>You will be able to log in using your fingerprint, face, PIN or passcode or any other method you use to unlock your device.</p>
+        <p>You will be able to log in using your fingerprint, face, PIN, passcode or any other method you use to unlock your device.</p>
 
         <div class="article-divider"></div>
 
@@ -129,11 +128,11 @@ Passkeys
           //............................................
         -->
 
-        <h2 id="resetlink">Why you should use a passkey</h2>
+        <h2 id="why">Why you should use a passkey</h2>
 
         <p>Passkeys provide the strongest protection against phishing and hacking attempts.</p>
         <p>Each passkey is unique and linked to the website or app it is created for. Fraudulent apps or websites cannot steal your passkey.</p>
-        <p>Your passkey is safely stored on your device. No one can see or access it, including NHS login. It cannot be leaked even if a website or app is hacked.</p>
+        <p>Your passkey is safely stored on your device. No one can see or access it, including NHS login.</p>
 
         <div class="article-divider"></div>
 
@@ -156,11 +155,15 @@ Passkeys
         //....................................................  
          -->
 
-        <h2 id="resetlink">What you need to set up a passkey</h2>
+        <h2 id="need">What you need to set up a passkey</h2>
 
         <p>To set up a passkey you should have a screen lock on your device. A screen lock can be your fingerprint, face, passcode, PIN or pattern.</p>
-        <p>If you're using an Apple device, you will need to enable iCloud Keychain. This way your passkey will be synched and available across all your Apple devices.</p>
         <p>You also need to have Bluetooth enabled on your device. This will allow you to set up a passkey on a nearby device.</p>
+        <div class="nhsuk-details__text nhsuk-u-margin-left-4 nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-6" style="width: 80%;">
+          <p>If you're using an Apple device, you may be asked to turn iCloud Keychain.</p>
+          <p>This will synchronise passkeys across all your Apple devices.</p>
+        </div>
+
 
         <div class="article-divider"></div>
 
@@ -184,23 +187,22 @@ Passkeys
           //....................................................................
          -->
 
-        <h2 id="resetlink">How to set up a passkey</h2>
+        <h2 id="setup">How to set up a passkey</h2>
 
         <p>You can set up a passkey on your phone, computer, laptop or tablet.</p>
-        <p>You may also set up a passkey on a USB security key.</p>
 
         <div class="nhsuk-inset-text">
           <span class="nhsuk-u-visually-hidden">Important: </span>
-        <p>You should only set up passkeys on your personal or trusted devices. When you create a passkey on a device, anyone who can unlock the device can log into your account using your passkey.</p>
+        <p>You should only set up passkeys on your personal or trusted devices.</p>
         </div>
 
         <h3>Set up a passkey on the device that you are using</h3>
         <ol class="nhsuk-list nhsuk-list--number">
           <li>
-            visit <strong>Login and security settings</strong> in your NHS account
+            Go to <strong>Login and security settings</strong> in your NHS account
           </li>
           <li>
-            select <strong>Passkeys</strong> under Login and security settings
+            Select <strong>Passkeys</strong>
           </li>
           <li>
             select <strong>Set up a passkey</strong> and a pop up will display, asking you to create a passkey
@@ -209,22 +211,22 @@ Passkeys
             </div>
           </li>
           <li>
-            select <strong>'Continue'</strong> and your device will ask you to authenticate by using your fingerprint, face, passcode or pattern or any other method you use to unlock your device
+            select <strong>'Continue'</strong> and your device will ask you to authenticate by using your fingerprint, face, passcode, pattern or any other method you use to unlock your device
           </li>
           <li>
-            follow the onscreen instructions and complete passkey set up
+            Follow the instructions on your device to finish setting up your passkey.
           </li>
         </ol>
 
-        <h3>Set up a passkey on a different device than the one you are using</h3>
-        <p>For example, you may be on your laptop but you might want to save your passkey on your mobile phone or tablet.</p>
-        <p>For this, you should have your Bluetooth enabled on both of your devices.</p>
+        <h3>Set up a passkey on a device other than the one you are using</h3>
+        <p>For example, you might be on your laptop, but you might want to save your passkey on your mobile phone.</p>
+
         <ol class="nhsuk-list nhsuk-list--number">
           <li>
-            visit <strong>Login and security settings</strong> in your NHS account
+            Go to <strong>Login and security settings</strong> in your NHS account
           </li>
           <li>
-            select <strong>Passkeys</strong> under Login and security settings
+            Select <strong>Passkeys</strong>
           </li>
           <li>
             select <strong>Set up a passkey</strong> and a pop up will display, asking you to create a passkey
@@ -251,10 +253,10 @@ Passkeys
         <h3>Set up a passkey on a Windows desktop</h3>
         <ol class="nhsuk-list nhsuk-list--number">
           <li>
-            visit <strong>Login and security settings</strong> in your NHS account
+            Go to <strong>Login and security settings</strong> in your NHS account
           </li>
           <li>
-            select <strong>Passkeys</strong> under Login and security settings
+            Select <strong>Passkeys</strong>
           </li>
           <li>
             select <strong>Set up a passkey</strong> and a pop up will display, asking you to create a passkey
@@ -269,16 +271,16 @@ Passkeys
             follow the onscreen instructions to authenticate and complete passkey set up
           </li>
         </ol>
-      <!-- //....................................................................
       
+      <!-- 
         <h3>Setting up a passkey on a USB security key</h3>
         <p>A USB security key is a device that is used to store and manage passwords and passkeys.</p>
         <ol class="nhsuk-list nhsuk-list--number">
           <li>
-            visit <strong>Login and security settings</strong> in your NHS account
+            Go to <strong>Login and security settings</strong> in your NHS account
           </li>
           <li>
-            select <strong>Passkeys</strong> under Login and security settings
+            Select <strong>Passkeys</strong>
           </li>
           <li>
             select <strong>Set up a passkey</strong> and a pop up will display, asking you to create a passkey
@@ -296,9 +298,9 @@ Passkeys
             follow the onscreen instructions to authenticate and complete passkey set up
           </li>
         </ol>
-
+      -->     
         <div class="article-divider"></div>
--->
+
         <!-- 
           //...............................................................
           //..LL...........OOOOOO.........GGGGG...........I....NN......N...
@@ -318,7 +320,7 @@ Passkeys
           //...............OOOOOO........GGGG..............................
           //...............................................................
          -->
-        <h2 id="resetlink">How to log in with a passkey</h2>
+        <h2 id="login">How to log in with a passkey</h2>
 
         <h3 id="resetlink">Log in on a device that has your passkey</h3>
 
@@ -380,7 +382,7 @@ Passkeys
           //....SSSSSS................................CCCCC..................
           //.................................................................
          -->
-        <h2 id="resetlink">Synch and use your passkey across your devices</h2>
+        <h2 id="synch">Synch and use your passkey across your devices</h2>
         
         <p>If you set up your passkey on an iPhone or iPad, it will be synched and available across all your Apple devices that are logged into the same Apple ID.</p>
         <p>If you set it up on an Android phone, it will be synched and available on other Android devices that are logged into the same Google Account.</p>
@@ -408,7 +410,7 @@ Passkeys
           //...............OOOOOO.......SSSSSS.................
           //...................................................
          -->
-        <h2 id="resetlink">If you lose your device</h2>
+        <h2 id="lose">If you lose your device</h2>
 
         <p>Your passkey is protected by your device's screen lock. 
           To use a passkey, your device will ask for your fingerprint, face, passcode or pattern to unlock your device.
@@ -437,7 +439,7 @@ Passkeys
           //.....CCCCC...............................................GGGG....................
           //.................................................................................
          -->
-        <h2 id="resetlink">If you change to a new device</h2>
+        <h2 id="change">If you change to a new device</h2>
 
         <div class="nhsuk-inset-text">
           <span class="nhsuk-u-visually-hidden">Important: </span>
@@ -457,5 +459,8 @@ Passkeys
     </div> <!-- end nhsuk-grid-row -->
   </main> <!-- end nhsuk-main-wrapper -->
 </div> <!-- end nhsuk-width-container -->
+
+
+
 
 {% endblock %}
