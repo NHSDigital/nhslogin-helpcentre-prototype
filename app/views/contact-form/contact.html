@@ -269,9 +269,15 @@ Contact us
               </label>
             </div>
             <div class="nhsuk-radios__item">
-              <input class="nhsuk-radios__input" id="visitUnknown" name="visit" type="radio" value="unknown">
-              <label class="nhsuk-label nhsuk-radios__label" for="visitUnknown">
-                I am not trying to visit a website or app
+              <input class="nhsuk-radios__input" id="visitPatientAccess" name="visit" type="radio" value="unknown">
+              <label class="nhsuk-label nhsuk-radios__label" for="visitPatientAccess">
+                Patient Access
+              </label>
+            </div>
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="visitNHSPrescription" name="visit" type="radio" value="unknown">
+              <label class="nhsuk-label nhsuk-radios__label" for="visitNHSPrescription">
+                NHS Repeat Prescription app
               </label>
             </div>
             <div class="nhsuk-radios__item">
@@ -332,14 +338,12 @@ Contact us
                       <option value="national_booking_service">National Booking Service</option>
                       <option value="visit_covid_status">NHS COVID Pass</option>
                       <option value="digital_weight_management_programme_mlcsu">NHS Midlands and Lancashire CSU</option>
-                      <option value="nhs_repeat_prescription_app">NHS Repeat Prescription App</option>
                       <option value="nhs_wales_app">NHS Wales App</option>
                       <option value="nhs_w_ish">NHS W:ISH</option>
                       <option value="visit_nye_health">Nye Health</option>
                       <option value="oxcare">Oxcare</option>
                       <option value="visit_patally">Patally</option>
                       <option value="patchs">PATCHS</option>
-                      <option value="patient_access">Patient Access</option>
                       <option value="patient_hub">Patient Hub</option>
                       <option value="visit_patient_pack">Patient Pack</option>
                       <option value="patient_portal">Patient Portal</option>
@@ -426,11 +430,13 @@ Contact us
 
     <!-- Message -->
 
-    <div class="nhsuk-form-group">
-      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="example-longer">Describe the problem in more detail</label>
-      <span class="nhsuk-hint" id="example-longer-hint">Do not include personal or medical information like your NHS number or medical history.</span>
-      <textarea class="nhsuk-textarea" id="example-longer" name="example-longer" rows="6" aria-describedby="example-longer-hint"></textarea>
-      <span class="nhsuk-hint" id="example-longer-hint">You have 1500 characters remaining</span>
+    <div class="nhsuk-character-count" data-module="nhsuk-character-count" data-maxlength="1500">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label nhsuk-u-font-weight-bold" for="message-detail">Describe the problem in more detail</label>
+        <div class="nhsuk-hint" id="message-detail-hint">Do not include personal or medical information like your NHS number or medical history.</div>
+        <textarea class="nhsuk-textarea nhsuk-js-character-count" id="message-detail" name="message-detail" rows="6" aria-describedby="message-detail-hint"></textarea>
+        <div class="nhsuk-hint nhsuk-character-count__message" id="message-detail-count">You have 1500 characters remaining</div>
+      </div>
     </div>
 
     
