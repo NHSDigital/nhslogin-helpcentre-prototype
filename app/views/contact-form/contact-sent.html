@@ -14,54 +14,68 @@
 
 {% if data.hsResearch === 'true' %}
 
-<div class="nhsuk-width-container">
-  
-    <div class="nhsuk-grid-row">
+    {% if data.reference === 'true' %}
 
-      <div class="nhsuk-grid-column-two-thirds">
+      <div class="nhsuk-width-container">
         
-        <div class="nhsuk-card">
-          <div class="nhsuk-card__content">
-            <h1 class="nhsuk-card__heading">
-              Message sent
-            </h1>
-            <p class="nhsuk-card__description nhsuk-u-font-size-24">Your reference number <br> <strong class="nhsuk-u-font-size-32">HDJ2123F</strong></p>
-            <p class="nhsuk-hint">You may need this number if you need to contact us again about your problem</p>
-          </div>
-        </div>
+          <div class="nhsuk-grid-row">
+
+            <div class="nhsuk-grid-column-two-thirds">
+              
+              <div class="nhsuk-card">
+                <div class="nhsuk-card__content">
+                  <h1 class="nhsuk-card__heading">
+                    Message sent
+                  </h1>
+                  <p class="nhsuk-card__description nhsuk-u-font-size-24">Your reference number <br> <strong class="nhsuk-u-font-size-32">HDJ2123F</strong></p>
+                  <p class="nhsuk-hint">You may need this number if you need to contact us again about your problem</p>
+                </div>
+              </div>
+    {% else %}
+      <div class="nhsuk-width-container">
+          
+        <div class="nhsuk-grid-row">
+
+          <div class="nhsuk-grid-column-two-thirds">
+            
+          
+                <h1 class="nhsuk-card__heading">
+                  Message sent
+                </h1>
+                
+    {% endif %}
+
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <p class="nhsuk-body">If you need medical help, go to <a href="https://www.nhs.uk/contact-us/get-medical-help/">111.nhs.uk</a> or call 111 or your GP.</p>
+    </div>
+
+    <h2>What happens next</h2>
+    <p>The NHS login support team will look into your issue.</p>
+    <p>We have sent you a confirmation email and will get back to you within <strong>48 hours</strong>.</p>
 
 
-        <div class="nhsuk-inset-text">
-          <span class="nhsuk-u-visually-hidden">Information: </span>
-          <p class="nhsuk-body">If you need medical help, go to <a href="https://www.nhs.uk/contact-us/get-medical-help/">111.nhs.uk</a> or call 111 or your GP.</p>
-        </div>
-
-        <h2>What happens next</h2>
-        <p>The NHS login support team will look into your issue.</p>
-        <p>We have sent you a confirmation email and will get back to you within <strong>24 hours</strong>.</p>
-
-
-        <details class="nhsuk-details">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text">
-              Not received your confirmation email?
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <p>If you did not get your confirmation email, you can:</p>
-            <p class="nhsuk-body">
-              <ul>
-                <li>
-                  try checking your spam or junk folder
-                </li>
-                <li>
-                  use our <a href="">online chat</a>. You will need to quote your reference number.
-                </li>
-              </ul>
-            </p>
-          </div>
-        </details>
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Not received your confirmation email?
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        <p>If you did not get your confirmation email, you can:</p>
+        <p class="nhsuk-body">
+          <ul>
+            <li>
+              try checking your spam or junk folder
+            </li>
+            <!-- <li>
+              use our <a href="">online chat</a>. You will need to quote your reference number.
+            </li> -->
+          </ul>
+        </p>
       </div>
+    </details>
+  </div>
 
 {% else %}
 
