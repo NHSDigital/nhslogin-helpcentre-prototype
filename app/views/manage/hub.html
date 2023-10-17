@@ -77,6 +77,19 @@ How to manage NHS login
         }}
       </div>
 
+      <!-- Landline number panel -->
+      {% if data.landline === 'true' %}
+      <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
+        {{ card({
+            "href": "/manage/landline/article",
+            "heading": "Landline number",
+            "headingLevel": 2,
+            "headingClasses": "nhsuk-heading-m",
+            "description": "How to add or change your landline number and what to do if you have problems."
+          })
+        }}
+      </div>
+      {% endif %}
       <!-- Remembered devices panel -->
 
       <div class="nhsuk-grid-column-one-half nhsuk-panel-group__item">
