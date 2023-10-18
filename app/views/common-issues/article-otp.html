@@ -1,0 +1,58 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'helpcentre-detail.html' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+How to set up NHS login
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Breadcrumb Navigation -->
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #F0F4F5">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item">
+      <a class="nhsuk-breadcrumb__link" href="/">Help Centre Home</a>
+    </li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="/">Back to Help Centre Home</a>
+  </p>
+</nav> <!-- end nhsuk-breadcrumb -->
+
+<!-- Main Body Content Start -->
+
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+    <div class="nhsuk-grid-row">
+
+          <h1>Security codes (One Time Passcodes)</h1>
+
+          <p class="nhsuk-body">When you first register for an account, a 6-digit security code will be sent to your email. You will be asked to enter this code to verify your email address and continue.</p>
+
+          <p>Then, you will be asked to give your mobile phone number. Another 6-digit security code will be sent by text message to your mobile phone.</p>
+
+          <h2>I am not receiving my security code</h2>
+            
+          <p>If you do not receive the security code email or text message, enter your email address and password again. We'll send you a new security code. You can only get a new code 5 times. After that, you'll be locked out for 15 minutes. If this happens because you are not getting a code, <a href="/contact-form/contact">contact us</a>.</p>
+            
+          <h2>Logging in with a security code</h2>
+            
+          <p>security code will be sent to your mobile phone every time you log in, unless you select 'Remember this device and stop sending security codes'.</p> 
+
+          <h2>Do I have to use a mobile</h2>
+            
+          <p>Right now, you cannot set up NHS login without a mobile phone. We are working on this and hope to offer a solution to users who do not own a mobile phone in the future.</p>
+
+
+      </div> <!-- end nhsuk-grid-column-two-thirds -->
+    </div> <!-- end nhsuk-grid-row -->
+  </main> <!-- end main-wrapper -->
+</div> <!-- end nhsuk-width-container -->
+
+{% endblock %}
