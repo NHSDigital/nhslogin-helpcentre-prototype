@@ -1,0 +1,47 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'helpcentre-detail.html' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+There is an issue connecting to my GP
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+<!-- Breadcrumb Navigation -->
+
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb" style="background-color: #F0F4F5">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item">
+      <a class="nhsuk-breadcrumb__link" href="/">Help Centre Home</a>
+    </li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="/">Back to Help Centre Home</a>
+  </p>
+</nav> <!-- end nhsuk-breadcrumb -->
+
+<!-- Main Body Content Start -->
+
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+    <div class="nhsuk-grid-row">
+
+          <h1>There is an issue connecting to my GP</h1>
+
+          <p class="nhsuk-body">X</p>
+
+          <h2>Secondary title</h2>
+            
+          <p>X <a href="/contact-form/contact">contact us</a>.</p>
+
+      </div> <!-- end nhsuk-grid-column-two-thirds -->
+    </div> <!-- end nhsuk-grid-row -->
+  </main> <!-- end main-wrapper -->
+</div> <!-- end nhsuk-width-container -->
+
+{% endblock %}
