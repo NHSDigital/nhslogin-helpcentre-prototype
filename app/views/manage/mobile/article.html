@@ -25,7 +25,153 @@
 </nav>
 
 <!-- Main Body Content Start -->
+{% if data.newArticle === 'true' %}
+<!-- Main Body Content Start -->
 
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-third sticky-nav">
+        <div class="article-section-nav-wrapper">
+          <div class="article-section-nav">
+            <h2 class="article-section-nav__title">Mobile phone number<span class="nhsuk-u-visually-hidden">navigation</span></h2>
+            <nav> 
+              <ol class="article-section-nav__list">
+
+              <!-- When landline phase 1/ add a mobile journey go live 
+                <li>
+                  <a class="active" href="#addlandline">How to add a mobile phone number</a>
+                </li>
+              -->
+                <li>
+                  <a class="" href="#changemobile">How to change your mobile phone number</a>
+                </li>
+
+                <li>
+                  <a class="" href="#lostaccess">If you lose access to your mobile phone number</a>
+                </li>
+
+                <li>
+                  <a class="" href="#cancellink">The link to cancel the update to your mobile phone number does not work</a>
+                </li>
+
+              </ol> <!-- end nhsuk-list -->
+            </nav> <!-- end app-side-nav -->
+          </div>
+        </div>
+      </div> <!-- end nhsuk-grid-column-one-third -->
+
+      <!-- Two-thirds-article-text -->
+
+     
+
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <!-- Add mobile When landline phase 1/ add a mobile journey go live 
+
+        <h2 id="addlandline">How to add a mobile phone number</h2>
+
+        <p>You can use your mobile phone number to receive security codes when logging in.</p>
+        <p>To add a mobile phone number:</p>
+        <ol class="nhsuk-list nhsuk-list--number">
+          <li>
+            Log in to <a href="https://settings.login.nhs.uk/">your NHS account</a>.
+          </li>
+          <li>
+            Select <strong>Login and security settings</strong>.
+          </li>
+          <li>
+            Select <strong>Two-step verification</strong>.
+          </li>
+          <li>
+            Select <strong>Add a mobile phone number</strong>.
+          </li>
+          <li>
+            Follow the on-screen instructions to confirm your mobile phone number.
+          </li>
+        </ol>
+
+        <div class="article-divider"></div>
+    -->
+      <!-- Change mobile -->
+
+        <h2 id="changemobile">How to change your mobile phone number</h2>
+
+        <p>To change the landline number you use to receive security codes:</p>
+        <ol class="nhsuk-list nhsuk-list--number">
+          <li>
+            Log in to <a href="https://settings.login.nhs.uk/">your NHS account</a>.
+          </li>
+          <li>
+            Select <strong>Login and security settings</strong>.
+          </li>
+          <li>
+            Select <strong>Two-step verification</strong>.
+          </li>
+          <li>
+            Select <strong>Change</strong> for mobile phone number.
+          </li>
+          <li>
+            Follow the on-screen instructions to confirm your new mobile phone number.
+          </li>
+        </ol>
+
+        <div class="article-divider"></div>
+
+        <!-- You have lost access to your mobile phone number -->
+
+        <h2 id="lostaccess">If you lose access to your mobile phone number</h2>
+
+        <p>If you have lost access to your mobile phone number and cannot log in another way, you can recover access to your account.</p>
+
+        <p>When you are asked to enter your security code to log in:</p>
+        <ol class="nhsuk-list nhsuk-list--number">
+          <li>
+            Select <strong>I cannot log in using my mobile phone</strong>.
+          </li>
+          <li>
+            Select <strong>Change the mobile phone number I use to log in</strong>.
+          </li>
+          <li>
+            Enter the mobile phone number you previously used to log in.
+            <div class="nhsuk-details__text nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-6" style="width: 80%;">
+              <span class="nhsuk-u-visually-hidden">Information:</span>
+              <p>If you do not remember it, you can select <strong>email you a security code</strong> and enter the security code that we send to your email address.</p>
+            </div>
+          </li>
+          <li>
+            Follow the on-screen instructions to change your mobile phone number.
+          </li>
+        </ol>
+        <p><a href="/contact-form/contact?error=CID3001">Contact us</a> if you still need help accessing your account.</p>
+
+        <div class="article-divider"></div>
+
+        <!-- The link to cancel changing your phone number does not work -->
+
+        <h2 id="cancellink">The link to cancel the update to your mobile phone number does not work</h2>
+
+        <p>To cancel the update to your mobile phone number, you must select the confirmation link we send you. If the link does not work, there are a number of possible reasons why.</p>
+
+        <h3>Expired link – Reference CID3009</h3>
+
+        <p>The link expires 24 hours after we email it to you.</p>
+        <p>We may have already updated the mobile phone number you use to log in. In this case you would have received a confirmation email.</p>
+        <p>You can check or change your login and security settings in <a href="https://settings.login.nhs.uk/">your NHS account</a>.</p>
+
+        <p><a href="/contact-form/contact?error=CID3002">Contact us</a> if you did not mean to change your mobile phone number, or you do not have access to it.</p>
+
+        <h3>Used link – Reference CID3010</h3>
+
+        <p>The link will not work if you have already used it and cancelled the update.</p>
+        <p>You can check or change your login and security settings in <a href="https://settings.login.nhs.uk/">your NHS account</a>.</p>
+        <p><a href="/contact-form/contact?error=CID3003">Contact us</a>  if you did not mean to change your mobile phone number, or you do not have access to it.</p>
+
+      </div> <!-- end grid-column-two-thirds -->
+    </div> <!-- end nhsuk-grid-row -->
+  </main> <!-- end nhsuk-main-wrapper -->
+</div> <!-- end nhsuk-width-container -->
+{% else %}
 <div class="nhsuk-width-container">
   <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
     <div class="nhsuk-grid-row">
@@ -121,5 +267,5 @@
     </div> <!-- end nhsuk-grid-row -->
   </main> <!-- end nhsuk-main-wrapper -->
 </div> <!-- end nhsuk-width-container -->
-
+{% endif %}
 {% endblock %}
