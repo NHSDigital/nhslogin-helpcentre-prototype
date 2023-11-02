@@ -13,11 +13,34 @@ Contact us
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
 
-    <h2 class="nhsuk-app-contact-panel__heading">Contact us</h2>
+    <!-- //......................................
+    //.................llll..........ddddd..
+    //.................llll..........ddddd..
+    //.................llll..........ddddd..
+    //.................llll..........ddddd..
+    //.....oooooo......llll.....dddd.ddddd..
+    //....ooooooooo....llll....ddddddddddd..
+    //...ooooooooooo...llll...dddddddddddd..
+    //..ooooooooooooo..llll..ddddddddddddd..
+    //..ooooo..oooooo..llll..ddddddddddddd..
+    //.ooooo....ooooo..llll..ddddd...ddddd..
+    //.ooooo.....oooo..llll.ldddd....ddddd..
+    //.ooooo.....oooo..llll.ldddd....ddddd..
+    //.ooooo.....oooo..llll.ldddd....ddddd..
+    //.ooooo....ooooo..llll..ddddd...ddddd..
+    //..ooooo..oooooo..llll..dddddd.dddddd..
+    //..ooooooooooooo..llll..ddddddddddddd..
+    //...ooooooooooo...llll...dddddddddddd..
+    //....ooooooooo....llll...dddddddddddd..
+    //.....oooooo...............ddddd.......
+    //...................................... -->
+
+
+{% if data.researchRound === 'old' %}
+
+    <h1 class="nhsuk-app-contact-panel__heading">Contact us</h1>
 
     <p>Use this form to get help or advice for a problem or issue with NHS login. The NHS login team cannot help with medical problems.</p>
-
-    <!-- Details component - Medical help -->
 
     <details class="nhsuk-details">
       <summary class="nhsuk-details__summary">
@@ -46,52 +69,31 @@ Contact us
     <!-- Name input field -->
 
     <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="one-half">
-        Name
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="one-half" >
+       Full name
       </label>
-      <input class="nhsuk-input nhsuk-u-width-one-half" id="one-half" name="one-half" type="text">
+      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="one-half" name="one-half" type="text">
     </div>
 
     <!-- Email address -->
 
     <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="two-thirds">
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="two-thirds">
         Email address
       </label>
       <span class="nhsuk-hint" id="input-with-hint-text-hint">
-        This should be the email address you use for NHS login.
+        This should be the email address you use for NHS login
       </span>
       <input class="nhsuk-input nhsuk-u-width-two-thirds" id="two-thirds" name="two-thirds" type="text">
     </div>
 
-    <!-- Problem or issue dropdown
+     <!-- Website or app dropdown  -->
 
     <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="select-1">
-        Problem or issue
-      </label>
-      <select class="nhsuk-select" id="select-1" name="select-1">
-        <option style="display:none;"></option>
-        <option value="1">CID1005: The NHS record we found does not match your details</option>
-        <option value="2">CID3001: You have lost access to your mobile phone number</option>
-        <option value="3">CID3002: Expired link - The link to cancel changing your phone number does not work</option>
-        <option value="4">CID3003: Used link - The link to cancel changing your phone number does not work</option>
-        <option value="5">CID7004: What to do if your registration details from your GP surgery’s online services have already been used</option>
-        <option value="6">CID2011: There may be a problem with your NHS number</option>
-        <option value="7">CID2012: Your NHS login may have been disabled</option>
-        <option value="8">CID7023: You have already set up an NHS login</option>
-        <option value="9">CID7029: We cannot connect your NHS login to your GP surgery</option>
-        <option value="10">CID7100: Unable to connect to your GP surgery’s system</option>
-      </select>
-    </div> -->
-
-    <!-- Website or app dropdown -->
-
-    <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="website-or-app">
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="website-or-app">
         Please select the website or app you are trying to visit
       </label>
-      <select class="nhsuk-select" id="website-or-app" name="website-or-app">
+      <select class="nhsuk-select nhsuk-u-width-two-thirds" id="website-or-app" name="website-or-app">
         <option value="visit_i_am_not_trying_to_visit_a_website_or_app">I am not trying to visit a website or app</option>
         <option value="accurx">Accurx</option>
         <option value="accurx_patient_portal">Accurx Patient Portal</option>
@@ -180,18 +182,280 @@ Contact us
         <option value="zesty_patient_portal">Zesty Patient Portal</option>
         <option value="visit_the_website_or_app_i_am_trying_to_visit_is_not_on_the_list">The website or app I am trying to visit is not on this list</option>
       </select>
-    </div>
+    </div> 
 
-    <!-- Message -->
+     <!-- Message -->
 
-    <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="example-longer">Message</label>
-      <span class="nhsuk-hint" id="example-longer-hint">Enter as much detail as you can, including any information we may have asked you to provide.</span>
+     <div class="nhsuk-form-group">
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="example-longer">Describe the problem</label>
+      <span class="nhsuk-hint" id="example-longer-hint">Do not include personal or medical information like your NHS number or medical history.</span>
       <textarea class="nhsuk-textarea" id="example-longer" name="example-longer" rows="6" aria-describedby="example-longer-hint"></textarea>
     </div>
 
+    <!-- button -->
+
     <a class="nhsuk-button" href="contact-sent">Send message</a>
 
-  </div>
-</div>
+
+
+
+{% else %}
+
+<!-- //................................................
+//.nnnn..nnnn........eeeee....eeww...wwwww..wwww..
+//.nnnnnnnnnnnn....eeeeeeeee..eewww..wwwww..wwww..
+//.nnnnnnnnnnnn...eeeeeeeeeee.eewww..wwwww..wwww..
+//.nnnnnnnnnnnnn.neeeeeeeeeee.eewww.wwwwww..wwww..
+//.nnnnnn.nnnnnn.neeeee.eeeeeeeewww.wwwwww.wwwww..
+//.nnnnn...nnnnn.neeee...eeeee.ewww.wwwwwwwwwwww..
+//.nnnnn...nnnnn.neeeeeeeeeeee.ewwwwwwwwwwwwwwww..
+//.nnnnn...nnnnn.neeeeeeeeeeee.ewwwwwwwwwwwwwww...
+//.nnnnn...nnnnn.neeeeeeeeeeee.ewwwwwwwwwwwwwww...
+//.nnnnn...nnnnn.neeee...eeeee..wwwwwww.wwwwwww...
+//.nnnnn...nnnnn.neeeee.eeeeee..wwwwwww.wwwwww....
+//.nnnnn...nnnnn.neeeeeeeeeeee..wwwwww..wwwwww....
+//.nnnnn...nnnnn..eeeeeeeeeee....wwwww..wwwwww....
+//.nnnnn...nnnnn...eeeeeeeee.....wwwww..wwwwww....
+//...................eeeee........................
+//................................................ -->
+
+    <h1 class="nhsuk-app-contact-panel__heading">Contact NHS login support</h1>
+
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <h2 class="nhsuk-heading-m">  We cannot help with medical problems</h2>
+      <p>This form is only for help using NHS login. </p>
+      <!-- Medical help -->
+      <p class="nhsuk-body">If you need medical help, go to <a href="https://www.nhs.uk/contact-us/get-medical-help/">111.nhs.uk</a> or call 111 or your GP.</p>
+      <p class="nhsuk-body">Call 999 if it's a life-threatening emergency.</p>
+    </div> 
+
+    <!-- Name input field -->
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="one-half" >
+       Full name
+      </label>
+      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="one-half" name="one-half" type="text">
+    </div>
+
+    <!-- Email address -->
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="two-thirds">
+        Email address
+      </label>
+      <span class="nhsuk-hint" id="input-with-hint-text-hint">
+        This should be the email address you use for NHS login
+      </span>
+      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="two-thirds" name="two-thirds" type="text">
+    </div>
+
+    <!-- Website or app dropdown radio version-->
+
+    <form  method="post">
+      <fieldset class="nhsuk-fieldset">
+        <legend class="nhsuk-fieldset__legend">
+          <label class="nhsuk-label nhsuk-u-font-weight-bold" for="website-or-app">
+            Select the website or app you are trying to visit
+          </label>
+        </legend>
+        <div class="nhsuk-form-group">
+          <fieldset class="nhsuk-fieldset">
+          <div class="nhsuk-radios nhsuk-radios--conditional">
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="visitNHS" name="visit" type="radio" value="app">
+              <label class="nhsuk-label nhsuk-radios__label" for="visitNHS">
+                NHS App
+              </label>
+            </div>
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="visitPatientAccess" name="visit" type="radio" value="unknown">
+              <label class="nhsuk-label nhsuk-radios__label" for="visitPatientAccess">
+                Patient Access
+              </label>
+            </div>
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="visitNHSPrescription" name="visit" type="radio" value="unknown">
+              <label class="nhsuk-label nhsuk-radios__label" for="visitNHSPrescription">
+                NHS Repeat Prescription App
+              </label>
+            </div>
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="visitOther" name="visit" type="radio" value="other" aria-controls="conditional-nhs-number-1" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-radios__label" for="visitOther">
+                Other
+              </label>
+            </div>
+                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-nhs-number-1">
+                  <div class="nhsuk-form-group">
+                    <select class="nhsuk-select nhsuk-u-width-two-thirds" id="website-or-app" name="website-or-app">
+                      <option value="select_an_option">Select an option</option>
+                      <option value="accurx">Accurx</option>
+                      <option value="accurx_patient_portal">Accurx Patient Portal</option>
+                      <option value="visit_airmid">Airmid</option>
+                      <option value="alder_hey__nywhere">Alder Hey @nywhere</option>
+                      <option value="visit_amity">Amity</option>
+                      <option value="anima_for_patients">Anima for Patients</option>
+                      <option value="visit_ask_nhs">Ask First</option>
+                      <option value="visit_avicenna_manage_my_meds">Avicenna - Manage My Meds</option>
+                      <option value="awp_adhd_clinic_app">AWP ADHD Clinic App</option>
+                      <option value="visit_baby_buddy">Baby Buddy</option>
+                      <option value="badger_notes">Badger Notes</option>
+                      <option value="be_part_of_research">Be Part of Research</option>
+                      <option value="boots_uk_ltd">Boots UK Ltd</option>
+                      <option value="visit_chain_sms">Chain SMS</option>
+                      <option value="chemist4u">Chemist4U</option>
+                      <option value="connect_health">Connect Health</option>
+                      <option value="visit_covid-19_national_testing_service">COVID-19 National Testing Service</option>
+                      <option value="day_lewis_patient_app">Day Lewis Patient App</option>
+                      <option value="visit_digital_redbook">Digital Redbook</option>
+                      <option value="visit_doctrin_your_digital_healthcare_service">Doctrin - Your digital healthcare service</option>
+                      <option value="drdoctor">DrDoctor</option>
+                      <option value="eclipse_app_">Eclipse App</option>
+                      <option value="ekhuft_patient_id ">EKHUFT Patient ID</option>
+                      <option value="visit_engage_consult">Engage Consult</option>
+                      <option value="visit_eredbook">eRedbook</option>
+                      <option value="visit_ers">eRS</option>
+                      <option value="visit_evergreen_life_phr">Evergreen Life PHR</option>
+                      <option value="visit_gm_patient_portal">GM Patient Portal</option>
+                      <option value="healthinote">Healthinote</option>
+                      <option value="visit_helm">HELM</option>
+                      <option value="hero_health">Hero Health</option>
+                      <option value="visit_co-op_health_app">Hey Pharmacist</option>
+                      <option value="visit_inhealthcare_digital_health_platform">Inhealthcare Digital Health Platform</option>
+                      <option value="visit_integrated_tracing_service">Integrated Tracing Service</option>
+                      <option value="kent__medway_patient_portal">Kent &amp; Medway Patient Portal</option>
+                      <option value="klinik_access">Klinik Access</option>
+                      <option value="lloyds_pharmacy_direct">Lloyds Pharmacy Direct</option>
+                      <option value="visit_low_carb_program">Low Carb Program</option>
+                      <option value="medadvisor_uk_app">MedAdvisor UK App</option>
+                      <option value="medloop">Medloop</option>
+                      <option value="my_health_and_wellbeing">My Health and Wellbeing</option>
+                      <option value="visit_mycarecentric_phr">myCareCentric PHR</option>
+                      <option value="my_cohens">myCohens</option>
+                      <option value="visit_mygp">myGP</option>
+                      <option value="visit_myway_diabetes">MyWay Diabetes</option>
+                      <option value="national_booking_service">National Booking Service</option>
+                      <option value="visit_covid_status">NHS COVID Pass</option>
+                      <option value="digital_weight_management_programme_mlcsu">NHS Midlands and Lancashire CSU</option>
+                      <option value="nhs_wales_app">NHS Wales App</option>
+                      <option value="nhs_w_ish">NHS W:ISH</option>
+                      <option value="visit_nye_health">Nye Health</option>
+                      <option value="oxcare">Oxcare</option>
+                      <option value="visit_patally">Patally</option>
+                      <option value="patchs">PATCHS</option>
+                      <option value="patient_hub">Patient Hub</option>
+                      <option value="visit_patient_pack">Patient Pack</option>
+                      <option value="patient_portal">Patient Portal</option>
+                      <option value="patient_triage">Patient Triage</option>
+                      <option value="visit_patients_know_best">Patients Know Best</option>
+                      <option value="pharmacy_website_and_bewell_app_service">Pharmacy Website and BeWell App Service</option>
+                      <option value="pharmacyx">PharmacyX</option>
+                      <option value="phlo_digital_pharmacy">Phlo Digital Pharmacy</option>
+                      <option value="pip__southern_health_parent_information_portal">Pip (Southern Health Parent Information Portal)</option>
+                      <option value="portasana">Portasana</option>
+                      <option value="visit_push_doctor_website_and_app">Push Doctor Website and App</option>
+                      <option value="visit_recap_health">Recap Health</option>
+                      <option value="register_with_a_gp_surgery">Register with a GP Surgery</option>
+                      <option value="remora2">Remora2</option>
+                      <option value="rosi_and_me_care_planning_service">ROSI and Me Care Planning Service</option>
+                      <option value="sapphire_clinics">Sapphire Clinics</option>
+                      <option value="stsft_meditech_patient_portal">STSFT MEDITECH Patient Portal</option>
+                      <option value="tameside_and_glossop_integrated_care_nhs_foundation_trust">Tameside and Glossop Integrated Care NHS Foundation Trust</option>
+                      <option value="the_pharmacy_app">The Pharmacy App</option>
+                      <option value="visit_uhs_my_medical_record">UHS My medical record</option>
+                      <option value="viso">Viso</option>
+                      <option value="v-consult">v-Consult</option>
+                      <option value="visit_view_your_covid-19_vaccination_record">View your Covid-19 vaccination record</option>
+                      <option value="virtually_healthcare">Virtually Healthcare</option>
+                      <option value="visba_care">Visiba Care</option>
+                      <option value="wales_vaccine_booking_service">Wales Vaccine Booking Service</option>
+                      <option value="visit_web-gp">Web-GP</option>
+                      <option value="zesty_patient_portal">Zesty Patient Portal</option>
+                      <option value="visit_the_website_or_app_i_am_trying_to_visit_is_not_on_the_list">The website or app I am trying to visit is not on this list</option>
+                    </select>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+    <!-- Radio selection for issue -->
+
+    <fieldset class="nhsuk-fieldset">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs nhsuk-u-font-weight-bold">
+          Select the problem you are having
+      </legend>
+  
+    
+      <div class="nhsuk-form-group">
+    
+        <div class="nhsuk-radios">
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="dupes" name="example-hints" type="radio" value="no">
+            <label class="nhsuk-label nhsuk-radios__label" for="dupes">
+              There is already an account linked to my details
+            </label>
+          </div>
+    
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="GP" name="example-hints" type="radio" value="yes">
+            <label class="nhsuk-label nhsuk-radios__label" for="GP">
+              There is an issue connecting to my GP
+            </label>
+          </div>
+    
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="code" name="example-hints" type="radio" value="no">
+            <label class="nhsuk-label nhsuk-radios__label" for="code">
+              I  need to change the email address linked to my NHS login account
+            </label>
+          </div>
+    
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="not sure">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+              Something else
+            </label>
+          </div>
+    
+        </div>
+      </div>
+    
+    </fieldset>
+
+    
+
+    <!-- Message -->
+
+    <div class="nhsuk-character-count" data-module="nhsuk-character-count" data-maxlength="1500">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label nhsuk-u-font-weight-bold" for="message-detail">Describe the problem in more detail</label>
+        <div class="nhsuk-hint" id="message-detail-hint">Do not include personal or medical information like your NHS number or medical history.</div>
+        <textarea class="nhsuk-textarea nhsuk-js-character-count" id="message-detail" name="message-detail" rows="6" aria-describedby="message-detail-hint"></textarea>
+        <div class="nhsuk-hint nhsuk-character-count__message" id="message-detail-count">You have 1500 characters remaining</div>
+      </div>
+    </div>
+
+    
+    <!-- PRIVACY POLICY AGREEMENT -->
+
+        <div class="nhsuk-u-margin-bottom-6 nhsuk-form-group">
+          <label class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Privacy policy agreement</label>
+          <p class="nhsuk-body">We will collect and save your information securely.</p>
+          <p class="nhsuk-body">
+            By sending this message you confirm that you agree to our <a href="../legal/privacy">privacy notice</a> and
+          <a href="../legal/terms">terms and conditions</a>.
+          </p>
+
+        <a class="nhsuk-button" href="contact-sent">Send message</a>
+
+      </div>
+    </div>
+   
+{% endif %}
 {% endblock %}
