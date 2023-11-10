@@ -6,7 +6,7 @@
     <div class="nhsuk-grid-row">
       <div class="nhsuk-hero__wrapper">
         <!-- Hero Title-->
-        {% if data.hsResearch === 'true' %}
+        {% if data.homepageUpdate === 'true' %}
 
         <h1 class="nhsuk-u-margin-bottom-3">How can we help you?</h1>
 
@@ -19,11 +19,7 @@
         <div class="nhsuk-hub__search">
           
           <div class="nhsuk-header__search-wrap nhsuk-hub__search-wrap" id="wrap-search">
-            {% if data.hsResearch === 'true' %}
             <form class="nhsuk-header__search-form nhsuk-hub__search-form" id="search" action="search-results-hs" method="get">
-            {% else %}
-            <form class="nhsuk-header__search-form nhsuk-hub__search-form" id="search" action="search-results" method="get">
-            {% endif %}
               <label class="nhsuk-u-visually-hidden" for="search-field">
                 Enter search term or reference code
               </label>
@@ -49,7 +45,7 @@
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
 
-    {% if data.hsResearch === 'true' %}
+    {% if data.homepageUpdate === 'true' %}
 
         <!-- FAQs -->
 
@@ -95,7 +91,7 @@
         {% endif %}
 
 
-      {% if data.hsResearch === 'true' %}
+      {% if data.homepageUpdate === 'true' %}
 
       <ul class="nhsuk-grid-row nhsuk-card-group">
 
