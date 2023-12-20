@@ -134,21 +134,81 @@ Error messages and support
       </ul>
 
     <p>You can try signing in with the email linked to this account.</p>
-    <p>If you cannot remember the email you used, check all your email accounts for an email from: noreply@login.nhs.uk.</p>      
-  
+    <p>If you cannot remember the email you used, check all your email accounts for an email from: noreply@login.nhs.uk.</p>
+
+    {% if data.revealDetails === 'true' %}
+    
+    <details class="nhsuk-details nhsuk-expander">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Forgotten your password?
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        <p>If you have forgotten your password, you can reset it:</p>
+          <ol>
+            <li>Visit NHS login settings and log in using the email address you used to create the account.</li>
+            <li>Select <strong>Reset your password</strong>.</li>
+            <li>We will send you an email with a link to reset your password.</li>
+            <li>Select the link in the email to enter and confirm your new password.</li>
+          </ol>
+          <p>For security reasons we are unable to disclose any information about an account.</p>
+      </div>
+    </details>
+    
+    <details class="nhsuk-details nhsuk-expander">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Change the email address you use to sign into NHS login
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+
+        <p>If you want to change the email address you use to sign into NHS login:</p>
+        <ol>
+          <li>Visit NHS login settings and log in using the email address and password you used to create the account.</li>
+          <li>Select <strong>Login and security settings</strong>.</li>
+          <li>Select <strong>Change email address</strong>.</li>
+          <li>  Enter your new email address.</li>
+        </ol>
+      </div>
+    </details>
+    
+    <details class="nhsuk-details nhsuk-expander">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Delete your existing account
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+
+        <p>If you want to delete your existing account:</p>
+        <ol>
+          <li>Visit NHS login settings and log in using the email address and password you used to create the account.</li>
+          <li>Select <strong>Login and security settings</strong>.</li>
+          <li>Select <strong>Delete my NHS account</strong>.</li>
+        </ol>
+    
+        <p>This will only delete your online NHS account and will not affect your medical records.</p>
+      </div>
+    </details>
+
+
+    {% else %}
+
     <p>If you have forgotten your password, you can reset it:</p>
-    <ol>
-      <li>Visit NHS login settings and log in using the email address you used to create the account.</li>
-      <li>Select <strong>Reset your password</strong>.</li>
-      <li>We will send you an email with a link to reset your password.</li>
-      <li>Select the link in the email to enter and confirm your new password.</li>
-    </ol>
-    <p>For security reasons we are unable to disclose any information about an account.</p>
+      <ol>
+        <li>Visit NHS login settings and log in using the email address you used to create the account.</li>
+        <li>Select <strong>Reset your password</strong>.</li>
+        <li>We will send you an email with a link to reset your password.</li>
+        <li>Select the link in the email to enter and confirm your new password.</li>
+      </ol>
+      <p>For security reasons we are unable to disclose any information about an account.</p>
 
     <p>If you want to change the email address you use to sign into NHS login:</p>
     <ol>
       <li>Visit NHS login settings and log in using the email address and password you used to create the account.</li>
-      <li>Select <strong>Login details</strong>.</li>
+      <li>Select <strong>Login and security settings</strong>.</li>
       <li>Select <strong>Change email address</strong>.</li>
       <li>  Enter your new email address.</li>
     </ol>
@@ -156,11 +216,13 @@ Error messages and support
     <p>If you want to delete your existing account:</p>
     <ol>
       <li>Visit NHS login settings and log in using the email address and password you used to create the account.</li>
-      <li>Select <strong>Login details</strong>.</li>
+      <li>Select <strong>Login and security settings</strong>.</li>
       <li>Select <strong>Delete my NHS account</strong>.</li>
     </ol>
 
     <p>This will only delete your online NHS account and will not affect your medical records.</p>
+
+    {% endif %}
 
     <p><a href="../contact-form/contact">Contact us</a> if you need further help.</p>
 
@@ -176,27 +238,73 @@ Error messages and support
     <h3 id="GP-connect">CID7023: Unable to connect to your GP surgery’s system</h3>
 
     <p>
-      If reference CID7023 is shown, this means the website or app you are trying to visit needs to connect to your GP surgery’s system and we have not been able to make that connection. If this happens to you, there are a number of possible reasons why.
+      If you see reference CID7023, the website or app you are trying to visit cannot connect to your GP surgery’s system. If this happens to you, there are some possible reasons why.
     </p>
+
+      {% if data.revealDetails === 'true' %}
+    
+    <details class="nhsuk-details nhsuk-expander">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          You have already set up an NHS login
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+    
+        <p>
+          We have already used your details to connect you to the website or app you were trying to visit. This can happen if you already have an NHS login with a different email address. 
+        </p>
+        <p>
+          We can only connect one NHS login to your GP surgery’s system.
+        </p>
+    
+        <p>
+          You can change the email address on your NHS login in your <strong>Login and security settings</strong>.
+        </p>
+      </div>
+    </details>
+    
+    <details class="nhsuk-details nhsuk-expander">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          We have the wrong details for you
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+
+        <p>The details we use to make the connection are wrong.</p>
+    
+        <p>This can happen if:
+          <ul>
+            <li>you have changed GP surgery</li>
+            <li>your GP surgery has changed systems</li>
+            <li>you no longer have permission to use your GP surgery’s online services</li>
+          </ul>
+        </p>
+    
+        <p>If your GP surgery is in England, you can ask your GP for new registration details for their online services.</p>
+      </div>
+    </details>
+
+
+    {% else %}
 
     <h4>You have already set up an NHS login</h4>
 
     <p>
-      The details we use to make the connection have already been used to connect you to the website or app you were trying to visit.
+      We have already used your details to connect you to the website or app you were trying to visit. This can happen if you already have an NHS login with a different email address. 
+    </p>
+    <p>
+      We can only connect one NHS login to your GP surgery’s system.
     </p>
 
     <p>
-      This can happen if you already have an NHS login with a different email address. We may have connected that NHS login to your GP surgery’s system. We can only connect one NHS login to your GP surgery’s system.
+      You can change the email address on your NHS login in your <strong>Login and security settings</strong>.
     </p>
 
-    <p>
-      If you want to change the email address on your NHS login you can do so in
-      <a href="https://settings.login.nhs.uk/" class="nhsuk-link">your NHS account</a>.
-    </p>
+    <h4>We have the wrong details for you</h4>
 
-    <h4>The details we use are invalid</h4>
-
-    <p>The details we use to make the connection are invalid.</p>
+    <p>The details we use to make the connection are wrong.</p>
 
     <p>This can happen if:
       <ul>
@@ -208,6 +316,8 @@ Error messages and support
 
     <p>If your GP surgery is in England, you can ask your GP for new registration details for their online services.</p>
 
+    {% endif %}
+
     <p>
       <a href="../contact-form/contact">Contact us</a> if you need help or if you still have problems.
 
@@ -216,13 +326,11 @@ Error messages and support
     <h3 id="error7029">CID7029: We cannot connect your NHS login to your GP surgery</h3>
 
     <p>
-      If you see reference CID7029, this means we cannot connect your NHS login to your GP surgery. There could be a
-      problem with your details, or with your GP surgery's system.
+      If you see reference CID7029, this means we cannot connect your NHS login to your GP surgery. There could be a problem with your details, or with your GP surgery's system.
     </p>
 
     <p>
-      <a href="../contact-form/contact">Contact us</a> so we can find out what is causing the problem. You will need to tell us
-      the email address you use for your NHS login.
+      <a href="../contact-form/contact">Contact us</a> so we can find out what is causing the problem. You will need to tell us the email address you use for your NHS login.
     </p>
 
     <div class="article-divider"></div>
@@ -234,6 +342,42 @@ Error messages and support
     <h3>I did not get the confirmation email</h3>
 
     <p>If you did not receive the confirmation email we sent you, check your spam or junk folders. Also check that you entered the correct email address.</p>
+
+    {% if data.revealDetails === 'true' %}
+
+    <details class="nhsuk-details nhsuk-expander">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          If you are using Gmail (Google mail)
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+
+        <p>Make sure emails get to your inbox, by adding the email address noreply@login.nhs.uk to your contact list.</p>
+    
+        <p>You can also read this page on <a href="https://support.google.com/mail/answer/7015314?sjid=17584974477078910830-EU">problems sending and receiving emails in Gmail</a>.</p>
+    
+        <p>This will only delete your online NHS account and will not affect your medical records.</p>
+      </div>
+    </details>
+
+    <details class="nhsuk-details nhsuk-expander">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          If you are using Outlook, Hotmail or Live
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+
+        <p>Add the email address noreply@login.nhs.uk to your 'Safe Senders' list.</p>
+  
+        <p>Changes to 'Safe Senders' can take 24 hours to update. You should then receive the confirmation email within the next 24 hours.</p>
+
+        <p>You can also read this page on <a href="https://support.microsoft.com/en-us/office/can-t-send-or-receive-email-in-outlook-com-d39e3341-8d79-4bf1-b3c7-ded602233642?ui=en-us&rs=en-us&ad=us">problems sending and receiving emails in Outlook</a>.</p>
+      </div>
+    </details>
+
+    {% else %}
 
     <h3>If you are using Gmail (Google mail)</h3>
 
@@ -248,6 +392,8 @@ Error messages and support
     <p>Changes to 'Safe Senders' can take 24 hours to update. You should then receive the confirmation email within the next 24 hours.</p>
 
     <p>You can also read this page on <a href="https://support.microsoft.com/en-us/office/can-t-send-or-receive-email-in-outlook-com-d39e3341-8d79-4bf1-b3c7-ded602233642?ui=en-us&rs=en-us&ad=us">problems sending and receiving emails in Outlook</a>.</p>
+
+    {% endif %}
 
     <p>If you still have any problems getting emails from us, ask your email provider for help.</p>
 
