@@ -36,6 +36,23 @@ How to set up NHS login
             <h2 class="article-section-nav__title">How to set up NHS login<span class="nhsuk-u-visually-hidden">navigation</span></h2>
             <nav> 
               <ol class="article-section-nav__list">
+                {% if data.scenario === 'authResearch' %}
+                <li>
+                  <a class="active" href="#whatis">What is NHS login?</a>
+                </li>
+
+                <li>
+                  <a class="" href="#where">Where you can use NHS login</a>
+                </li>
+
+                <li>
+                  <a class="" href="#whatyouneed">What you need to set up an NHS login</a>
+                </li>
+
+                <li>
+                  <a class="" href="#howto">How to set up an NHS login</a>
+                </li>
+                {% else %}
                 <li>
                   <a class="active" href="#whatis">What is NHS login?</a>
                 </li>
@@ -51,7 +68,7 @@ How to set up NHS login
                 <li>
                   <a class="" href="#whatyouneed">What you need to set up an NHS login</a>
                 </li>
-
+                {% endif %}
               </ol> <!-- nhsuk-list -->
             </nav> <!-- end app-side-nav -->
           </div>
@@ -71,9 +88,7 @@ How to set up NHS login
           <div class="article-divider"></div>
 
         <!-- How to set up article  --> 
-        
-        <div>
-
+          {% if data.scenario != 'authResearch' %}
           <h2 id="howto">How to set up an NHS login</h2>
 
           <p class="nhsuk-body">You must access a health and care website or app before you can set up an NHS login. Many of them will show the NHS login button.</p>
@@ -83,7 +98,7 @@ How to set up NHS login
           <p class="nhsuk-body">You can select this button on your chosen website or app to log in, or to create an NHS login.</p>
 
           <div class="article-divider"></div>
-
+          {% endif %}
           <!-- Where you can use NHS login article -->
 
           <h2 class="nhsuk-heading-l" id="where">Where you can use NHS login</h2>
@@ -98,6 +113,73 @@ How to set up NHS login
 
           <h2 class="nhsuk-heading-l" id="whatyouneed">What you need to set up an NHS login</h2>
 
+          {% if data.scenario === 'authResearch' %}
+          <p class="nhsuk-body">To set up an NHS login you will need:
+            <ul>
+              <li>an email address (with more than 6 characters)</li>
+              <li>a mobile phone or a landline number</li>
+            </ul>
+          </p>
+
+          <p class="nhsuk-body">To be able to use some services, you will also need to provide your:
+            <ul>
+              <li>NHS number or your full name</li>
+              <li>date of birth</li>
+              <li>postcode</li>
+            </ul>
+          </p>
+
+          <p>
+            To access your health records or any personal information you will also need to provide high level proof of who you are. 
+            If your mobile phone number matches the one you have registered with your GP, we will use it to verify your identity.
+            Otherwise, you will need to provide proof of identity.
+          </p>
+          <p>This can be a:
+            <ul>
+              <li>passport</li>
+              <li>UK driving license (full or provisional)</li>
+              <li>Biometric Residence Permit (BRP)</li>
+              <li>UK Residence Card, or EEA Biometric Residence Card (BRC)</li>
+              <li>European driving license (full)</li>
+              <li>European national identity card</li>
+            </ul>
+          </p>
+          <p>
+            If you cannot provide a valid photo ID, you can use your registration details from your GP surgery.
+          </p>
+          <p>These are:
+            <ul>
+              <li>a Linkage Key (also known as Passphrase)</li>
+              <li>an ODS Code (also known as Organisation Code or Surgery ID)</li>
+              <li>an Account ID</li>
+            </ul>
+          </p>
+          <p>You need to ask your GP surgery for these details.</p>
+
+
+          <div class="article-divider"></div>
+
+          <h2 id="howto">How to set up an NHS login</h2>
+
+          <p>You must access a health and care website or app before you can set up an NHS login. Many of them will show the NHS login button.</p>
+          <p>
+            You will need to:
+            <ol>
+              <li>Enter your email address.</li>
+              <li>Create a password.</li>
+              <li>Enter the security code we email to you.</li>
+            </ol>
+          </p>
+          <p>
+            For added security, you will need to set up Two-step verification by:
+            <ol>
+              <li>Providing a mobile phone or landline number.</li>
+              <li>Entering the 6 digit security code we send to this number.</li>
+            </ol>
+          </p>
+          <p>To access some websites and apps, you may need to provide additional information and prove who you are. This is so we can connect you to your NHS record and protect your health information.</p>
+          <p><a href="/provewhoyouare/hub">More information on how to prove who you are</a></p>
+          {% else %}
           <p class="nhsuk-body">You will need:
             <ul>
               <li>an email address (with more than 6 characters)</li>
@@ -127,6 +209,7 @@ How to set up NHS login
           </p>
 
           <p class="nhsuk-body"><a href="../provewhoyouare/hub">More information on how to prove who you are</a></p>
+          {% endif %}
 
           <!--<div class="article-divider"></div>
 
