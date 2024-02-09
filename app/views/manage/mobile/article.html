@@ -24,9 +24,6 @@
   </p>
 </nav>
 
-
-{% if data.newArticle === 'true' %}
-
 <div class="nhsuk-width-container">
   <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
     <div class="nhsuk-grid-row">
@@ -164,101 +161,5 @@
     </div> <!-- end nhsuk-grid-row -->
   </main> <!-- end nhsuk-main-wrapper -->
 </div> <!-- end nhsuk-width-container -->
-{% else %}
-<div class="nhsuk-width-container">
-  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-one-third sticky-nav">
-        <div class="article-section-nav-wrapper">
-          <div class="article-section-nav">
-            <h2 class="article-section-nav__title">Mobile phone number<span class="nhsuk-u-visually-hidden">navigation</span></h2>
-            <nav> 
-              <ol class="article-section-nav__list">
 
-                <li>
-                  <a class="active" href="#changemobile">How to change your mobile phone number</a>
-                </li>
-
-                <li>
-                  <a class="" href="#lostaccess">You have lost access to your mobile phone number</a>
-                </li>
-
-                <li>
-                  <a class="" href="#cancellink">The link to cancel the update to your phone number does not work</a>
-                </li>
-
-              </ol> <!-- end nhsuk-list -->
-            </nav> <!-- end app-side-nav -->
-          </div>
-        </div>
-      </div> <!-- end nhsuk-grid-column-one-third -->
-
-      <!-- Two-thirds-article-text -->
-
-      <!-- The confirm email address link in your email does not work article -->
-
-      <div class="nhsuk-grid-column-two-thirds">
-
-        <h2 id="changemobile">How to change your mobile phone number</h2>
-
-        <p>You can change your phone number by visiting your <a href="https://settings.login.nhs.uk/">NHS login settings</a>. Under the heading ‘your personal information’ select ‘change phone number’.</p>
-
-        <p>To visit your NHS login settings, you first need to log in with your NHS login details. To do this, you need access to your previous mobile phone or phone number that is currently on your NHS login.</p>
-
-        <div class="article-divider"></div>
-
-        <!-- You have lost access to your mobile phone number -->
-
-        <h2 id="lostaccess">You have lost access to your mobile phone number</h2>
-
-        <p>You no longer have access to the phone number on your NHS login. You can change the phone number on your NHS login by telling us your NHS number.</p>
-
-        <p><a href="/contact-form/contact">Contact us</a> if you do not know your NHS number.</p>
-
-        <p>You will need to tell us:
-          <ul>
-            <li>the email address for your NHS login</li>
-            <li>the current phone number for your NHS login</li>
-            <li>your new phone number</li>
-          </ul>
-        </p>
-
-        <p>It will also help if you can tell us about a recent time when you have tried to log into a website or app using your NHS login. Tell us the date and time, if possible.</p>
-
-        <p>To do this you can:
-          <ol class="nhsuk-list nhsuk-list--number">
-            <li>visit a website or app that uses NHS login</li>
-            <li>enter your username and password</li>
-            <li>press continue</li>
-            <li>note the date and time</li>
-          </ol>
-        </p>
-
-        <div class="article-divider"></div>
-
-        <!-- The link to cancel changing your phone number does not work -->
-
-        <h2 id="cancellink">The link to cancel the update to your phone number does not work</h2>
-
-        <p>To cancel the update to your phone number, you must select the confirmation link we send you. If the link does not work, there are a number of possible reasons why.</p>
-
-        <h3>Expired link – Reference CID3002</h3>
-
-        <p>The link expires 24 hours after we email it to you.</p>
-        <p>We may have already updated the phone number you use to log in. In this case you would have received a confirmation email.</p>
-        <p>You can check or change your login and security settings in <a href="#">your NHS account</a>.</p>
-
-        <p><a href="/contact-form/contact?error=CID3002">Contact us</a> if you did not mean to change your phone number, or you do not have access to it.</p>
-
-        <h3>Used link – Reference CID3003</h3>
-
-        <p>The link will not work if you have already used it and cancelled the update.</p>
-        <p>You can check or change your login and security settings in <a href="#">your NHS account</a>.</p>
-        <p><a href="/contact-form/contact?error=CID3003">Contact us</a>  if you did not mean to change your phone number, or you do not have access to it.</p>
-
-      </div> <!-- end grid-column-two-thirds -->
-    </div> <!-- end nhsuk-grid-row -->
-  </main> <!-- end nhsuk-main-wrapper -->
-</div> <!-- end nhsuk-width-container -->
-{% endif %}
 {% endblock %}
