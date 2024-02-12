@@ -43,7 +43,11 @@
                 <li>
                   <a class="" href="#changelandline">How to change your landline number</a>
                 </li>
-
+                {% if data.removeFunction === 'implemented' %}
+                <li>
+                  <a class="" href="#removelandline">How to remove your landline number</a>
+                </li>
+                {% endif %}
                 <li>
                   <a class="" href="#lostaccess">If you lose access to your landline number</a>
                 </li>
@@ -113,6 +117,33 @@
 
         <div class="article-divider"></div>
 
+      <!-- Remove landline -->
+        {% if data.removeFunction === 'implemented' %}
+
+        <h2 id="removelandline">How to remove your landline number</h2>
+
+        <p>If you remove your landline number, we will send security codes to the mobile phone number on your account.</p>
+        <p>To remove the landline number you use to receive security codes:</p>
+        <ol class="nhsuk-list nhsuk-list--number">
+          <li>
+            Log in to <a href="https://settings.login.nhs.uk/">your NHS account</a>.
+          </li>
+          <li>
+            Select <strong>Login and security settings</strong>.
+          </li>
+          <li>
+            Select <strong>Two-step verification</strong>.
+          </li>
+          <li>
+            Select <strong>Remove</strong> for landline number.
+          </li>
+          <li>
+            Follow the on-screen instructions to remove your landline number.
+          </li>
+        </ol>
+
+        <div class="article-divider"></div>
+        {% endif %}
         <!-- You have lost access to your mobile phone number -->
 
         <h2 id="lostaccess">If you lose access to your landline number</h2>
