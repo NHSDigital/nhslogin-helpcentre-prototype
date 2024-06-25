@@ -1,0 +1,106 @@
+{% extends 'helpcentre-detail.html' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Contact us
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+
+    <h1 class="nhsuk-app-contact-panel__heading">Contact NHS login support</h1>
+
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <h2 class="nhsuk-heading-m">  We cannot help with medical problems</h2>
+      <p>This form is only for help using NHS login. </p>
+      <!-- Medical help -->
+      <p class="nhsuk-body">If you need medical help, go to <a href="https://www.nhs.uk/contact-us/get-medical-help/">111.nhs.uk</a> or call 111 or your GP.</p>
+      <p class="nhsuk-body">Call 999 if it's a life-threatening emergency.</p>
+    </div> 
+
+    <!-- Get help text block -->
+
+    <h2>Get help</h2>
+   
+    <p class="nhsuk-body">Telling us as much information as possible will make it easier for us to find your account and quickly solve your problem.</p>
+    
+    <!-- User details block -->
+
+    <h3>Your details</h3>
+    
+    <!-- Name input field -->
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="username" >
+       Full name
+      </label>
+      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="username" name="username" type="email">
+    </div>
+
+    <!-- NHS login Email address  -->
+
+
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="login-mail">
+        NHS login email (if known)
+      </label>
+      <div class="nhsuk-hint" id="example-with-hint-text-hint">
+        This is the email you used to create your account.
+      </div>
+      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="login-mail" name="login-mail" type="email">
+    </div>
+
+     <!-- Contact email address  -->
+
+     <div class="nhsuk-form-group">
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="contact-mail">
+        Contact email (if different to NHS login email)
+      </label>
+      <div class="nhsuk-hint" id="example-with-hint-text-hint">
+        This is the email address we will use to contact you about this problem.
+      </div>
+      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="contact-mail" name="contact-mail" type="email">
+    </div>
+
+    <!-- phone number  -->
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="phone-number">
+        NHS login phone number (optional)
+      </label>
+      <div class="nhsuk-hint" id="example-with-hint-text-hint">
+        This is the phone number you used to create your account.
+      </div>
+      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="phone-number" name="phone-number" type="number">
+    </div>
+
+    <!-- last digits of nhs number  -->
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="nhs-number">
+        Last 3 digits of your NHS number (optional)
+      </label>
+      <div class="nhsuk-hint" id="example-with-hint-text-hint">
+        If you know your NHS number.
+      </div>
+      <input class="nhsuk-input nhsuk-u-width-one-third" id="nhs-number" name="nhs-number" type="number">
+    </div>
+
+<!-- button -->
+
+    <a class="nhsuk-button" href="contact-problem-details">Continue</a>
+
+    
+    <!-- closing div for form  -->
+    </div>
+</div>
+   
+{% endblock %}
