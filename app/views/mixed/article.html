@@ -136,7 +136,25 @@ Error messages and support
     <p>You can try signing in with the email linked to this account.</p>
     <p>If you cannot remember the email you used, check all your email accounts for an email from: noreply@login.nhs.uk.</p>
 
-    {% if data.revealDetails === 'true' %}
+    <details class="nhsuk-details nhsuk-expander"> <!-- /. expander start for change email -->
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Email address you use for NHS login
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+
+        <p>If you want to change the email address you use to sign into NHS login:</p>
+        <ol>
+          <li><a href="https://settings.login.nhs.uk/">Access your NHS account settings.</a></li>
+          <li>Select <strong>Login and security settings</strong>.</li>
+          <li>Under the heading for Email and password, select <strong>Change</strong> (for email).</li>
+          <li>Enter your new email address.</li>
+          <li>Enter the 6 digit security code we email you to confirm your new email address.</li>
+        </ol>
+        <p>If you no longer have access to your NHS login email address, <a href="#">contact us</a> so we can try to fix the problem.</p>
+      </div>
+    </details> <!-- /. expander close for change email -->
     
     <details class="nhsuk-details nhsuk-expander">
       <summary class="nhsuk-details__summary">
@@ -153,28 +171,12 @@ Error messages and support
             <li>Select the link in the email to enter and confirm your new password.</li>
           </ol>
           <p>For security reasons we are unable to disclose any information about an account.</p>
+          <p>If you cannot access to your NHS login settings, <a href="#">contact us</a> so we can try to fix the problem.</p>
       </div>
     </details>
     
-    <details class="nhsuk-details nhsuk-expander">
-      <summary class="nhsuk-details__summary">
-        <span class="nhsuk-details__summary-text">
-          Change the email address you use to sign into NHS login
-        </span>
-      </summary>
-      <div class="nhsuk-details__text">
-
-        <p>If you want to change the email address you use to sign into NHS login:</p>
-        <ol>
-          <li>Visit NHS login settings and log in using the email address and password you used to create the account.</li>
-          <li>Select <strong>Login and security settings</strong>.</li>
-          <li>Select <strong>Change email address</strong>.</li>
-          <li>  Enter your new email address.</li>
-        </ol>
-      </div>
-    </details>
     
-    <details class="nhsuk-details nhsuk-expander">
+    <details class="nhsuk-details nhsuk-expander"> <!-- /. expander start for delete account -->
       <summary class="nhsuk-details__summary">
         <span class="nhsuk-details__summary-text">
           Delete your existing account
@@ -190,41 +192,21 @@ Error messages and support
         </ol>
     
         <p>This will only delete your online NHS account and will not affect your medical records.</p>
+
+        <p>If you cannot access to your NHS login settings, <a href="#">contact us</a> so we can try to fix the problem.</p>
+      </div>
+    </details> <!-- /. expander close for delete account -->
+
+    <details class="nhsuk-details nhsuk-expander"> 
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Something else
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        <p>If you need help with something not covered here, <a href="#">contact us</a> so we can try to fix the problem.</p>
       </div>
     </details>
-
-
-    {% else %}
-
-    <p>If you have forgotten your password, you can reset it:</p>
-      <ol>
-        <li>Visit NHS login settings and log in using the email address you used to create the account.</li>
-        <li>Select <strong>Reset your password</strong>.</li>
-        <li>We will send you an email with a link to reset your password.</li>
-        <li>Select the link in the email to enter and confirm your new password.</li>
-      </ol>
-      <p>For security reasons we are unable to disclose any information about an account.</p>
-
-    <p>If you want to change the email address you use to sign into NHS login:</p>
-    <ol>
-      <li>Visit NHS login settings and log in using the email address and password you used to create the account.</li>
-      <li>Select <strong>Login and security settings</strong>.</li>
-      <li>Select <strong>Change email address</strong>.</li>
-      <li>  Enter your new email address.</li>
-    </ol>
-
-    <p>If you want to delete your existing account:</p>
-    <ol>
-      <li>Visit NHS login settings and log in using the email address and password you used to create the account.</li>
-      <li>Select <strong>Login and security settings</strong>.</li>
-      <li>Select <strong>Delete my NHS account</strong>.</li>
-    </ol>
-
-    <p>This will only delete your online NHS account and will not affect your medical records.</p>
-
-    {% endif %}
-
-    <p><a href="../contact-form/contact">Contact us</a> if you need further help.</p>
 
     <div class="article-divider"></div>
 
