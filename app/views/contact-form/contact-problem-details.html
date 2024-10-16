@@ -29,11 +29,11 @@ Contact us
               </li>
             {% elif data.error === "problemUnselected" %}
               <li>
-                <a href="#problemUnselected">Select your problem</a>
+                <a href="#problemUnselected">Select the problem</a>
               </li>
             {% elif data.error === "messageEmpty" %}
               <li>
-                <a href="#messageEmpty">Describe your problem in more detail</a>
+                <a href="#messageEmpty">Describe the problem in more detail</a>
               </li>
             {% endif %}  
             </ul>
@@ -66,7 +66,7 @@ Contact us
           <div class="nhsuk-form-group nhsuk-form-group--error">
           <legend class="nhsuk-fieldset__legend">
             <label class="nhsuk-label nhsuk-u-font-weight-bold" for="website-or-app">
-              Select the website or app you are trying to visit
+              Which website or app are you trying to visit?
             </label>
           </legend>
 
@@ -80,7 +80,7 @@ Contact us
         <fieldset class="nhsuk-fieldset">
           <legend class="nhsuk-fieldset__legend">
             <label class="nhsuk-label nhsuk-u-font-weight-bold" for="website-or-app">
-              Select the website or app you are trying to visit
+              Which website or app are you trying to visit?
             </label>
           </legend>
         <div class="nhsuk-form-group">
@@ -216,11 +216,11 @@ Contact us
     <fieldset class="nhsuk-fieldset">
       <div class="nhsuk-form-group nhsuk-form-group--error">
       <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs nhsuk-u-font-weight-bold">
-          Select the problem you are having
+          What problem are you having?
       </legend>
       <!-- span for error message-->
       <span class="nhsuk-error-message">
-        <span class="nhsuk-u-visually-hidden">Error:</span> <span id="problemUnselected">Select your problem</span>
+        <span class="nhsuk-u-visually-hidden">Error:</span> <span id="problemUnselected">Select the problem</span>
       </span>
 
       <div class="nhsuk-radios">
@@ -306,7 +306,7 @@ Contact us
     <fieldset class="nhsuk-fieldset">
       <div class="nhsuk-form-group nhsuk-form-group--error">
       <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs nhsuk-u-font-weight-bold">
-          Select the problem you are having
+        What problem are you having?
       </legend>
 
       <div class="nhsuk-radios">
@@ -327,7 +327,7 @@ Contact us
 
                 <!-- span for error message-->
                 <span class="nhsuk-error-message">
-                  <span class="nhsuk-u-visually-hidden">Error:</span> <span id="subProblemUnselected">Select your problem</span>
+                  <span class="nhsuk-u-visually-hidden">Error:</span> <span id="subProblemUnselected">Select the problem you are having</span>
                 </span>
               </div>
              
@@ -397,7 +397,7 @@ Contact us
     <fieldset class="nhsuk-fieldset">
       <div class="nhsuk-form-group">
       <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs nhsuk-u-font-weight-bold">
-          Select the problem you are having
+        What problem are you having?
       </legend>
 
       <div class="nhsuk-radios">
@@ -495,7 +495,7 @@ Contact us
         <div class="nhsuk-hint" id="message-detail-hint">Do not include personal or medical information like your NHS number or medical history.</div>
          <!-- span for error message-->
          <span class="nhsuk-error-message">
-          <span class="nhsuk-u-visually-hidden">Error:</span> <span id="messageEmpty">Describe your problem in more detail</span>
+          <span class="nhsuk-u-visually-hidden">Error:</span> <span id="messageEmpty">Describe the problem in more detail</span>
         </span>
     {% else %}
     <div class="nhsuk-character-count" data-module="nhsuk-character-count" data-maxlength="1500">
