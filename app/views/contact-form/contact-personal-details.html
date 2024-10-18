@@ -121,14 +121,10 @@ Contact us
       </span>
     {% else %}
     <div class="nhsuk-form-group">
-      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="loginMail">
-        NHS login email (if known)
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="login-mail">
+        Email you used to set up your account (if known)
       </label>
-      <div class="nhsuk-hint" id="example-with-hint-text-hint">
-        This is the email you used to create your account.
-      </div>
-    {% endif %}
-      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="loginMail" name="loginMail" type="email">
+      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="login-mail" name="login-mail" type="email">
     </div>
 
     <!-- Contact email address  -->
@@ -162,11 +158,8 @@ Contact us
       </span>
     {% else %}
      <div class="nhsuk-form-group">
-      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="contactMail">
-        Contact email (if different to NHS login email)
-      </label>
-      <div class="nhsuk-hint" id="example-with-hint-text-hint">
-        This is the email address we will use to contact you about this problem.
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="contact-mail">
+        Contact email (if different)
       </div>
     {% endif %}
       <input class="nhsuk-input nhsuk-u-width-two-thirds" id="contactMail" name="contactMail" type="email">
@@ -183,7 +176,7 @@ Contact us
         NHS login phone number (optional)
       </label>
       <div class="nhsuk-hint" id="example-with-hint-text-hint">
-        This is the phone number you used to create your account.
+        This is the number we send security codes to (we will not call you on this number)
       </div>
       <!-- span for error message -->
       <span class="nhsuk-error-message">
