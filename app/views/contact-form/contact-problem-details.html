@@ -10,8 +10,39 @@ Contact us
 {% endblock %}
 
 {% block content %}
-<div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-two-thirds">
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+    <!-- ERROR SUMMARY OPEN -->
+
+    {% if data.state === 'error' %}
+
+        <div class="nhsuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
+          <h2 class="nhsuk-error-summary__title" id="error-summary-title">
+            There is a problem
+          </h2>
+          <div class="nhsuk-error-summary__body">
+            <ul class="nhsuk-list nhsuk-error-summary__list" role="list">
+            {% if data.error === "appUnselected" %}
+              <li>
+                <a href="#appSelectError">Select the website or app you are trying to visit</a>
+              </li>
+            {% elif data.error === "problemUnselected" %}
+              <li>
+                <a href="#problemUnselected">Select the problem</a>
+              </li>
+            {% elif data.error === "messageEmpty" %}
+              <li>
+                <a href="#messageEmpty">Describe the problem in more detail</a>
+              </li>
+            {% endif %}  
+            </ul>
+          </div>
+        </div>    
+
+    {% endif %}
+
+    <!-- ERROR SUMMARY CLOSE -->
 
 
     <h1 class="nhsuk-app-contact-panel__heading">Contact NHS login support</h1>
@@ -20,18 +51,42 @@ Contact us
     <!-- your problem text block -->
 
     <h2 class="nhsuk-heading-s">Your problem</h2>
+
+    <!-- Website or app dropdown radio version-->
+    <!-- Website or app dropdown radio version-->
+    <!-- Website or app dropdown radio version-->
+    <!-- Website or app dropdown radio version-->
     <!-- Website or app dropdown radio version-->
 
     <form  method="post">
-      <fieldset class="nhsuk-fieldset">
-        <legend class="nhsuk-fieldset__legend">
-          <label class="nhsuk-label nhsuk-u-font-weight-bold" for="website-or-app">
-            Select the website or app you are trying to visit
-          </label>
-        </legend>
+
+        {% if data.error === "appUnselected" %}
+        <fieldset class="nhsuk-fieldset">
+
+          <div class="nhsuk-form-group nhsuk-form-group--error">
+          <legend class="nhsuk-fieldset__legend">
+            <label class="nhsuk-label nhsuk-u-font-weight-bold" for="website-or-app">
+              Which website or app are you trying to visit?
+            </label>
+          </legend>
+
+          <fieldset class="nhsuk-fieldset">
+          <div class="nhsuk-radios nhsuk-radios--conditional">
+            <!-- span for error message-->
+          <span class="nhsuk-error-message">
+            <span class="nhsuk-u-visually-hidden">Error:</span> <span id="appSelectError">Select the website or app you are trying to visit</span>
+          </span>
+        {% else %}
+        <fieldset class="nhsuk-fieldset">
+          <legend class="nhsuk-fieldset__legend">
+            <label class="nhsuk-label nhsuk-u-font-weight-bold" for="website-or-app">
+              Which website or app are you trying to visit?
+            </label>
+          </legend>
         <div class="nhsuk-form-group">
           <fieldset class="nhsuk-fieldset">
           <div class="nhsuk-radios nhsuk-radios--conditional">
+        {% endif %}
             <div class="nhsuk-radios__item">
               <input class="nhsuk-radios__input" id="visitNHS" name="visit" type="radio" value="app">
               <label class="nhsuk-label nhsuk-radios__label" for="visitNHS">
@@ -152,106 +207,306 @@ Contact us
     </form>
 
     <!-- Radio selection for issue -->
+    <!-- Radio selection for issue -->
+    <!-- Radio selection for issue -->
+    <!-- Radio selection for issue -->
+    <!-- Radio selection for issue -->
 
+    {% if data.error === "problemUnselected" %}
     <fieldset class="nhsuk-fieldset">
+      <div class="nhsuk-form-group nhsuk-form-group--error">
       <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs nhsuk-u-font-weight-bold">
-          Select the problem you are having
+          What problem are you having?
       </legend>
+      <!-- span for error message-->
+      <span class="nhsuk-error-message">
+        <span class="nhsuk-u-visually-hidden">Error:</span> <span id="problemUnselected">Select the problem</span>
+      </span>
+
+      <div class="nhsuk-radios">
+
+        <!-- conditional radios grouping start-->
+
+        <div class="nhsuk-radios nhsuk-radios--conditional">
+
+            <!-- below div is for the conditional reveal functionality -->
+
+            <div class="nhsuk-radios nhsuk-radios--conditional"> 
+
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" type="radio" id="issue-1" name="issue" value="dupes"  aria-controls="account-issue-options">
+                <label class="nhsuk-label nhsuk-radios__label" for="issue-1">
+                  There is already an account linked to my details
+                </label>
+              </div>
+             
+              <!-- for this list to toggle, the aria controls must match the ID of the hidden conditionals -->
+              <!-- below div is for the list to be able to toggle -->
   
+             <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="account-issue-options">
+  
+                  <!-- conditional radios -->
+  
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" type="radio" id="sub-issue-1" name="issue-detail" value="first-line-password-reset">
+                      <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-1">
+                        I cannot remember the password I used to set up my account
+                      </label>
+                    </div>
+  
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" type="radio" id="sub-issue-2" name="issue-detail" value="first-line-change-mobile">
+                      <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-2">
+                        I cannot access my account as I have changed my mobile number
+                      </label>
+                    </div>
+  
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" type="radio" id="sub-issue-3" name="issue-detail" value="second-line-email-hint">
+                      <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-3">
+                        I cannot remember the email address I used to set up my account
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" type="radio" id="sub-issue-4" name="issue-detail" value="second-line-manual-reset">
+                      <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-4">
+                        I cannot access the email address I used to set up my account
+                      </label>
+                    </div>
+              </div>
+        <!-- end of conditional radios -->
+  
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="issue-5" name="issue" type="radio" value="2">
+          <label class="nhsuk-label nhsuk-radios__label" for="issue-5">
+            There is an issue connecting to my GP
+          </label>
+        </div>
+  
+
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="issue-6" name="issue" type="radio" value="3">
+          <label class="nhsuk-label nhsuk-radios__label" for="issue-6">
+            I  need to change the email address linked to my NHS login account
+          </label>
+        </div>
+  
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="issue-7" name="issue" type="radio" value="4">
+          <label class="nhsuk-label nhsuk-radios__label" for="issue-7">
+            Something else
+          </label>
+        </div>
+      </div>
+      
+      </fieldset>
+
+      {% elif data.error === "subProblemUnselected" %}
+    <fieldset class="nhsuk-fieldset">
+      <div class="nhsuk-form-group nhsuk-form-group--error">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs nhsuk-u-font-weight-bold">
+        What problem are you having?
+      </legend>
+
+      <div class="nhsuk-radios">
+
+        <!-- conditional radios grouping start-->
+
+        <div class="nhsuk-radios nhsuk-radios--conditional">
+
+            <!-- below div is for the conditional reveal functionality -->
+
+            <div class="nhsuk-radios nhsuk-radios--conditional"> 
+
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" type="radio" id="issue-1" name="issue" value="dupes"  aria-controls="account-issue-options">
+                <label class="nhsuk-label nhsuk-radios__label" for="issue-1">
+                  There is already an account linked to my details
+                </label>
+
+                <!-- span for error message-->
+                <span class="nhsuk-error-message">
+                  <span class="nhsuk-u-visually-hidden">Error:</span> <span id="subProblemUnselected">Select the problem you are having</span>
+                </span>
+              </div>
+             
+              <!-- for this list to toggle, the aria controls must match the ID of the hidden conditionals -->
+              <!-- below div is for the list to be able to toggle -->
+  
+             <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="account-issue-options">
+  
+                  <!-- conditional radios -->
+  
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" type="radio" id="sub-issue-1" name="issue-detail" value="first-line-password-reset">
+                      <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-1">
+                        I cannot remember the password I used to set up my account
+                      </label>
+                    </div>
+  
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" type="radio" id="sub-issue-2" name="issue-detail" value="first-line-change-mobile">
+                      <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-2">
+                        I cannot access my account as I have changed my mobile number
+                      </label>
+                    </div>
+  
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" type="radio" id="sub-issue-3" name="issue-detail" value="second-line-email-hint">
+                      <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-3">
+                        I cannot remember the email address I used to set up my account
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" type="radio" id="sub-issue-4" name="issue-detail" value="second-line-manual-reset">
+                      <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-4">
+                        I cannot access the email address I used to set up my account
+                      </label>
+                    </div>
+              </div>
+        <!-- end of conditional radios -->
+  
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="issue-5" name="issue" type="radio" value="2">
+          <label class="nhsuk-label nhsuk-radios__label" for="issue-5">
+            There is an issue connecting to my GP
+          </label>
+        </div>
+  
+
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="issue-6" name="issue" type="radio" value="3">
+          <label class="nhsuk-label nhsuk-radios__label" for="issue-6">
+            I  need to change the email address linked to my NHS login account
+          </label>
+        </div>
+  
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="issue-7" name="issue" type="radio" value="4">
+          <label class="nhsuk-label nhsuk-radios__label" for="issue-7">
+            Something else
+          </label>
+        </div>
+      </div>
+      
+      </fieldset>
+      
+    {% else %}
+    <fieldset class="nhsuk-fieldset">
       <div class="nhsuk-form-group">
-    
-        <div class="nhsuk-radios">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xs nhsuk-u-font-weight-bold">
+        What problem are you having?
+      </legend>
 
-          <!-- conditional radios grouping start-->
+      <div class="nhsuk-radios">
 
-          <div class="nhsuk-radios nhsuk-radios--conditional">
+        <!-- conditional radios grouping start-->
 
-              <!-- below div is for the conditional reveal functionality -->
+        <div class="nhsuk-radios nhsuk-radios--conditional">
 
-              <div class="nhsuk-radios nhsuk-radios--conditional"> 
+            <!-- below div is for the conditional reveal functionality -->
 
-                <div class="nhsuk-radios__item">
-                  <input class="nhsuk-radios__input" type="radio" id="issue-1" name="issue" value="dupes"  aria-controls="account-issue-options">
-                  <label class="nhsuk-label nhsuk-radios__label" for="issue-1">
-                    There is already an account linked to my details
-                  </label>
-                </div>
-               
-                <!-- for this list to toggle, the aria controls must match the ID of the hidden conditionals -->
-                <!-- below div is for the list to be able to toggle -->
-    
-               <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="account-issue-options">
-    
-                    <!-- conditional radios -->
-    
-                      <div class="nhsuk-radios__item">
-                        <input class="nhsuk-radios__input" type="radio" id="sub-issue-1" name="issue-detail" value="first-line-password-reset">
-                        <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-1">
-                          I cannot remember the password I used to set up my account
-                        </label>
-                      </div>
-    
-                      <div class="nhsuk-radios__item">
-                        <input class="nhsuk-radios__input" type="radio" id="sub-issue-2" name="issue-detail" value="first-line-change-mobile">
-                        <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-2">
-                          I cannot access my account as I have changed my mobile number
-                        </label>
-                      </div>
-    
-                      <div class="nhsuk-radios__item">
-                        <input class="nhsuk-radios__input" type="radio" id="sub-issue-3" name="issue-detail" value="second-line-email-hint">
-                        <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-3">
-                          I cannot remember the email address I used to set up my account
-                        </label>
-                      </div>
+            <div class="nhsuk-radios nhsuk-radios--conditional"> 
 
-                      <div class="nhsuk-radios__item">
-                        <input class="nhsuk-radios__input" type="radio" id="sub-issue-4" name="issue-detail" value="second-line-manual-reset">
-                        <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-4">
-                          I cannot access the email address I used to set up my account
-                        </label>
-                      </div>
-                </div>
-          <!-- end of conditional radios -->
-    
-          <div class="nhsuk-radios__item">
-            <input class="nhsuk-radios__input" id="issue-5" name="issue" type="radio" value="2">
-            <label class="nhsuk-label nhsuk-radios__label" for="issue-5">
-              There is an issue connecting to my GP
-            </label>
-          </div>
-    
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" type="radio" id="issue-1" name="issue" value="dupes"  aria-controls="account-issue-options">
+                <label class="nhsuk-label nhsuk-radios__label" for="issue-1">
+                  There is already an account linked to my details
+                </label>
+              </div>
+             
+              <!-- for this list to toggle, the aria controls must match the ID of the hidden conditionals -->
+              <!-- below div is for the list to be able to toggle -->
+  
+             <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="account-issue-options">
+  
+                  <!-- conditional radios -->
+  
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" type="radio" id="sub-issue-1" name="issue-detail" value="first-line-password-reset">
+                      <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-1">
+                        I cannot remember the password I used to set up my account
+                      </label>
+                    </div>
+  
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" type="radio" id="sub-issue-2" name="issue-detail" value="first-line-change-mobile">
+                      <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-2">
+                        I cannot access my account as I have changed my mobile number
+                      </label>
+                    </div>
+  
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" type="radio" id="sub-issue-3" name="issue-detail" value="second-line-email-hint">
+                      <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-3">
+                        I cannot remember the email address I used to set up my account
+                      </label>
+                    </div>
 
-          <div class="nhsuk-radios__item">
-            <input class="nhsuk-radios__input" id="issue-6" name="issue" type="radio" value="3">
-            <label class="nhsuk-label nhsuk-radios__label" for="issue-6">
-              I  need to change the email address linked to my NHS login account
-            </label>
-          </div>
-    
-          <div class="nhsuk-radios__item">
-            <input class="nhsuk-radios__input" id="issue-7" name="issue" type="radio" value="4">
-            <label class="nhsuk-label nhsuk-radios__label" for="issue-7">
-              Something else
-            </label>
-          </div>
-    </div>
-    
-    </fieldset>
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" type="radio" id="sub-issue-4" name="issue-detail" value="second-line-manual-reset">
+                      <label class="nhsuk-label nhsuk-radios__label" for="sub-issue-4">
+                        I cannot access the email address I used to set up my account
+                      </label>
+                    </div>
+              </div>
+        <!-- end of conditional radios -->
+  
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="issue-5" name="issue" type="radio" value="2">
+          <label class="nhsuk-label nhsuk-radios__label" for="issue-5">
+            There is an issue connecting to my GP
+          </label>
+        </div>
+  
+
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="issue-6" name="issue" type="radio" value="3">
+          <label class="nhsuk-label nhsuk-radios__label" for="issue-6">
+            I  need to change the email address linked to my NHS login account
+          </label>
+        </div>
+  
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="issue-7" name="issue" type="radio" value="4">
+          <label class="nhsuk-label nhsuk-radios__label" for="issue-7">
+            Something else
+          </label>
+        </div>
+      </div>
+      
+      </fieldset>
+    {% endif %}
 
     
 
     <!-- Message -->
+    <!-- Message -->
+    <!-- Message -->
+    <!-- Message -->
+    <!-- Message -->
 
+    {% if data.error === "messageEmpty" %}
+    <div class="nhsuk-character-count" data-module="nhsuk-character-count" data-maxlength="1500">
+      <div class="nhsuk-form-group nhsuk-form-group--error">
+        <label class="nhsuk-label nhsuk-u-font-weight-bold" for="message-detail">Describe the problem in more detail</label>
+        <div class="nhsuk-hint" id="message-detail-hint">Do not include personal or medical information like your NHS number or medical history.</div>
+         <!-- span for error message-->
+         <span class="nhsuk-error-message">
+          <span class="nhsuk-u-visually-hidden">Error:</span> <span id="messageEmpty">Describe the problem in more detail</span>
+        </span>
+    {% else %}
     <div class="nhsuk-character-count" data-module="nhsuk-character-count" data-maxlength="1500">
       <div class="nhsuk-form-group">
         <label class="nhsuk-label nhsuk-u-font-weight-bold" for="message-detail">Describe the problem in more detail</label>
         <div class="nhsuk-hint" id="message-detail-hint">Do not include personal or medical information like your NHS number or medical history.</div>
+    {% endif %}
         <textarea class="nhsuk-textarea nhsuk-js-character-count" id="message-detail" name="message-detail" rows="6" aria-describedby="message-detail-hint"></textarea>
         <div class="nhsuk-hint nhsuk-character-count__message" id="message-detail-count">You have 1500 characters remaining</div>
       </div>
     </div>
-
     
     <!-- PRIVACY POLICY AGREEMENT -->
 
