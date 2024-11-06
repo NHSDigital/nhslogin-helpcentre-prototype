@@ -110,22 +110,20 @@ Contact us
     {% if data.error === "loginMailInvalid"%}
     <div class="nhsuk-form-group nhsuk-form-group--error">
       <label class="nhsuk-label nhsuk-u-font-weight-bold" for="loginMail">
-        NHS login email (if known)
+        Email you used to set up your account (if known)
       </label>
-      <div class="nhsuk-hint" id="example-with-hint-text-hint">
-        This is the email you used to create your account.
-      </div>
       <!-- span for error message-->
       <span class="nhsuk-error-message">
         <span class="nhsuk-u-visually-hidden">Error:</span> <span id="loginMailError">Enter a valid email address</span>
       </span>
     {% else %}
     <div class="nhsuk-form-group">
-      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="login-mail">
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="loginMail">
         Email you used to set up your account (if known)
       </label>
-      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="login-mail" name="login-mail" type="email">
+      <input class="nhsuk-input nhsuk-u-width-two-thirds" id="loginMail" name="loginMail" type="email">
     </div>
+    {% endif %}
 
     <!-- Contact email address  -->
     <!-- Contact email address  -->
@@ -135,7 +133,7 @@ Contact us
     {% if data.error === "emailsEmpty" %}
     <div class="nhsuk-form-group nhsuk-form-group--error">
       <label class="nhsuk-label nhsuk-u-font-weight-bold" for="contactMail">
-        Contact email (if different to NHS login email)
+        Contact email (if different)
       </label>
       <div class="nhsuk-hint" id="example-with-hint-text-hint">
         This is the email address we will use to contact you about this problem.
@@ -147,7 +145,7 @@ Contact us
     {% elif data.error === "contactMailInvalid"%}
     <div class="nhsuk-form-group nhsuk-form-group--error">
       <label class="nhsuk-label nhsuk-u-font-weight-bold" for="contactMail">
-        Contact email (if different to NHS login email)
+        Contact email (if different)
       </label>
       <div class="nhsuk-hint" id="example-with-hint-text-hint">
         This is the email address we will use to contact you about this problem.
@@ -158,12 +156,12 @@ Contact us
       </span>
     {% else %}
      <div class="nhsuk-form-group">
-      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="contact-mail">
+      <label class="nhsuk-label nhsuk-u-font-weight-bold" for="contactMail">
         Contact email (if different)
-      </div>
-    {% endif %}
+      </label>
       <input class="nhsuk-input nhsuk-u-width-two-thirds" id="contactMail" name="contactMail" type="email">
     </div>
+    {% endif %}
 
     <!-- phone number  -->
     <!-- phone number  -->
@@ -190,9 +188,9 @@ Contact us
       <div class="nhsuk-hint" id="example-with-hint-text-hint">
         This is the mobile phone number you used to create your account.
       </div>
-    {% endif %}
       <input class="nhsuk-input nhsuk-u-width-two-thirds" id="mobilePhone" name="mobilePhone" type="number">
     </div>
+    {% endif %}
 
     <!-- last digits of nhs number  -->
     <!-- last digits of nhs number  -->
