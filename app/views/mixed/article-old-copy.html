@@ -32,9 +32,13 @@ Error messages and support
             <h2 class="article-section-nav__title">Error messages and support<span class="nhsuk-u-visually-hidden">navigation</span></h2>
             <nav> 
               <ol class="article-section-nav__list">
+
+                
+
+                {% if data.hsResearch === 'true' %}
                 
                 <li>
-                  <a class="active" href="#dupes">You already have an NHS account</a>
+                  <a class="active" href="#dupes">There is already an account linked to my details</a>
                 </li>
 
                 <li>
@@ -56,6 +60,34 @@ Error messages and support
                 <li>
                   <a class="" href="#reference2014">CID2014: You cannot use your NHS login</a>
                 </li>
+
+                
+
+                {% else %}
+
+                <li>
+                  <a class="active" href="#error2011">CID2011: There may be a problem with your NHS number</a>
+                </li>
+
+                <li>
+                  <a class="" href="#error2012">CID2012: Your NHS login may have been disabled</a>
+                </li>
+
+                <li>
+                  <a class="" href="#reference2014">CID2014: You cannot use your NHS login</a>
+                </li>
+
+
+                <li>
+                  <a class="" href="#error7023">CID7023: Unable to connect to your GP surgery’s system</a>
+                </li>
+
+                <li>
+                  <a class="" href="#error7029">CID7029: We cannot connect your NHS login to your GP surgery</a>
+                </li>
+                
+                {% endif %}
+
           </ol>
 
             </nav> <!-- /. side-nav -->
@@ -83,33 +115,93 @@ Error messages and support
 
       <!-- Reference CID2011: There may be a problem with your NHS number -->
 
-        <!-- START OF BLOCK FOR DUPES -->
-
+      {% if data.hsResearch === 'true' %}
 
       <!-- There is already an account - top 3 issues from support November 2023 -->
 
-      <h2 id="dupes">You already have an NHS account</h2>
+      <h2 id="dupes">There is already an account linked to my details</h2>
 
-      <p>You can only have one NHS account linked to one email address.</p>
-       <p>If you create a new NHS account with a different email address, we’ll let you know and ask you to log in to your existing account.</p>
+      <p>If you try to create an account and get a message that it already exists, it may be because there is already:</p>
+      <ul>
+        <li>an account with the email address you tried to use</li>
+        <li>an account linked to the NHS number you entered, but with a different email address</li>
+      </ul>
 
-    <p>If you cannot log in to your existing account, for example because you’ve lost access to its email address, you’ll need to create a new NHS account.</p>
+    <p>You can try signing in with the email linked to this account.</p>
+    <p>If you cannot remember the email you used, check all your email accounts for an email from: noreply@login.nhs.uk.</p>
 
-    <p>Once you've passed ID checks and logged in to the new account, we’ll delete your other account.</p>
+    <details class="nhsuk-details nhsuk-expander"> <!-- /. expander start for change email -->
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Email address you use for NHS login
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
 
-    <p>Your medical records will transfer to the new one.</p>
-
-    <h3 >Other things you may need help with:</h2>
+        <p>If you want to change the email address you use to sign into NHS login:</p>
+        <ol>
+          <li><a href="https://settings.login.nhs.uk/">Access your NHS account settings.</a></li>
+          <li>Select <strong>Login and security settings</strong>.</li>
+          <li>Under the heading for Email and password, select <strong>Change</strong> (for email).</li>
+          <li>Enter your new email address.</li>
+          <li>Enter the 6 digit security code we email you to confirm your new email address.</li>
+        </ol>
+        <p>If you no longer have access to your NHS login email address, <a href="#">contact us</a> so we can try to fix the problem.</p>
+      </div>
+    </details> <!-- /. expander close for change email -->
     
-      <p> <a href="../manage/passwords/article">Reset my password</a></p>
-      <p> <a href="../manage/email/article">Change my email address</a></p>
-      <p> <a href="../manage/delete/article">Delete my existing account</a></p>
-
-      <p>If you need further help, <a href="">contact us</a>.</p>
-
-      <!-- END OF BLOCK FOR DUPES -->
-     
+    <details class="nhsuk-details nhsuk-expander">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Forgotten your password?
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        <p>If you have forgotten your password, you can reset it:</p>
+          <ol>
+            <li>Visit NHS login settings and log in using the email address you used to create the account.</li>
+            <li>Select <strong>Reset your password</strong>.</li>
+            <li>We will send you an email with a link to reset your password.</li>
+            <li>Select the link in the email to enter and confirm your new password.</li>
+          </ol>
+          <p>For security reasons we are unable to disclose any information about an account.</p>
+          <p>If you cannot access to your NHS login settings, <a href="#">contact us</a> so we can try to fix the problem.</p>
+      </div>
+    </details>
     
+    
+    <details class="nhsuk-details nhsuk-expander"> <!-- /. expander start for delete account -->
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Delete your existing account
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+
+        <p>If you want to delete your existing account:</p>
+        <ol>
+          <li>Visit NHS login settings and log in using the email address and password you used to create the account.</li>
+          <li>Select <strong>Login and security settings</strong>.</li>
+          <li>Select <strong>Delete my NHS account</strong>.</li>
+        </ol>
+    
+        <p>This will only delete your online NHS account and will not affect your medical records.</p>
+
+        <p>If you cannot access to your NHS login settings, <a href="#">contact us</a> so we can try to fix the problem.</p>
+      </div>
+    </details> <!-- /. expander close for delete account -->
+
+    <details class="nhsuk-details nhsuk-expander"> 
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+          Something else
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        <p>If you need help with something not covered here, <a href="#">contact us</a> so we can try to fix the problem.</p>
+      </div>
+    </details>
+
     <div class="article-divider"></div>
 
 
@@ -124,6 +216,8 @@ Error messages and support
     <p>
       If you see reference CID7023, the website or app you are trying to visit cannot connect to your GP surgery’s system. If this happens to you, there are some possible reasons why.
     </p>
+
+      {% if data.revealDetails === 'true' %}
     
     <details class="nhsuk-details nhsuk-expander">
       <summary class="nhsuk-details__summary">
@@ -167,6 +261,38 @@ Error messages and support
         <p>If your GP surgery is in England, you can ask your GP for new registration details for their online services.</p>
       </div>
     </details>
+
+
+    {% else %}
+
+    <h4>You have already set up an NHS login</h4>
+
+    <p>
+      We have already used your details to connect you to the website or app you were trying to visit. This can happen if you already have an NHS login with a different email address. 
+    </p>
+    <p>
+      We can only connect one NHS login to your GP surgery’s system.
+    </p>
+
+    <p>
+      You can change the email address on your NHS login in your <strong>Login and security settings</strong>.
+    </p>
+
+    <h4>We have the wrong details for you</h4>
+
+    <p>The details we use to make the connection are wrong.</p>
+
+    <p>This can happen if:
+      <ul>
+        <li>you have changed GP surgery</li>
+        <li>your GP surgery has changed systems</li>
+        <li>you no longer have permission to use your GP surgery’s online services</li>
+      </ul>
+    </p>
+
+    <p>If your GP surgery is in England, you can ask your GP for new registration details for their online services.</p>
+
+    {% endif %}
 
     <p>
       <a href="../contact-form/contact">Contact us</a> if you need help or if you still have problems.
@@ -330,6 +456,7 @@ Error messages and support
 
       <!------------------------------------------------------------------------------------->
 
+      {% else %}
 
         <h2 id="error2011">CID2011: There may be a problem with your NHS number</h2>
 
@@ -461,6 +588,8 @@ Error messages and support
           <a href="../contact-form/contact">Contact us</a> so we can check you have been given the right registration details. You
           will need to tell us the email address you use for your NHS login.
         </p> -->
+
+        {% endif %}
         
 
       </div> <!-- /. two-thirds-column -->
